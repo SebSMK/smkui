@@ -1,0 +1,22 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ § Link
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+// Default look.
+a,
+a:link {
+  color: blue;
+  text-decoration: none;
+  line-height: inherit;
+}
+
+// Hover and focus.
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+// Active
+a:active {
+  //...
+}

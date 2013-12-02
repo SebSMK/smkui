@@ -1,0 +1,32 @@
+{
+  "folders":
+  [
+    {
+      "path": ".",
+
+      "file_exclude_patterns": [
+        "*.jpg",
+        "*.png",
+        "*.gif",
+        "*.svg",
+        "*.eot",
+        "*.woff",
+        "*.ttf",
+        "*.sublime-workspace"
+      ],
+      
+      "folder_exclude_patterns": [
+        ".tmp",
+        ".sass-cache",
+        "development",
+        "production",
+        "node_modules",
+        "src/bower_components",
+        "src/design",
+        "src/fonts",
+        "src/images",
+        "src/favicons"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ § Layout
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// Use this file to define page layouts using the Susy grid system and nudge
+// elements into place.
+
+/*
+ § Grid settings (Susy).
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// http://susy.oddbird.net/guides/reference/
+
+$total-columns: 12;
+$column-width:  3em;
+$gutter-width:  2.5em;
+$grid-padding:  $gutter-width;
+$media-layout:  12; // http://susy.oddbird.net/guides/reference/#ref-media-layouts
+
+/*
+ § Default layout
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.section--main {
+  @include container;
+}
+
+.article {
+  position: relative;
+} // .article

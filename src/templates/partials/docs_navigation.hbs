@@ -1,0 +1,50 @@
+<div class="drawer">
+
+  <!-- Pages -->
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/copyright.html">Copyright</a>
+  </nav>
+
+  <!-- Components -->
+    <h3 class="heading">Components</h3>
+    <nav>
+      {{#each pages}}
+        {{#is data.category "components"}}
+          <a href="/{{data.slug}}.html">{{data.title}}</a>
+        {{/is}}
+      {{/each}}
+    </nav>
+
+  <!-- Views -->
+    <h3 class="heading">Views</h3>
+    <nav>
+      {{#each pages}}
+        {{#is data.category "views"}}
+          <a href="/{{data.slug}}.html">{{data.title}}</a>
+        {{/is}}
+      {{/each}}
+    </nav>
+
+  <!-- Typography -->
+    <h3 class="heading">Typography</h3>
+    <nav>
+      {{#each pages}}
+        {{#is data.category "typography"}}
+          <a href="/{{data.slug}}.html">{{data.title}}</a>
+        {{/is}}
+      {{/each}}
+    </nav>
+
+  <!-- Layout -->
+  <h3 class="heading">Layout</h3>
+  <nav>
+    {{#each pages}}
+      {{#is data.category "layout"}}
+        <a href="/{{data.slug}}.html">{{data.title}}</a>
+      {{/is}}
+    {{/each}}
+  </nav>
+</div>

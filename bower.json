@@ -1,0 +1,21 @@
+{
+  "name": "etiquette",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jacquesmourier/etiquette",
+  "authors": [
+    "Jacques Mourier"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bourbon": "~3.1.8",
+    "susy": "~1.0.9"
+  }
+}

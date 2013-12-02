@@ -1,0 +1,22 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ § Subsection
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// Subsection is a custom object used by the default Etiquette look and feel.
+// It is used for splitting articles into separate chunks. Aka. subsections.
+
+// Base class
+.subsection {
+  // Spacing
+  margin-bottom: 3.5em;
+
+  // Paragraph
+  p {
+    margin-bottom: 1em;
+  }
+
+  // Heading
+  .heading {
+    @extend .heading--s;
+    @extend .heading--section;
+  }
+} // subsection

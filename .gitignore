@@ -1,0 +1,12 @@
+node_modules/
+src/bower_components/
+
+# Grunt build targets
+development/
+production/
+
+# Temporary
+.sass-cache/
+
+# Sublime workspace
+*.sublime-workspace

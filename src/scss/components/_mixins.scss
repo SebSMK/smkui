@@ -1,0 +1,23 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ § Mixins
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*
+ § @font-face
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// https://github.com/thesedays/scss-mixins/blob/master/fonts.scss
+
+@mixin font-face($font-family, $font-url, $font-file-name) {
+  @font-face {
+    font: {
+      family: $font-family;
+      style: normal;
+      weight: normal;
+    }
+
+    src: url($font-url + '/' + $font-file-name + '.eot') format('eot'), 
+         url($font-url + '/' + $font-file-name + '.woff') format('woff'), 
+         url($font-url + '/' + $font-file-name + '.ttf')  format('truetype'),
+         url($font-url + '/' + $font-file-name + '.svg#' + $font-file-name) format('svg');
+  }
+}

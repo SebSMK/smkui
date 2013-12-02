@@ -1,0 +1,99 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ § Drawer
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// A fixed navigation designed that will slide in from the browser edge.
+// To customize the drawer you probably want to check out the accompanying
+// javascript in app.js.
+
+/*
+ § Configuration
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+$drawer-width: 11em;
+
+/*
+ § Looks
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.drawer {
+  @extend %padding-top--xs;
+  background: $gray-lightest;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -$drawer-width; // Hide the drawer.
+  width: $drawer-width;
+  @include transition (left $time-s ease-in-out);
+
+  // Headings
+  .heading {
+    @extend .heading--section;
+    @extend %margin-top--s;
+    padding-right: 8%;
+    padding-left: 8%;
+    margin-bottom: .3em;
+  } // heading
+  
+  // Navigation block (collection of links)
+  nav {
+    @extend %margin-bottom--m;
+
+    // Links
+    a {
+      display: block;
+      padding-right: 8%;
+      padding-bottom: .05em;
+      padding-left: 8%;
+
+      // Current link
+      &.current {
+        color: $black;
+      }
+      
+      // Hover and focus stats
+      &:hover,
+      &:focus {
+        background: silver;
+        text-decoration: none;
+      }
+    } // a
+  } // nav
+} // drawer
+
+/*
+ § Toggle 
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.drawer-toggle {
+
+}
+
+/*
+ § Open state
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+ // Show the drawer.
+.drawer--open {
+  left: 0;
+}
+
+// Prepare page elements to be pushed aside.
+.main-header,
+.article {
+  position: relative;
+  right: 0;
+  @include transition (right $time-s ease-in-out);
+  @include transition ('padding-left' $time-s ease-in-out);
+}
+
+/*
+ § Show when there is room for it
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media (min-width: $screen-s) {
+   // Show the drawer.
+  .drawer {
+    left: 0;
+  }
+
+  // Push page element aside.
+  .main-header,
+  .article {
+    padding-left: $drawer-width;
+  }
+}

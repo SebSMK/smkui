@@ -1,0 +1,8 @@
+{
+  "name": "smkui",
+  "src": "src",
+  "dev": "development",
+  "prod": "production",
+  "copyright_holder": "National Gallery of Denmark",
+  "contributors": ["Thorbjørn Wulff", "Sebastien Brossard", "Jacques Mourier"]
+}
