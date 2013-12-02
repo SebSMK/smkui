@@ -55,7 +55,7 @@ module.exports = function(grunt) {
       },
       production: {
         files: {
-          '<%= app.prod %>/js/app.min.js': ['<%= app.src %>/js/app.js']
+          '<%= app.prod %>/js/app.min.js': ['<%= app.src %>/js/vendor/**/*.js', '<%= app.src %>/js/app.js']
         },
       }
     },
@@ -101,8 +101,7 @@ module.exports = function(grunt) {
           collapseBooleanAttributes: true,
           removeAttributeQuotes: true,
           removeRedundantAttributes: true,
-          removeOptionalTags: true,
-          removeEmptyElements: true
+          removeOptionalTags: true
         },
         expand: true,
         cwd: '<%= app.dev %>',
@@ -144,6 +143,21 @@ module.exports = function(grunt) {
           // crossdomain.xml and robots.txt
           { expand: true, cwd: '<%= app.src %>/misc/', src: ['**'], dest: '<%= app.prod %>/', filter: 'isFile' }
         ]
+      }
+    },
+
+    // Deploy to staging via FTP
+    // https://github.com/zonak/grunt-ftp-deploy
+    'ftp-deploy': {
+      build: {
+        auth: {
+          host: 'ftp.mourier.me',
+          port: 21,
+          authKey: 'key1'
+        },
+        src: '<%= app.prod %>',
+        dest: '/smk',
+        exclusions: []
       }
     },
 
@@ -210,7 +224,8 @@ module.exports = function(grunt) {
     'assemble',
     'htmlmin',
     'newer:imageoptim',
-    'copy:production'
+    'copy:production',
+    'ftp-deploy'
   ]);
 
 }; // end module

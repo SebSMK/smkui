@@ -14,8 +14,9 @@ $drawer-width: 15em;
  § Looks
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .drawer {
-  @extend %padding-top--xs;
-  background: $gray-lightest;
+  @extend %padding-top--s;
+  background: #fff;
+  border-right: 1px solid $black;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -26,33 +27,41 @@ $drawer-width: 15em;
   // Headings
   .heading {
     @extend .heading--section;
-    @extend %margin-top--s;
+    border: 0;
     padding-right: 8%;
     padding-left: 8%;
-    margin-bottom: .3em;
+    padding-bottom: .25em;
+    margin-bottom: 0;
   } // heading
   
   // Navigation block (collection of links)
   nav {
-    @extend %margin-bottom--m;
+    @extend %margin-bottom--s;
 
     // Links
     a {
       display: block;
       padding-right: 8%;
-      padding-bottom: .05em;
+      padding-top: 0.085em;
+      padding-bottom: .07em;
       padding-left: 8%;
+      text-transform: uppercase;
+      color: $gray-dark;
+      @include transition(background $time-xs ease);
+      
+      // Hover and focus stats
+      &:hover,
+      &:active,
+      &:focus {
+        background: $yellow;
+        color: $black;
+        text-decoration: none;
+      }
 
       // Current link
       &.current {
         color: $black;
-      }
-      
-      // Hover and focus stats
-      &:hover,
-      &:focus {
-        background: silver;
-        text-decoration: none;
+        background: $gray-light;
       }
     } // a
   } // nav

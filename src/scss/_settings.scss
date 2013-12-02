@@ -3,21 +3,17 @@
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /*
- § Global settings
-\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-$body-background: #fff; // The body background color.
-
-/*
  § Colors
-\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/;
-// Blacks
-$black:         #333;
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+$black:       #333;
 
-// Grays
-$gray:          #666;
-$gray-light:    #999;
-$gray-lighter:  #ccc;
-$gray-lightest: #eee;
+$gray-light: #f2f4f9;  
+$gray:       #ecedf2;
+$gray-dark:  #a2a2a5;
+
+$yellow:     #fff8ac;
+
+$purple: #5e7be5;
 
 /*
  § Screen sizes (used in media queries).
@@ -45,3 +41,8 @@ $s:  1em;   // Small
 $m:  1.5em; // Medium
 $l:  2em;   // Large
 $xl: 3.5em; // Extra large
+
+/*
+ § Global settings
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+$body-background: #fff; // The body background color.

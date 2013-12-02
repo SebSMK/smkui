@@ -3,10 +3,13 @@ src/bower_components/
 
 # Grunt build targets
 development/
-# production/
+production/
 
 # Temporary
 .sass-cache/
 
 # Sublime workspace
 *.sublime-workspace
+
+# FTP access credentials
+.ftppass

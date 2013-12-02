@@ -3,9 +3,44 @@
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 // Load custom fonts with @fontface.
 
-// Opensans Light
+// Hill Light
 @include font-face(
-  'opensans light',          // Font family
-  '../fonts/opensans_light', // Font url
-  'opensans_light'           // Font file name
+  'hill light',          // Font family
+  '../fonts/hill_light', // Font url
+  'hill_light'           // Font file name
 );
+
+// Hill Thin
+// @include font-face(
+//   'hill thin',          // Font family
+//   '../fonts/hill_thin', // Font url
+//   'hill_thin'           // Font file name
+// );
+
+// Hill Regular
+@include font-face(
+  'hill regular',          // Font family
+  '../fonts/hill_regular', // Font url
+  'hill_regular'           // Font file name
+);
+
+// Hill Demibold
+@include font-face(
+  'hill demibold',          // Font family
+  '../fonts/hill_demibold', // Font url
+  'hill_demibold'           // Font file name
+);
+
+// // Hill Bold
+// @include font-face(
+//   'hill bold',          // Font family
+//   '../fonts/hill_bold', // Font url
+//   'hill_bold'           // Font file name
+// );
+
+// // Hill Heavy
+// @include font-face(
+//   'hill heavy',          // Font family
+//   '../fonts/hill_heavy', // Font url
+//   'hill_heavy'           // Font file name
+// );

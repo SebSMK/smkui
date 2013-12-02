@@ -1,15 +1,3 @@
-// Flowtype.
-// Adjusts font-size and line-height based on element width.
-// http://simplefocus.com/flowtype/
-$('body').flowtype({
-  minimum   : 350,  // Stop rezing when the screen is less than n pixels wide.
-  maximum   : 1200, // Stop resizing when the screen is more than n pixels wide.
-  minFont   : 15,   // Never go under a font size of n pixels (for the base font size).
-  maxFont   : 18,   // Never go over a font size of n pixels (for the base font size).
-  fontRatio : 50,   // 
-  lineRatio : 1.5
-});
-
 // When the DOM is ready do this...
 // http://api.jquery.com/ready/
 $(function() {

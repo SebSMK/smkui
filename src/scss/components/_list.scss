@@ -79,7 +79,7 @@
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /*ul, ul, div*/.list--blocky {
-  border: 1px solid $gray-lighter;
+  border: 1px solid $gray;
 
   // List items.
   // When you want a linkyfied list, just use <a> tags wrapped in a <div> and
@@ -87,7 +87,7 @@
   > a, 
   > li {
     display: block;
-    border-bottom: 1px solid $gray-lighter;
+    border-bottom: 1px solid $gray;
     padding: .5em .65em;
 
     // Remove border from the last list item.
@@ -99,7 +99,7 @@
   > a {
     &:hover,
     &:focus {
-      background: $gray-lightest;
+      background: $gray;
       text-decoration: none;
     }
   }

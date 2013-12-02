@@ -10,9 +10,9 @@
 // Note: To change the base font size and base line height, configure the
 // Flowtype call in app.js. The styles in here only work as no-js fallbacks.
 // http://simplefocus.com/flowtype/
-$font-size:   15px;
+$font-size:   16px;
 $line-height: 1.5;
-$font-family: sans-serif;
+$font-family: 'hill light', sans-serif;
 $font-color:  $black;
 
 /*
@@ -26,12 +26,18 @@ body {
   font-size: $font-size;
   line-height: $line-height;
   color: $font-color;
+  letter-spacing: .02em;
+
+  // Decrease font sizes when the screen gets bigger
+  @media (min-width: $screen-s) { font-size: $font-size * 1.15; }
+  @media (min-width: $screen-m) { font-size: $font-size * 1.25; }
 }
 
 b,
 strong,
 %type--bold {
-    font-weight: bold;
+    font-weight: normal;
+    font-family: 'hill demibold', sans-serif;
 }
 
 i,

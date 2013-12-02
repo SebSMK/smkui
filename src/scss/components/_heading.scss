@@ -5,16 +5,17 @@
 // TODO: subheader?
 
 // Configuration
-$font-family-heading: sans-serif;
+$font-family-heading: 'hill demibold', sans-serif;
 
 // Base class
 .heading {
   font-family: $font-family-heading;
   font-size: 1em;
-  font-weight: bold;
+  font-weight: normal;
   line-height: $line-height * .8;
   margin-bottom: .5em;
   color: $black;
+  letter-spacing: -.005em;
 }
 
 // Extra small
@@ -38,21 +39,21 @@ $font-family-heading: sans-serif;
 .heading--l {
   @extend .heading;
   font-size: 1.95em;
-  letter-spacing: -.03em;
   margin-bottom: .75em;
+  letter-spacing: -.01em;
 }
 
 // Extra large
 .heading--xl {
   @extend .heading;
   font-size: 4.5em;
-  letter-spacing: -.045em;
+  letter-spacing: -.03em;
 }
 
 // Heading border
 .heading--bordered {
   @extend .heading;
-  border-bottom: 1px solid $gray-lighter;
+  border-bottom: 1px solid $gray;
   padding-bottom: .25em;
 }
 
@@ -65,5 +66,5 @@ $font-family-heading: sans-serif;
   letter-spacing: .075em;
   text-transform: uppercase;
   margin-bottom: 1em;
-  border-bottom: 1px solid $gray-lighter;
+  border-bottom: 1px solid $gray;
 }
