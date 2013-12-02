@@ -40,7 +40,7 @@ $(function() {
    § Docs navigation
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   // Configuration
-  var drawerWidth = '11em';
+  var drawerWidth = '15em';
 
   // Show drawer
   function showDrawer() {

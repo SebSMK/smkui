@@ -3,7 +3,7 @@ src/bower_components/
 
 # Grunt build targets
 development/
-production/
+# production/
 
 # Temporary
 .sass-cache/

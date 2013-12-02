@@ -3,7 +3,6 @@
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .header--main {
-  @include container;
+  @extend %container;
   position: relative;
-  @include transition (right $time-s ease-in-out);
 }
