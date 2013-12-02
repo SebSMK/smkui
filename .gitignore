@@ -11,5 +11,5 @@ production/
 # Sublime workspace
 *.sublime-workspace
 
-# FTP access credentials
+# FTP access credentials for staging environment
 .ftppass
