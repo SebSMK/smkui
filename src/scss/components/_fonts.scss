@@ -4,11 +4,11 @@
 // Load custom fonts with @fontface.
 
 // Hill Light
-@include font-face(
-  'hill light',          // Font family
-  '../fonts/hill_light', // Font url
-  'hill_light'           // Font file name
-);
+// @include font-face(
+//   'hill light',          // Font family
+//   '../fonts/hill_light', // Font url
+//   'hill_light'           // Font file name
+// );
 
 // Hill Thin
 // @include font-face(
@@ -24,19 +24,19 @@
   'hill_regular'           // Font file name
 );
 
-// Hill Demibold
-@include font-face(
-  'hill demibold',          // Font family
-  '../fonts/hill_demibold', // Font url
-  'hill_demibold'           // Font file name
-);
-
-// // Hill Bold
+// // Hill Demibold
 // @include font-face(
-//   'hill bold',          // Font family
-//   '../fonts/hill_bold', // Font url
-//   'hill_bold'           // Font file name
+//   'hill demibold',          // Font family
+//   '../fonts/hill_demibold', // Font url
+//   'hill_demibold'           // Font file name
 // );
+
+// Hill Bold
+@include font-face(
+  'hill bold',          // Font family
+  '../fonts/hill_bold', // Font url
+  'hill_bold'           // Font file name
+);
 
 // // Hill Heavy
 // @include font-face(

@@ -146,18 +146,19 @@ module.exports = function(grunt) {
       }
     },
 
-    // Deploy to staging via FTP
+    // Deploy to staging via FTP (smk.mourier.me)
     // https://github.com/zonak/grunt-ftp-deploy
     'ftp-deploy': {
       build: {
         auth: {
           host: 'ftp.mourier.me',
           port: 21,
-          authKey: 'key1'
+          authKey: 'key1' // See ./.ftppass
         },
         src: '<%= app.prod %>',
         dest: '/smk',
-        exclusions: []
+        // Exclude files that don't change very often (fonts and favicons)
+        exclusions: ['<%= app.prod %>/fonts', '<%= app.prod %>/*.png', '<%= app.prod %>/*.ico']
       }
     },
 
