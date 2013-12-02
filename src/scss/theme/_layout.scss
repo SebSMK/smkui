@@ -9,15 +9,21 @@
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 // http://susy.oddbird.net/guides/reference/
 
-$total-columns: 12;
-$column-width:  3em;
+$total-columns: 4;
+$column-width:  8em;
 $gutter-width:  2.5em;
-$grid-padding:  $gutter-width;
+$grid-padding:  1.25em;
 $media-layout:  12; // http://susy.oddbird.net/guides/reference/#ref-media-layouts
 
 /*
  § Default layout
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.main-header,
+.main-footer {
+  @include container;
+}
+
 .section--main {
   @include container;
 }
@@ -25,3 +31,49 @@ $media-layout:  12; // http://susy.oddbird.net/guides/reference/#ref-media-layou
 .article {
   position: relative;
 } // .article
+
+/*
+ § Layout on small screens
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@include at-breakpoint($screen-s) {
+  @include with-grid-settings(12, 3em, 2.5em, 2.5em) {
+
+    .main-header,
+.main-footer {
+  @include container;
+}
+
+.section--main {
+  @include container;
+}
+
+  }
+}
+
+/*
+ § Demonstrating the grid system (grid.hbs)
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+%grid-column-filler {
+  background: rgba(0, 0, 0, .1);
+}
+
+.article--grid {
+  .container {
+    @extend %grid-column-filler;
+  }
+
+  .two-columns {
+    @extend %grid-column-filler;
+    @include span-columns(2, 4);
+  }
+
+  .two-columns:last-child {
+    @include span-columns(2 omega, 4);
+  }
+
+  .four-columns {
+    @extend %grid-column-filler;
+    @include span-columns(4, 4);
+  }
+
+}

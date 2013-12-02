@@ -39,10 +39,13 @@ $(function() {
   /*
    § Docs navigation
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  // Configuration
+  var drawerWidth = '11em';
+
   // Show drawer
   function showDrawer() {
     $('.drawer').toggleClass('drawer--open'); // Show drawer
-    $('.article, .header').css('right', '-11em'); // Push page elements aside
+    $('.article, .header').css('right', '-' + drawerWidth); // Push page elements aside
   }
 
   // Hide drawer
@@ -53,6 +56,9 @@ $(function() {
   
   // Toggle link
   $('a.drawer-toggle').click( function(e) {
+    // Prevent default browser behavior for anchors.
+    e.preventDefault();
+
     // If the drawer is open
     if( $('.drawer').hasClass('drawer--open') ) {
       hideDrawer();
@@ -60,8 +66,6 @@ $(function() {
       // If the drawer is closed
       showDrawer();
     }
-    // Prevent default browser behavior for anchors.
-    e.preventDefault();
   });
 
 }); // When the DOM is ready.

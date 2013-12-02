@@ -63,6 +63,10 @@ $drawer-width: 11em;
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .drawer-toggle {
 
+  // Hid the drawer on small screens
+  @media (min-width: $screen-s) {
+    display: none;
+  }
 }
 
 /*
@@ -91,9 +95,10 @@ $drawer-width: 11em;
     left: 0;
   }
 
-  // Push page element aside.
-  .main-header,
+  // Push page elements aside.
+  .main-header h3,
+  .main-footer .copyright,
   .article {
-    padding-left: $drawer-width;
+    padding-left: $drawer-width !important;
   }
 }

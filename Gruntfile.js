@@ -77,7 +77,8 @@ module.exports = function(grunt) {
         layoutdir: '<%= app.src %>/templates/layouts',
         partials: '<%= app.src %>/templates/partials/*.hbs',
         pages: '<%= app.src %>/templates/pages/*.hbs',
-        flatten: true
+        flatten: true,
+        data: '<%= app.src %>/db/*.json' 
       },
       pages: {
         files: { '<%= app.dev %>': ['<%= app.src %>/templates/pages/*.hbs'] }
