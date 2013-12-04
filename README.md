@@ -15,7 +15,7 @@ This code is publically available for educational and inspirational purposes onl
 
 ## Todos
 
-# Components
+### Components
 - Buttons (small, medium, large, Get more results)
 - Headings (regular, sections...)
 - Search field (with suggestions...)
@@ -28,7 +28,7 @@ This code is publically available for educational and inspirational purposes onl
 - Gallery
 - Social links
 
-# Views
+### Views
 - Grid (Filters on top)
 - Grid (Filters in left column)
 - List
@@ -36,7 +36,7 @@ This code is publically available for educational and inspirational purposes onl
 - Single (without image)
 - Before searching.
 
-# Design
+### Design
 - Logo
 - Colors
 - Text elements
