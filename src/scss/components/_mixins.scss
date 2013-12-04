@@ -1,10 +1,10 @@
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § Mixins
-\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /*
  § @font-face
-\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 // https://github.com/thesedays/scss-mixins/blob/master/fonts.scss
 
 @mixin font-face($font-family, $font-url, $font-file-name) {
@@ -15,9 +15,24 @@
       weight: normal;
     }
 
-    src: url($font-url + '/' + $font-file-name + '.eot') format('eot'), 
+    src: url($font-url + '/' + $font-file-name + '.eot')  format('eot'), 
          url($font-url + '/' + $font-file-name + '.woff') format('woff'), 
          url($font-url + '/' + $font-file-name + '.ttf')  format('truetype'),
          url($font-url + '/' + $font-file-name + '.svg#' + $font-file-name) format('svg');
   }
+}
+
+/*
+ § Image replacement
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// Replace element content with an image. This image will be retrieved from the
+// generated sprite. See the Grunt task 'sprite' for further details on sprite
+// generation.
+
+// TODO: retina sprites
+
+@mixin image-replacement($image-name) {
+  @include sprite($image-name);
+  text-indent: -9999em;
+  display: inline-block;
 }

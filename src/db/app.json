@@ -4,6 +4,6 @@
   "dev": "development",
   "prod": "production",
   "owner": "The National Gallery of Denmark",
-  "owner_url": "http://smk.dk",
+  "owner_url": "http://smk.dk/en",
   "contributors": ["Thorbjørn Wulff", "Sebastien Brossard", "Jacques Mourier"]
 }

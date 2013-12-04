@@ -13,6 +13,27 @@ module.exports = function(grunt) {
     // Project information.
     app: grunt.file.readJSON('src/db/app.json'),
 
+    // Image spriting
+    // https://github.com/Ensighten/grunt-spritesmith
+    sprite:{
+      options: {
+        padding: 10,
+        engine: 'gm'
+      },
+      development_1x: {
+        src: '<%= app.src %>/images/1x/*.png',
+        destImg: '<%= app.dev %>/images/sprite_1x.png',
+        destCSS: '<%= app.src %>/scss/sprites/_sprite_1x.scss',
+        imgPath: '../images/sprite_1x.png'
+      },
+      production_1x: {
+        src: '<%= app.src %>/images/1x/*.png',
+        destImg: '<%= app.prod %>/images/sprite_1x.png',
+        destCSS: '<%= app.src %>/scss/sprites/_sprite_1x.scss',
+        imgPath: '../images/sprite_1x.png'
+      }
+    },
+
     // Compass (scss compiling).
     // https://github.com/gruntjs/grunt-contrib-compass
     compass: {
@@ -117,7 +138,7 @@ module.exports = function(grunt) {
       development: {
         files: [
           // Images
-          { expand: true, flatten: true, src: ['<%= app.src %>/images/**'], dest: '<%= app.dev %>/images/', filter: 'isFile' },
+          // { expand: true, flatten: true, src: ['<%= app.src %>/images/**'], dest: '<%= app.dev %>/images/', filter: 'isFile' },
 
           // Favicons
           { expand: true, flatten: true, src: ['<%= app.src %>/favicons/**'], dest: '<%= app.dev %>/', filter: 'isFile' },
@@ -132,7 +153,7 @@ module.exports = function(grunt) {
       production: {
         files: [
           // Images
-          { expand: true, flatten: true, src: ['<%= app.src %>/images/**'], dest: '<%= app.prod %>/images/', filter: 'isFile' },
+          // { expand: true, flatten: true, src: ['<%= app.dev %>/images/sprite*.*'], dest: '<%= app.prod %>/images/', filter: 'isFile' },
 
           // Favicons
           { expand: true, flatten: true, src: ['<%= app.src %>/favicons/**'], dest: '<%= app.prod %>/', filter: 'isFile' },
@@ -205,6 +226,7 @@ module.exports = function(grunt) {
   // been changed since the last run.
   // https://github.com/tschaub/grunt-newer
   grunt.registerTask('default', [
+    'sprite:development_1x',
     'compass:development',
     'uglify:development',
     'assemble',
@@ -219,13 +241,19 @@ module.exports = function(grunt) {
   ]);
 
   // Production build.
-  grunt.registerTask('production', [
+  grunt.registerTask('production', [  
+    'sprite:production_1x',
     'compass:production',
     'uglify:production',
     'assemble',
     'htmlmin',
-    'newer:imageoptim',
-    'copy:production',
+    'newer:imageoptim', // TODO: Adjust
+    'copy:production'
+  ]);
+
+  // Deploy to staging
+  grunt.registerTask('deploy_stag', [
+    'production',
     'ftp-deploy'
   ]);
 

@@ -8,16 +8,11 @@ a:link {
   color: $purple;
   text-decoration: none;
   line-height: inherit;
+  @include transition(all $time-s ease-in-out);
 }
 
 // Hover and focus.
 a:hover,
-a:active,
 a:focus {
   text-decoration: underline;
-}
-
-// Active
-a:active {
-  //...
 }

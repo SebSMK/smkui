@@ -34,20 +34,25 @@
 @import "components/code";    // code, kbd, pre, and samp.
 
 // Layout
-@import "components/grid";
 @import "components/spacer";
+
+// Sprites
+@import "sprites/sprite_1x";
 
 // Objects
 @import "components/teaser";
 @import "components/drawer";
+@import "components/copyright";
+@import "components/smk-logo";
 // Button
 // Form
 
 // Theme.
 // Put all your customizations here.
-@import "theme/layout";       // Layout for pages and elements.
-@import "theme/header--main"; // The main header.
-@import "theme/subsection";   // For dividing content into chunks (aka. subsections).
+@import "docs/layout";      // Layout for pages and elements.
+@import "docs/main-header"; // The main header.
+@import "docs/main-footer"; // The main header.
+@import "docs/subsection";  // For dividing content into chunks (aka. subsections).
 
 // For development.
 // @import "components/debug"; // Debugging styles.

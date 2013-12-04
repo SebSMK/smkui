@@ -33,13 +33,13 @@ $(function() {
   // Show drawer
   function showDrawer() {
     $('.drawer').toggleClass('drawer--open'); // Show drawer
-    $('.article, .header').css('right', '-' + drawerWidth); // Push page elements aside
+    $('.article, .main-header, .main-footer').css('right', '-' + drawerWidth); // Push page elements aside
   }
 
   // Hide drawer
   function hideDrawer() {
     $('.drawer').toggleClass('drawer--open'); // Show drawer
-    $('.article, .header').css('right', '0'); // Push page elements aside
+    $('.article, .main-header, .main-footer').css('right', '0'); // Push page elements aside
   } 
   
   // Toggle link

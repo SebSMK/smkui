@@ -90,6 +90,7 @@ $drawer-width: 15em;
 
 // Prepare page elements to be pushed aside.
 .main-header,
+.main-footer,
 .article {
   position: relative;
   right: 0;
@@ -108,7 +109,7 @@ $drawer-width: 15em;
 
   // Push page elements aside.
   .main-header h3,
-  .main-footer .copyright,
+  .main-footer section,
   .article {
     padding-left: $drawer-width !important;
   }
