@@ -1,23 +1,23 @@
   $smk_logo-x: 0px;
-  $smk_logo-y: 88px;
+  $smk_logo-y: 45px;
   $smk_logo-offset-x: 0px;
-  $smk_logo-offset-y: -88px;
+  $smk_logo-offset-y: -45px;
   $smk_logo-width: 215px;
   $smk_logo-height: 108px;
-  $smk_logo-total-width: 333px;
-  $smk_logo-total-height: 196px;
+  $smk_logo-total-width: 215px;
+  $smk_logo-total-height: 153px;
   $smk_logo-image: '../images/sprite_1x.png';
-  $smk_logo: 0px 88px 0px -88px 215px 108px 333px 196px '../images/sprite_1x.png';
+  $smk_logo: 0px 45px 0px -45px 215px 108px 215px 153px '../images/sprite_1x.png';
   $smkui_logo-x: 0px;
   $smkui_logo-y: 0px;
   $smkui_logo-offset-x: 0px;
   $smkui_logo-offset-y: 0px;
-  $smkui_logo-width: 333px;
-  $smkui_logo-height: 88px;
-  $smkui_logo-total-width: 333px;
-  $smkui_logo-total-height: 196px;
+  $smkui_logo-width: 162px;
+  $smkui_logo-height: 45px;
+  $smkui_logo-total-width: 215px;
+  $smkui_logo-total-height: 153px;
   $smkui_logo-image: '../images/sprite_1x.png';
-  $smkui_logo: 0px 0px 0px 0px 333px 88px 333px 196px '../images/sprite_1x.png';
+  $smkui_logo: 0px 0px 0px 0px 162px 45px 215px 153px '../images/sprite_1x.png';
 
   @mixin sprite-width($sprite) {
     width: nth($sprite, 5);

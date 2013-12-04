@@ -43,16 +43,18 @@
 @import "components/teaser";
 @import "components/drawer";
 @import "components/copyright";
-@import "components/smk-logo";
+@import "components/smk-logo";  // SMK logo.
 // Button
 // Form
 
-// Theme.
-// Put all your customizations here.
+// Docs.
+// These styles are for SMKUI itself and should not be included in production.
 @import "docs/layout";      // Layout for pages and elements.
 @import "docs/main-header"; // The main header.
-@import "docs/main-footer"; // The main header.
+@import "docs/main-footer"; // The main footer.
 @import "docs/subsection";  // For dividing content into chunks (aka. subsections).
+@import "docs/smkui-logo";  // SMKUI logo.
+@import "docs/tweaks";      // Small tweaks and nudges.
 
 // For development.
 // @import "components/debug"; // Debugging styles.

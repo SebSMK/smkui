@@ -13,8 +13,9 @@ Before diving into SMKUI to make changes or optimizations, you should be comfort
 ## Copyright notice
 This code is publically available for educational and inspirational purposes only. While you are free to download, modify, and play around with the entire codebase it remains the intellectual property of [The National Gallery of Denmark](http://smk.dk/en). Note that the open source projects used in this project (like Grunt, Bower etc.) all fall under other usage licenses.
 
+## Todos
 
-## Components
+# Components
 - Buttons (small, medium, large, Get more results)
 - Headings (regular, sections...)
 - Search field (with suggestions...)
@@ -27,7 +28,7 @@ This code is publically available for educational and inspirational purposes onl
 - Gallery
 - Social links
 
-## Views
+# Views
 - Grid (Filters on top)
 - Grid (Filters in left column)
 - List
@@ -35,7 +36,7 @@ This code is publically available for educational and inspirational purposes onl
 - Single (without image)
 - Before searching.
 
-## Design
+# Design
 - Logo
 - Colors
 - Text elements
