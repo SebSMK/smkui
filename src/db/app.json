@@ -11,11 +11,6 @@
   
   "contributors": [
     {
-      "name": "Thorbjørn Wulff",
-      "title": "System administration",
-      "url": ""
-    },
-    {
       "name": "Sébastien Brossard",
       "title": "Development",
       "url": ""
@@ -23,6 +18,11 @@
     {
       "name": "Jacques Mourier",
       "title": "Frontend development",
+      "url": ""
+    },
+    {
+      "name": "Thorbjørn Wulff",
+      "title": "System administration",
       "url": ""
     }
   ],

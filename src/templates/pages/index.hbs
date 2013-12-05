@@ -1,4 +1,48 @@
 ---
 slug:     home
-title:    Home
+category: pages
+title:    What is this thing?
 ---
+
+<article id="{{slug}}" class="article article--{{slug}}">
+  <header>
+    <h1 class="heading--l">{{title}}</h1>
+    <p class="lead">SMKUI is a web user interface library by The National Gallery of Denmark (SMK). It provides a set of guidelines for aesthetics, design, and frontend code architecture across the gallery's web based projects.</p>
+  </header>
+
+  <div class="subsection">
+    <h2 class="heading">The design</h2>
+    <p>The design principles used in SMKUI is based on a design manual by <a href="http://www.e-types.com/">E-types</a> which was initally developed with print media in mind. SMKUI is interepreting the original design principles to make them applicable in digial and web based media aswell.</p>
+  </div>
+
+  <div class="subsection">
+    <h2 class="heading">The code</h2>
+    <p>The code is available from our <a href="{{app.repo}}">GitHub repository</a>. Note that the code is made publically available for educational and inspirational purposes only. Read more about the <a href="/copyright.html">usage rights and copyrights</a>.</p>
+  </div>
+
+  <div class="subsection">
+    <h2 class="heading">Copyright</h2>
+      <p>The code of SMKUI can be found at <a href="{{app.repo}}">GitHub</a>, however, the codebase is made publically available for educational and inspirational purposes only. While you are free to download, modify, and play around with the whole thing, it remains the intellectual property of <a href="{{owner_url}}">The National Gallery of Denmark</a>.</p>
+      
+      <p>Note that the open source projects used in this project (like Grunt, Bower etc.) all fall under other usage licenses.</p>
+  </div>
+
+  <div class="subsection">
+    <h2 class="heading">Main contributors</h2>
+      <ul class="list">
+      {{#each sort app.contributors}}
+        <li>
+          {{#any url}}<a href="{{url}}">{{/any}}
+            {{name}}
+          {{#any url}}</a>{{/any}}
+          {{#any title}}<small>({{title}})</small>{{/any}}
+        </li>
+      {{/each}}
+      </ul>
+  </div>
+
+  <div class="subsection">
+    <h2 class="heading">Contact</h2>
+  </div>
+
+</article>
