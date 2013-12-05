@@ -9,9 +9,21 @@
   "owner_url": "http://smk.dk/en",
   
   "contributors": [
-    "Thorbjørn Wulff",
-    "Sebastien Brossard",
-    "Jacques Mourier"
+    {
+      "name": "Thorbjørn Wulff",
+      "title": "System administration",
+      "url": ""
+    },
+    {
+      "name": "Sebastien Brossard",
+      "title": "Development",
+      "url": ""
+    },
+    {
+      "name": "Jacques Mourier",
+      "title": "Frontend development",
+      "url": ""
+    }
   ],
 
   "faviconVersion": "1"

@@ -22,7 +22,12 @@ title:    About
     <h2 class="heading">Main contributors</h2>
       <ul class="list">
       {{#each app.contributors}}
-        <li>{{this}} <small>(noget)</small></li>
+        <li>
+          {{#any url}}<a href="{{url}}">{{/any}}
+            {{name}}
+          {{#any url}}</a>{{/any}}
+          {{#any title}}<small>({{title}})</small>{{/any}}
+        </li>
       {{/each}}
       </ul>
   </div>
