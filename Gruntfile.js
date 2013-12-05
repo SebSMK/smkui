@@ -19,7 +19,6 @@ module.exports = function(grunt) {
     // https://github.com/Ensighten/grunt-spritesmith
     sprite:{
       options: {
-        padding: 10,
         engine: 'gm'
       },
       // For screens with low pixel density.
@@ -27,7 +26,8 @@ module.exports = function(grunt) {
         src: '<%= app.src %>/images/1x/*.png',
         destImg: '<%= app.dev %>/images/sprite_1x.png',
         destCSS: '<%= app.src %>/scss/sprites/_sprite_1x.scss',
-        imgPath: '../images/sprite_1x.png'
+        imgPath: '../images/sprite_1x.png',
+        padding: 10
       },
       // For screens with high pixel density.
       development_2x: {
@@ -37,13 +37,15 @@ module.exports = function(grunt) {
         // Notice, this stylesheet is not being imported. It is only being
         // generated because Spritesmith requires this setting.
         destCSS: '<%= app.src %>/scss/sprites/_sprite_2x.scss', 
-        imgPath: '../images/sprite_1x.png'
+        imgPath: '../images/sprite_1x.png',
+        padding: 20
       },
       production_1x: {
         src: '<%= app.src %>/images/1x/*.png',
         destImg: '<%= app.prod %>/images/sprite_1x.png',
         destCSS: '<%= app.src %>/scss/sprites/_sprite_1x.scss',
-        imgPath: '../images/sprite_1x.png'
+        imgPath: '../images/sprite_1x.png',
+        padding: 10
       },
       // For screens with high pixel density.
       production_2x: {
@@ -53,7 +55,8 @@ module.exports = function(grunt) {
         // Notice, this stylesheet is not being imported. It is only being
         // generated because Spritesmith requires this setting.
         destCSS: '<%= app.src %>/scss/sprites/_sprite_2x.scss', 
-        imgPath: '../images/sprite_1x.png'
+        imgPath: '../images/sprite_1x.png',
+        padding: 20
       },
     },
 
@@ -94,12 +97,20 @@ module.exports = function(grunt) {
           compress: false
         },
         files: {
-          '<%= app.dev %>/js/app.min.js': ['<%= app.src %>/js/vendor/**/*.js', '<%= app.src %>/js/app.js']
+          '<%= app.dev %>/js/app.min.js': [
+            '<%= app.src %>/js/vendor/**/*.js',
+            '<%= app.src %>/bower_components/enquire/dist/enquire.js',
+            '<%= app.src %>/js/app.js'
+          ]
         },
       },
       production: {
         files: {
-          '<%= app.prod %>/js/app.min.js': ['<%= app.src %>/js/vendor/**/*.js', '<%= app.src %>/js/app.js']
+          '<%= app.prod %>/js/app.min.js': [
+            '<%= app.src %>/js/vendor/**/*.js',
+            '<%= app.src %>/bower_components/enquire/dist/enquire.js',
+            '<%= app.src %>/js/app.js'
+          ]
         },
       }
     },

@@ -2,13 +2,21 @@
  § SMKUI logo
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-// Default
-.smkui-logo {
+// Default (Small)
+.smkui-logo,
+.smkui-logo--s {
+  @include image-replacement($smkui_logo_small);
+}
+
+// Medium
+.smkui-logo--m {
   @include image-replacement($smkui_logo);
 }
 
 // Linkyfied
-.smkui-logo[href] {
+.smkui-logo[href],
+.smkui-logo--s[href],
+.smkui-logo--m[href] {
   &:hover,
   &:focus {
     opacity: .75;   

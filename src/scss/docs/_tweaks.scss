@@ -13,21 +13,4 @@
   .ms-application-tiles {
     img { background: #000; padding: 1em; }
   }
-
-  // Layouting icon descriptions and icons.
-  .subsection {
-
-    // Icon
-    img {
-      margin-right: 1em;
-      @media (min-width: $screen-s) { float: left; }
-    }
-    
-    // Icon description
-    div {
-      clear: both;
-      overflow: hidden;
-      @media (min-width: $screen-s) { margin-bottom: 1em; }
-    }
-  }
 }

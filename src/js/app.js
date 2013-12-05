@@ -3,6 +3,16 @@
 $(function() {
 
   /*
+   § Screen widths
+  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  // These corresponds to the variables set in _settings.scss
+  var screenXs  =  '300px';
+  var screenS   =  '700px';
+  var screenM   = '1000px';
+  var screenL   = '1300px';
+  var screenXl  = '1600px';
+
+  /*
    § Remove 300ms touch delay for touch devices.
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   // https://github.com/ftlabs/fastclick
@@ -25,7 +35,7 @@ $(function() {
   }
 
   /*
-   § Docs navigation
+   § Drawer
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   // Configuration
   var drawerWidth = '15em';
@@ -43,19 +53,28 @@ $(function() {
   } 
   
   // Toggle link
-  $('a.drawer-toggle').click( function(e) {
+  $('.main-header .smkui-logo').click( function(e) {
     // Prevent default browser behavior for anchors.
-    e.preventDefault();
 
-    // If the drawer is open
-    if( $('.drawer').hasClass('drawer--open') ) {
-      hideDrawer();
-    } else {
-      // If the drawer is closed
-      showDrawer();
-    }
-  });
+    // Using enquire.js to condition trigger based on screenwidth.
+    enquire.register("screen and (max-width:" + screenS + ")", {
+      match : function() {
+        // Prevent link from directing to the home page.
+        e.preventDefault();
+        
+        // If the drawer is open
+        if( $('.drawer').hasClass('drawer--open') ) {
+          hideDrawer();
+        } else {
+          // If the drawer is closed
+          showDrawer();
+        }
+      }
+    }); // enquire
+  }); // click event
 
+  
 }); // When the DOM is ready.
+
 
 

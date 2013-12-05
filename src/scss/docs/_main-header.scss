@@ -3,5 +3,8 @@
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .main-header {
-
+  padding-top: $m;
+  padding-bottom: $m;
+  margin-bottom: $m * 1.5;
+  border-bottom: 1px solid $black;
 }
