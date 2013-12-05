@@ -1,9 +1,18 @@
 {
   "name": "SMKUI",
+
   "src": "src",
   "dev": "development",
   "prod": "production",
+
   "owner": "The National Gallery of Denmark",
   "owner_url": "http://smk.dk/en",
-  "contributors": ["Thorbjørn Wulff", "Sebastien Brossard", "Jacques Mourier"]
+  
+  "contributors": [
+    "Thorbjørn Wulff",
+    "Sebastien Brossard",
+    "Jacques Mourier"
+  ],
+
+  "faviconVersion": "1"
 }

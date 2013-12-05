@@ -9,7 +9,11 @@
   li {
     margin-bottom: .5em;
     position: relative;
-    padding-left: 1.75em;
+
+    // For secondary information
+    small {
+      @extend %type--weak;
+    }
   }
 } // end list
 
@@ -22,6 +26,7 @@
   @extend .list;
 
   li {
+    padding-left: 1.75em;
 
     // Add the bullets.
     &:before {
@@ -41,10 +46,10 @@
 
 /*ol*/.list--numbered {
   @extend .list;
-    
   counter-reset: li; // Initiate a counter.
 
   li {
+    padding-left: 1.75em;
     
     // Add the numbers.
     &:before {

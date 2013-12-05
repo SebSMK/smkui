@@ -20,6 +20,11 @@ title:    About
 
   <div class="subsection">
     <h2 class="heading">Main contributors</h2>
+      <ul class="list">
+      {{#each app.contributors}}
+        <li>{{this}} <small>(noget)</small></li>
+      {{/each}}
+      </ul>
   </div>
 
   <div class="subsection">

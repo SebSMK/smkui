@@ -58,6 +58,7 @@ s,
 
 // Small
 small,
+%type--s, // Added this name variation for consistency in class names.
 %type--small {
   font-size: .7em;
 }
