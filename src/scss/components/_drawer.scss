@@ -51,7 +51,6 @@ $drawer-width: 15em;
       
       // Hover and focus stats
       &:hover,
-      &:active,
       &:focus {
         background: $yellow;
         color: $black;
@@ -93,6 +92,33 @@ $drawer-width: 15em;
   width: .3em;
   opacity: 1;
 }
+
+/*
+ § Inverse colors
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.drawer--inverse {
+  background: $black;
+  border: 0;
+
+  nav {
+    a {
+      color: #fff;
+
+      &:hover,
+      &:focus {
+        background: $gray-darkest;
+        color: #fff;   
+      }
+
+      &.current {
+        background: $yellow;
+        color: $black;
+      }
+    } // a
+  } // nav
+
+  .heading { color: $gray-darker; }
+} // drawer--inverse
 
 /*
  § Open state

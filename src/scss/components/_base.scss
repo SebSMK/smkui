@@ -249,6 +249,15 @@ textarea {
 }
 
 /*
+ § IE10: Disable double-tap-to-zoom on certain elements.
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+a,
+input,
+button {
+    -ms-touch-action: none;
+}
+
+/*
  § Tables
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 // Remove most spacing between table cells.

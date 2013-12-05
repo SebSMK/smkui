@@ -17,7 +17,6 @@ This code is made publically available for educational and inspirational purpose
 
 ### Components
 - Buttons (small, medium, large, Get more results)
-- Headings (regular, sections...)
 - Search field (with suggestions...)
 - grid item
 - list item
@@ -27,6 +26,11 @@ This code is made publically available for educational and inspirational purpose
 - Data pair (key + value)
 - Gallery
 - Social links
+- include http://quojs.tapquo.com/
+- Drawer: make it work on iPhone
+- Drawer: Close when touching page
+- Drawer: open/close on swipe
+
 
 ### Views
 - Grid (Filters on top)

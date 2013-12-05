@@ -1,7 +1,3 @@
-// When the DOM is ready do this...
-// http://api.jquery.com/ready/
-$(function() {
-
   /*
    § Screen widths
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -11,6 +7,11 @@ $(function() {
   var screenM   = '1000px';
   var screenL   = '1300px';
   var screenXl  = '1600px';
+
+// When the DOM is ready do this...
+// http://api.jquery.com/ready/
+$(document).ready(function() {
+
 
   /*
    § Remove 300ms touch delay for touch devices.
@@ -52,31 +53,29 @@ $(function() {
     $('.drawer').toggleClass('drawer--open'); // Show drawer
     $('.article, .main-header, .main-footer').css('right', '0'); // Push page elements aside
     $('.main-header .smkui-logo').toggleClass('active');
-  } 
+  }
   
   // Toggle link
   $('.main-header .smkui-logo').click( function(e) {
-    // Prevent default browser behavior for anchors.
 
-    // Using enquire.js to condition trigger based on screenwidth.
+    // Using enquire.js to condition trigger based on screen width.
     enquire.register("screen and (max-width:" + screenS + ")", {
       match : function() {
         // Prevent link from directing to the home page.
         e.preventDefault();
         
-        // If the drawer is open
+        // If the drawer is drawer--openpen
         if( $('.drawer').hasClass('drawer--open') ) {
           hideDrawer();
         } else {
           // If the drawer is closed
           showDrawer();
         }
-      }
+      } // match
     }); // enquire
   }); // click event
 
   
 }); // When the DOM is ready.
-
 
 
