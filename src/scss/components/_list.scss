@@ -13,6 +13,7 @@
     // For secondary information
     small {
       @extend %type--weak;
+      @extend %padding-left--xs;
     }
   }
 } // end list
@@ -26,14 +27,14 @@
   @extend .list;
 
   li {
-    padding-left: 1.75em;
+    padding-left: 1.25em;
 
     // Add the bullets.
     &:before {
       content: "•";
       position: absolute;
       left: 0;
-      font-size: 1.75em;
+      font-size: 1em;
     }
   }
 } // end list--bulleted
@@ -49,7 +50,7 @@
   counter-reset: li; // Initiate a counter.
 
   li {
-    padding-left: 1.75em;
+    padding-left: 1.25em;
     
     // Add the numbers.
     &:before {
@@ -74,7 +75,6 @@
     // Add the bullets.
     &:before {
       content: "✓";
-      font-size: 1.15em;
     }
   }
 } // end list--tickmarked
@@ -104,7 +104,8 @@
   > a {
     &:hover,
     &:focus {
-      background: $gray;
+      background: $yellow;
+      color: $black;
       text-decoration: none;
     }
   }
