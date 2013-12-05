@@ -13,17 +13,30 @@ module.exports = function(grunt) {
     // Project information.
     app: grunt.file.readJSON('src/db/app.json'),
 
-    // Image spriting
+    // Image spriting.
+    // Two sprites are being generated. One for screens with low pixel density
+    // and another for screens with high pixel density (like retina displays).
     // https://github.com/Ensighten/grunt-spritesmith
     sprite:{
       options: {
         padding: 10,
         engine: 'gm'
       },
+      // For screens with low pixel density.
       development_1x: {
         src: '<%= app.src %>/images/1x/*.png',
         destImg: '<%= app.dev %>/images/sprite_1x.png',
         destCSS: '<%= app.src %>/scss/sprites/_sprite_1x.scss',
+        imgPath: '../images/sprite_1x.png'
+      },
+      // For screens with high pixel density.
+      development_2x: {
+        src: '<%= app.src %>/images/2x/*.png',
+        destImg: '<%= app.dev %>/images/sprite_2x.png',
+
+        // Notice, this stylesheet is not being imported. It is only being
+        // generated because Spritesmith requires this setting.
+        destCSS: '<%= app.src %>/scss/sprites/_sprite_2x.scss', 
         imgPath: '../images/sprite_1x.png'
       },
       production_1x: {
@@ -31,7 +44,17 @@ module.exports = function(grunt) {
         destImg: '<%= app.prod %>/images/sprite_1x.png',
         destCSS: '<%= app.src %>/scss/sprites/_sprite_1x.scss',
         imgPath: '../images/sprite_1x.png'
-      }
+      },
+      // For screens with high pixel density.
+      production_2x: {
+        src: '<%= app.src %>/images/2x/*.png',
+        destImg: '<%= app.prod %>/images/sprite_2x.png',
+
+        // Notice, this stylesheet is not being imported. It is only being
+        // generated because Spritesmith requires this setting.
+        destCSS: '<%= app.src %>/scss/sprites/_sprite_2x.scss', 
+        imgPath: '../images/sprite_1x.png'
+      },
     },
 
     // Compass (scss compiling).
@@ -86,7 +109,7 @@ module.exports = function(grunt) {
     imageoptim: {
       all: {
         options: { quitAfter: true },
-        src: ['<%= app.src %>/images', '<%= app.src %>/favicons']
+        src: ['<%= app.prod %>/images', '<%= app.prod %>/favicons']
       }
     },
 
@@ -179,7 +202,7 @@ module.exports = function(grunt) {
         src: '<%= app.prod %>',
         dest: '/smk',
         // Exclude files that don't change very often (fonts and favicons)
-        exclusions: ['<%= app.prod %>/fonts', '<%= app.prod %>/*.png', '<%= app.prod %>/*.ico']
+        exclusions: ['.DS_Store']
       }
     },
 
@@ -227,6 +250,7 @@ module.exports = function(grunt) {
   // https://github.com/tschaub/grunt-newer
   grunt.registerTask('default', [
     'sprite:development_1x',
+    'sprite:development_2x',
     'compass:development',
     'uglify:development',
     'assemble',
@@ -243,11 +267,12 @@ module.exports = function(grunt) {
   // Production build.
   grunt.registerTask('production', [  
     'sprite:production_1x',
+    'sprite:production_2x',
     'compass:production',
     'uglify:production',
     'assemble',
     'htmlmin',
-    'newer:imageoptim', // TODO: Adjust
+    'imageoptim',
     'copy:production'
   ]);
 

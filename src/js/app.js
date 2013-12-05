@@ -6,7 +6,7 @@ $(function() {
    § Remove 300ms touch delay for touch devices.
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   // https://github.com/ftlabs/fastclick
-  FastClick.attach(document.body);
+  // FastClick.attach(document.body);
 
   /*
    § Add the class 'current' to links that point to the current url.

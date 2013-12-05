@@ -1,0 +1,46 @@
+  $smk_logo-x: 0px;
+  $smk_logo-y: 90px;
+  $smk_logo-offset-x: 0px;
+  $smk_logo-offset-y: -90px;
+  $smk_logo-width: 430px;
+  $smk_logo-height: 216px;
+  $smk_logo-total-width: 430px;
+  $smk_logo-total-height: 306px;
+  $smk_logo-image: '../images/sprite_1x.png';
+  $smk_logo: 0px 90px 0px -90px 430px 216px 430px 306px '../images/sprite_1x.png';
+  $smkui_logo-x: 0px;
+  $smkui_logo-y: 0px;
+  $smkui_logo-offset-x: 0px;
+  $smkui_logo-offset-y: 0px;
+  $smkui_logo-width: 324px;
+  $smkui_logo-height: 90px;
+  $smkui_logo-total-width: 430px;
+  $smkui_logo-total-height: 306px;
+  $smkui_logo-image: '../images/sprite_1x.png';
+  $smkui_logo: 0px 0px 0px 0px 324px 90px 430px 306px '../images/sprite_1x.png';
+
+  @mixin sprite-width($sprite) {
+    width: nth($sprite, 5);
+  }
+
+  @mixin sprite-height($sprite) {
+    height: nth($sprite, 6);
+  }
+
+  @mixin sprite-position($sprite) {
+    $sprite-offset-x: nth($sprite, 3);
+    $sprite-offset-y: nth($sprite, 4);
+    background-position: $sprite-offset-x  $sprite-offset-y;
+  }
+
+  @mixin sprite-image($sprite) {
+    $sprite-image: nth($sprite, 9);
+    background-image: url(#{$sprite-image});
+  }
+
+  @mixin sprite($sprite) {
+    @include sprite-image($sprite);
+    @include sprite-position($sprite);
+    @include sprite-width($sprite);
+    @include sprite-height($sprite);
+  }

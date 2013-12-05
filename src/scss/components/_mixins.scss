@@ -20,19 +20,40 @@
          url($font-url + '/' + $font-file-name + '.ttf')  format('truetype'),
          url($font-url + '/' + $font-file-name + '.svg#' + $font-file-name) format('svg');
   }
-}
+} // font-face
 
 /*
  § Image replacement
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 // Replace element content with an image. This image will be retrieved from the
 // generated sprite. See the Grunt task 'sprite' for further details on sprite
-// generation.
-
-// TODO: retina sprites
+// generation. In your scss files, use the mixin like so:
+//
+// .element {
+//   @include image-replacement($image_file_name);  
+// }
+//
+// To use the support for retina, make sure that you have identically named
+// image files in '/images/1x' and '/images/2x'. Put images for devices with a
+// pixel ration of 1 in the '1x' folder and put images with twice the resolution
+// in the folder '2x'.
 
 @mixin image-replacement($image-name) {
+
+  // For devices with a pixel ration of 1
   @include sprite($image-name);
   text-indent: -9999em;
   display: inline-block;
-}
+  
+  // Double the resolution of the sprite on devices with a pixel ratio of 2
+  // (like retina displays).
+  @media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) {
+    background-image: url('../images/sprite_2x.png');
+
+    // This should be set to half the width of the 2x sprite. If the 2x sprite
+    // is 200px wide, then set this value to 100px.
+    background-size: 215px; 
+  }
+} // image-replacement
