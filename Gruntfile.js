@@ -25,8 +25,8 @@ module.exports = function(grunt) {
       development_1x: {
         src: '<%= app.src %>/images/1x/*.png',
         destImg: '<%= app.dev %>/images/sprite_1x.png',
-        destCSS: '<%= app.src %>/scss/sprites/_sprite_1x.scss',
-        imgPath: '../images/sprite_1x.png',
+        destCSS: '<%= app.src %>/scss/components/_sprite.scss',
+        imgPath: '../images/sprite_2x.png',
         padding: 10
       },
       // For screens with high pixel density.
@@ -36,15 +36,15 @@ module.exports = function(grunt) {
 
         // Notice, this stylesheet is not being imported. It is only being
         // generated because Spritesmith requires this setting.
-        destCSS: '<%= app.src %>/scss/sprites/_sprite_2x.scss', 
-        imgPath: '../images/sprite_1x.png',
+        destCSS: '<%= app.src %>/scss/components/_sprite_2x.scss', 
+        imgPath: '../images/sprite_2x.png',
         padding: 20
       },
       production_1x: {
         src: '<%= app.src %>/images/1x/*.png',
         destImg: '<%= app.prod %>/images/sprite_1x.png',
-        destCSS: '<%= app.src %>/scss/sprites/_sprite_1x.scss',
-        imgPath: '../images/sprite_1x.png',
+        destCSS: '<%= app.src %>/scss/components/_sprite.scss',
+        imgPath: '../images/sprite_2x.png',
         padding: 10
       },
       // For screens with high pixel density.
@@ -54,8 +54,8 @@ module.exports = function(grunt) {
 
         // Notice, this stylesheet is not being imported. It is only being
         // generated because Spritesmith requires this setting.
-        destCSS: '<%= app.src %>/scss/sprites/_sprite_2x.scss', 
-        imgPath: '../images/sprite_1x.png',
+        destCSS: '<%= app.src %>/scss/components/_sprite_2x.scss', 
+        imgPath: '../images/sprite_2x.png',
         padding: 20
       },
     },

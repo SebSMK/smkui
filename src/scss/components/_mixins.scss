@@ -40,20 +40,18 @@
 
 @mixin image-replacement($image-name) {
 
-  // For devices with a pixel ration of 1
+  // For devices with a pixel ration of 2
   @include sprite($image-name);
   text-indent: -9999em;
   display: inline-block;
-  
-  // Double the resolution of the sprite on devices with a pixel ratio of 2
-  // (like retina displays).
-  @media 
-  (-webkit-min-device-pixel-ratio: 2), 
-  (min-resolution: 192dpi) {
-    background-image: url('../images/sprite_2x.png');
 
-    // This should be set to half the width of the 2x sprite. If the 2x sprite
-    // is 200px wide, then set this value to 100px.
-    background-size: 215px; 
+  // This should be set to half the width of the 2x sprite. If the 2x sprite
+  // is 200px wide, then set this value to 100px.
+  background-size: 215px; 
+  
+  // Half the resolution for devices with a pixel ratio of 1.
+  @media (-webkit-max-device-pixel-ratio: 1), (max-resolution: 96dpi) {
+    background-image: url('../images/sprite_1x.png');
+    background-size: auto; 
   }
 } // image-replacement

@@ -14,7 +14,7 @@ $drawer-width: 15em;
  § Looks
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .drawer {
-  padding-top: $s;
+  padding-top: $m;
   background: #fff;
   border-right: 1px solid $black;
   position: fixed;
@@ -22,7 +22,6 @@ $drawer-width: 15em;
   bottom: 0;
   left: -$drawer-width; // Hide the drawer.
   width: $drawer-width;
-  @include box-shadow(0 0 0 0 rgba(0, 0, 0, 0));
   @include transition (all $time-s ease-in-out);
 
   // Headings
@@ -69,14 +68,30 @@ $drawer-width: 15em;
 } // drawer
 
 /*
- § Toggle 
+ § Menu icon
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.drawer-toggle {
+.main-header .smkui-logo:after {
+  @include image-replacement($menu);
+  @include transition(all $time-s ease-in-out);
+  content: "Menu";
+  speak: none;
+  position: absolute;
+  top: 1.2em;
+  left: 0;
+  width: .5em;
+  opacity: .25;
 
-  // Hid the drawer on small screens
-  @media (min-width: $screen-s) {
-    display: none;
-  }
+  @media (min-width: $screen-xs) { width: .75em; }
+  @media (min-width: 470px) { width: 1em; }
+
+  // Hide the menu icon on small screens.
+  @media (min-width: $screen-s) { display: none; }
+}
+
+// When opened
+.main-header .smkui-logo.active:after {
+  width: .3em;
+  opacity: 1;
 }
 
 /*
@@ -85,7 +100,6 @@ $drawer-width: 15em;
  // Show the drawer.
 .drawer--open{
   left: 0;
-  @include box-shadow(0 0 .5em 0 rgba(0, 0, 0, .1));
 }
 
 // Prepare page elements to be pushed aside.

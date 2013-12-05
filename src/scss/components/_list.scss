@@ -13,7 +13,7 @@
     // For secondary information
     small {
       @extend %type--weak;
-      @extend %padding-left--xs;
+      padding-left: $xs;
     }
   }
 } // end list

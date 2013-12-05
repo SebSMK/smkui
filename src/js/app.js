@@ -44,12 +44,14 @@ $(function() {
   function showDrawer() {
     $('.drawer').toggleClass('drawer--open'); // Show drawer
     $('.article, .main-header, .main-footer').css('right', '-' + drawerWidth); // Push page elements aside
+    $('.main-header .smkui-logo').toggleClass('active');
   }
 
   // Hide drawer
   function hideDrawer() {
     $('.drawer').toggleClass('drawer--open'); // Show drawer
     $('.article, .main-header, .main-footer').css('right', '0'); // Push page elements aside
+    $('.main-header .smkui-logo').toggleClass('active');
   } 
   
   // Toggle link
