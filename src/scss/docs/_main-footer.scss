@@ -3,6 +3,6 @@
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .main-footer {
-  @extend %padding-top--l;
-  @extend %padding-bottom--m;
+  margin-top: $l;
+  margin-bottom: $l;
 }

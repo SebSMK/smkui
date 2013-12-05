@@ -14,7 +14,7 @@ $drawer-width: 15em;
  § Looks
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .drawer {
-  @extend %padding-top--s;
+  padding-top: $s;
   background: #fff;
   border-right: 1px solid $black;
   position: fixed;
@@ -37,7 +37,7 @@ $drawer-width: 15em;
   
   // Navigation block (collection of links)
   nav {
-    @extend %margin-bottom--s;
+    margin-bottom: $s;
 
     // Links
     a {

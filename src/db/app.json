@@ -1,5 +1,6 @@
 {
   "name": "SMKUI",
+  "repo": "https://github.com/jacquesmourier/smkui",
 
   "src": "src",
   "dev": "development",
@@ -15,7 +16,7 @@
       "url": ""
     },
     {
-      "name": "Sebastien Brossard",
+      "name": "Sébastien Brossard",
       "title": "Development",
       "url": ""
     },
