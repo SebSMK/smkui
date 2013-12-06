@@ -52,7 +52,7 @@ $drawer-width: 15em;
       // Hover and focus stats
       &:hover,
       &:focus {
-        background: $yellow;
+        background: $yellow-dim;
         color: $black;
         text-decoration: none;
       }
@@ -111,7 +111,7 @@ $drawer-width: 15em;
       }
 
       &.current {
-        background: $yellow;
+        background: $yellow-dim;
         color: $black;
       }
     } // a

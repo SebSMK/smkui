@@ -3,16 +3,19 @@
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 // Default look.
-a,
-a:link {
+a {
   color: $purple;
   text-decoration: none;
   line-height: inherit;
   @include transition(all $time-s ease-in-out);
 }
 
-// Hover and focus.
-a:hover,
-a:focus {
+// Hover
+a:hover {
   text-decoration: underline;
+}
+
+// Focus
+a:focus {
+  @include focus;
 }

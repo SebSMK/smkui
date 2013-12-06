@@ -11,7 +11,7 @@
 // Flowtype call in app.js. The styles in here only work as no-js fallbacks.
 // http://simplefocus.com/flowtype/
 $font-size:   16px;
-$line-height: 1.5;
+$line-height: 1.45;
 $font-family: 'hill regular', sans-serif;
 $font-color:  $black;
 
@@ -29,8 +29,12 @@ body {
   letter-spacing: .02em;
 
   // Decrease font sizes when the screen gets bigger
-  @media (min-width: $screen-s) { font-size: $font-size * 1.15; }
-  @media (min-width: $screen-m) { font-size: $font-size * 1.25; }
+  @media (min-width: $screen-s) { font-size: $font-size * 1.1; }
+  
+  @media (min-width: $screen-m) {
+    font-size: $font-size * 1.2;
+    line-height: $line-height * 1.075;
+  }
 }
 
 // Bold

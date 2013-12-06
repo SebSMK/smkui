@@ -14,6 +14,11 @@
     margin-bottom: .85em;
   }
 
+  // Add a little more space between the first paragraph and the next element.
+  p:first-of-type {
+    margin-bottom: 1.25em;
+  }
+
   // Heading
   h2.heading {
     @extend .heading--s;

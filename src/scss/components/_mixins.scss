@@ -55,3 +55,12 @@
     background-size: auto; 
   }
 } // image-replacement
+
+/*
+ § Focus
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// General style for elements in focus (using the :focus pseudo selector).
+
+@mixin focus {
+  outline: 4px solid rgba(14, 167, 226, .5);
+}

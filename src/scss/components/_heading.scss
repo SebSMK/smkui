@@ -54,7 +54,7 @@ $font-family-heading: 'hill bold', sans-serif;
 // Heading border
 .heading--bordered {
   @extend .heading;
-  border-bottom: 1px solid $gray;
+  border-bottom: 1px solid $gray-dark;
   padding-bottom: .25em;
 }
 
@@ -67,5 +67,4 @@ $font-family-heading: 'hill bold', sans-serif;
   letter-spacing: .075em;
   text-transform: uppercase;
   margin-bottom: 1em;
-  border-bottom: 1px solid $gray;
 }
