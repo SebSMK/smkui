@@ -12,7 +12,7 @@
   color: #fff;
   text-transform: uppercase;
   display: inline-block;
-  margin: 0 .75em 1em 0;
+  margin: 0 .75em .75em 0;
   padding: .6em 1em;
   text-align: center;
   border-radius: 2px;
@@ -30,17 +30,16 @@
 
   // When in focus
   &:focus {
-
+    // ...
   }
   
   // When the button is clicked
   &:active {
-    border-bottom: 0;
-    margin-top: 1px;
+    // ...
   }
 
   // Adjust paddin on medium screens
-  @media (min-width: $screen-m) { padding: 0.4em .85em; }
+  @media (min-width: $screen-m) { padding: 0.35em .75em; }
 }
 
 /*
