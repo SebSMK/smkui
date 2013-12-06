@@ -16,7 +16,7 @@ This code is made publically available for educational and inspirational purpose
 ## Todos
 
 ### Components
-- Buttons (small, medium, large, Get more results)
+- <s>Buttons (small, medium, large, Get more results)</s>
 - Search field (with suggestions...)
 - grid item
 - list item
