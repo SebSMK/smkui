@@ -98,7 +98,6 @@ module.exports = function(grunt) {
         },
         files: {
           '<%= app.dev %>/js/app.min.js': [
-            // '<%= app.src %>/js/vendor/**/*.js',
             '<%= app.src %>/bower_components/enquire/dist/enquire.js',
             '<%= app.src %>/bower_components/mustache/mustache.js',
             '<%= app.src %>/bower_components/typeahead.js/dist/typeahead.js',
@@ -109,7 +108,6 @@ module.exports = function(grunt) {
       production: {
         files: {
           '<%= app.prod %>/js/app.min.js': [
-            // '<%= app.src %>/js/vendor/**/*.js',
             '<%= app.src %>/bower_components/enquire/dist/enquire.js',
             '<%= app.src %>/bower_components/mustache/mustache.js',
             '<%= app.src %>/bower_components/typeahead.js/dist/typeahead.js',

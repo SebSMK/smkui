@@ -1,0 +1,30 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ § Browse happy
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// Remind users that they are using an outdated broswer.
+
+// Imports
+@import "settings";
+
+.browsehappy {
+  padding-left: 15em !important;
+  
+  // Inner wrapper
+  .browsehappy-inner {
+    background: $red;
+    padding: .75em 1.25em .95em;
+    margin-bottom: 2em;
+    color: #fff;
+
+    // Message
+    p a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    // Call to action
+    .button {
+      margin: 1em 0 0 0;
+    }
+  }
+}
