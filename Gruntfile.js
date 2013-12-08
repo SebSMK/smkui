@@ -175,46 +175,118 @@ module.exports = function(grunt) {
     copy: {
       development: {
         files: [
-          // Images
-          // { expand: true, flatten: true, src: ['<%= app.src %>/images/**'], dest: '<%= app.dev %>/images/', filter: 'isFile' },
+          // Images.
+          // The 'sprite' task will generate two sprites (one for both low and
+          // high pixel density). This task will copy over the low density images
+          // to the 'images' folder, so that IE8 has a fallback
+          // (see also src/scss/ie8.scss). 
+          {
+            expand: true,
+            flatten: true,
+            cwd: '<%= app.src %>/images/1x/',
+            src: ['**'],
+            dest: '<%= app.dev %>/images/'
+          },
 
           // Favicons
-          { expand: true, flatten: true, src: ['<%= app.src %>/favicons/**'], dest: '<%= app.dev %>/', filter: 'isFile' },
+          {
+            expand: true,
+            flatten: true,
+            src: ['<%= app.src %>/favicons/**'],
+            dest: '<%= app.dev %>/',
+            filter: 'isFile'
+          },
 
-          // Fonts
-          { expand: true, cwd: '<%= app.src %>/fonts/', src: ['**'], dest: '<%= app.dev %>/fonts/', filter: 'isFile' },
+          // Fonts.
+          // Copy over the fonts folder and all its subdirectories.
+          {
+            expand: true,
+            cwd: '<%= app.src %>/fonts/',
+            src: ['**'],
+            dest: '<%= app.dev %>/fonts/',
+          },
 
           // crossdomain.xml and robots.txt
-          { expand: true, cwd: '<%= app.src %>/misc/', src: ['**'], dest: '<%= app.dev %>/', filter: 'isFile' },
+          {
+            expand: true,
+            cwd: '<%= app.src %>/misc/',
+            src: ['**'],
+            dest: '<%= app.dev %>/'
+          },
 
           // Data
-          { expand: true, cwd: '<%= app.src %>/db/', src: ['**'], dest: '<%= app.dev %>/db/', filter: 'isFile' },
+          { 
+            expand: true, 
+            cwd: '<%= app.src %>/db/',
+            src: ['**'],
+            dest: '<%= app.dev %>/db/',
+            filter: 'isFile'
+          },
 
           // Copy jQuery from src/bower_components.
-          // This is used as a fallback when the CDN fails to deliver jQuery (see src/templates/partials/scripts.hbs).
-          { expand: true, cwd: '<%= app.src %>/bower_components/jquery/', src: ['jquery.min.js'], dest: '<%= app.prod %>/js/vendor/', filter: 'isFile' }
+          // This is used as a fallback when the CDN fails to deliver jQuery 
+          // (see src/templates/partials/scripts.hbs).
+          {
+            expand: true, 
+            cwd: '<%= app.src %>/bower_components/jquery/',
+            src: 'jquery.min.js', 
+            dest: '<%= app.dev %>/js/vendor/'
+          }
         ]
       },
+
       production: {
         files: [
-          // Images
-          // { expand: true, flatten: true, src: ['<%= app.dev %>/images/sprite*.*'], dest: '<%= app.prod %>/images/', filter: 'isFile' },
+          // Images.
+          {
+            expand: true,
+            flatten: true,
+            cwd: '<%= app.src %>/images/1x/',
+            src: ['**'],
+            dest: '<%= app.prod %>/images/'
+          },
 
           // Favicons
-          { expand: true, flatten: true, src: ['<%= app.src %>/favicons/**'], dest: '<%= app.prod %>/', filter: 'isFile' },
+          {
+            expand: true,
+            flatten: true,
+            src: ['<%= app.src %>/favicons/**'],
+            dest: '<%= app.prod %>/',
+            filter: 'isFile'
+          },
 
-          // Fonts
-          { expand: true, cwd: '<%= app.src %>/fonts/', src: ['**'], dest: '<%= app.prod %>/fonts/', filter: 'isFile' },
+          // Fonts.
+          {
+            expand: true,
+            cwd: '<%= app.src %>/fonts/',
+            src: ['**'],
+            dest: '<%= app.prod %>/fonts/',
+          },
 
           // crossdomain.xml and robots.txt
-          { expand: true, cwd: '<%= app.src %>/misc/', src: ['**'], dest: '<%= app.prod %>/', filter: 'isFile' },
+          {
+            expand: true,
+            cwd: '<%= app.src %>/misc/',
+            src: ['**'],
+            dest: '<%= app.prod %>/'
+          },
 
           // Data
-          { expand: true, cwd: '<%= app.src %>/db/', src: ['**'], dest: '<%= app.prod %>/db/', filter: 'isFile' },
+          { 
+            expand: true, 
+            cwd: '<%= app.src %>/db/',
+            src: ['**'],
+            dest: '<%= app.prod %>/db/',
+            filter: 'isFile'
+          },
 
           // Copy jQuery from src/bower_components.
-          // This is used as a fallback when the CDN fails to deliver jQuery (see src/templates/partials/scripts.hbs).
-          { expand: true, cwd: '<%= app.src %>/bower_components/jquery/', src: ['jquery.min.js'], dest: '<%= app.dev %>/js/vendor/', filter: 'isFile' }
+          {
+            expand: true, 
+            cwd: '<%= app.src %>/bower_components/jquery/',
+            src: 'jquery.min.js', 
+            dest: '<%= app.prod %>/js/vendor/'
+          }
         ]
       }
     },
