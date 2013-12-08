@@ -36,10 +36,10 @@
 // pixel ration of 1 in the '1x' folder and put images with twice the resolution
 // in the folder '2x'.
 
-@mixin image-replacement($image-name) {
+@mixin image-replacement($image-file-name) {
 
   // For devices with a pixel ration of 2
-  @include sprite($image-name);
+  @include sprite($image-file-name);
   text-indent: -9999em;
   display: inline-block;
 
@@ -53,6 +53,18 @@
     background-size: auto; 
   }
 } // image-replacement
+
+/*
+ § Spriteless image replacement
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@mixin spriteless-image-replacement($image-file-name) {
+  background-image: url("../images/#{$image-file-name}");
+  background-position: 0 0;
+  background-size: auto; 
+  text-indent: -9999em;
+  display: inline-block;
+}
 
 /*
  § Focus

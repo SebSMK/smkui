@@ -4,6 +4,7 @@
 
 // Configuration
 @import "settings";
+@import "components/mixins";
 
 /*
  § Purple button
@@ -68,15 +69,17 @@
 // Use single image files for screens with low pixel density (1x) instead of
 // the sprite.
 
+
+
 // SMK logo
-.smk-logo { background-image: url("../images/smk_logo.png"); }
+.smk-logo { @include spriteless-image-replacement('smk_logo.png'); }
 
 // SMKUI logo (small)
 .smkui-logo,
-.smkui-logo--s { background-image: url("../images/smkui_logo_small.png"); }
+.smkui-logo--s { @include spriteless-image-replacement('smkui_logo_small.png'); }
 
 // SMKUI logo (medium)
-.smkui-logo--m { background-image: url("../images/smkui_logo.png"); }
+.smkui-logo--m { @include spriteless-image-replacement('smkui_logo.png'); }
 
 // Menu icon
-.main-header .smkui-logo:after { background-image: url("../images/menu.png"); }
+.main-header .smkui-logo:after { @include spriteless-image-replacement('menu.png'); }

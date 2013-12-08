@@ -4,13 +4,5 @@
 <!-- If the CDN id down, fetch a local copy of jQuery -->
 <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js">\x3C/script>')</script>
 
-<!-- 
-  IE does not use the XMLHttpRequest, but an alternative object named XDomainRequest.
-  This script is being loaded for IE8 and IE9 to enable Typeahead autosuggestion (typeahead.js).
-  http://stackoverflow.com/questions/10232017/ie9-jquery-ajax-with-cors-returns-access-is-denied/10232313#10232313
--->
-<!--[if IE]>
-  <script src="js/polyfills/xdr.js"></script>
-<![endif]-->
-
+<!-- Load app javascript (initializers, configuration and custom code) -->
 <script src="js/app.min.js"></script>

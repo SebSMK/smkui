@@ -231,6 +231,15 @@ module.exports = function(grunt) {
             cwd: '<%= app.src %>/bower_components/jquery/',
             src: 'jquery.min.js',
             dest: '<%= app.dev %>/js/vendor/'
+          },
+
+          // Vendor scripts
+          {
+            expand: true,
+            cwd: '<%= app.src %>/js/vendor/',
+            src: ['**'],
+            dest: '<%= app.dev %>/js/vendor/',
+            filter: 'isFile'
           }
         ]
       },
@@ -272,8 +281,8 @@ module.exports = function(grunt) {
           },
 
           // Data
-          { 
-            expand: true, 
+          {
+            expand: true,
             cwd: '<%= app.src %>/db/',
             src: ['**'],
             dest: '<%= app.prod %>/db/',
@@ -282,10 +291,19 @@ module.exports = function(grunt) {
 
           // Copy jQuery from src/bower_components.
           {
-            expand: true, 
+            expand: true,
             cwd: '<%= app.src %>/bower_components/jquery/',
-            src: 'jquery.min.js', 
+            src: 'jquery.min.js',
             dest: '<%= app.prod %>/js/vendor/'
+          },
+
+          // Vendor scripts
+          {
+            expand: true,
+            cwd: '<%= app.src %>/js/vendor/',
+            src: ['**'],
+            dest: '<%= app.prod %>/js/vendor/',
+            filter: 'isFile'
           }
         ]
       }
