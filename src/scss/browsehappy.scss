@@ -5,26 +5,17 @@
 
 // Imports
 @import "settings";
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "components/mixins";
+@import "components/button";
 
 .browsehappy {
   padding-left: 15em !important;
-  
+
   // Inner wrapper
   .browsehappy-inner {
-    background: $red;
-    padding: .75em 1.25em .95em;
+    border: 1px solid $red;
+    padding: .55em .75em .65em;
     margin-bottom: 2em;
-    color: #fff;
-
-    // Message
-    p a {
-      color: #fff;
-      text-decoration: underline;
-    }
-
-    // Call to action
-    .button {
-      margin: 1em 0 0 0;
-    }
   }
 }
