@@ -215,8 +215,8 @@ module.exports = function(grunt) {
           },
 
           // Data
-          { 
-            expand: true, 
+          {
+            expand: true,
             cwd: '<%= app.src %>/db/',
             src: ['**'],
             dest: '<%= app.dev %>/db/',
@@ -227,9 +227,9 @@ module.exports = function(grunt) {
           // This is used as a fallback when the CDN fails to deliver jQuery 
           // (see src/templates/partials/scripts.hbs).
           {
-            expand: true, 
+            expand: true,
             cwd: '<%= app.src %>/bower_components/jquery/',
-            src: 'jquery.min.js', 
+            src: 'jquery.min.js',
             dest: '<%= app.dev %>/js/vendor/'
           }
         ]
@@ -305,9 +305,9 @@ module.exports = function(grunt) {
         // Exclude files that don't change very often (fonts and favicons)
         exclusions: [
           '.DS_Store',
-          '<%= app.prod %>/fonts/*',
-          '<%= app.prod %>/*.png',
-          '<%= app.prod %>/*.ico'
+          // '<%= app.prod %>/fonts/*',
+          // '<%= app.prod %>/*.png',
+          // '<%= app.prod %>/*.ico'
         ]
       }
     },
@@ -383,7 +383,7 @@ module.exports = function(grunt) {
   ]);
 
   // Deploy to staging
-  grunt.registerTask('deploy_stag', [
+  grunt.registerTask('deployStag', [
     'production',
     'ftp-deploy'
   ]);
