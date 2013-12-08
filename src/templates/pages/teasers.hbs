@@ -13,16 +13,37 @@ title:    Teasers
   
   <div class="subsection">
     <h2 class="heading">Grid style</h2>
-    <p>This is a single teaser in the 'grid' style, which allows for large thumbnails. The teaser will take up the entire width of its parent item. Here the columnized layout is made possible with the jQuery plugin <a href="https://github.com/desandro/masonry">Masonry</a>.</p>
+    <p>This is a single teaser in the 'grid' style, which allows for large thumbnails. By default the teaser will take up the entire width of its parent item, however, in this example <a href="https://github.com/desandro/masonry">Masonry</a> is used to create a tile-like layout.</p>
 
     <article class="teaser--grid">
-      <!-- Thumb -->
-      <!-- Title -->
-      <!-- description -->
-      <!-- Categories -->
-      <!-- Meta -->
-      <!-- Link it to someplace -->
-    </article>
+      <div class="teaser__thumbnail">
+        <a href="#" alt="">
+          <img src="/images/artworks/a_w320.jpg" alt="">
+        </a>
+      </div>
+
+      <ul class="teaser__category">
+        <li><a href="#">Category 1</a></li>
+        <li><a href="#">Category 2</a></li>
+        <li>What up?</li>
+      </ul>
+      
+      <h3 class="teaser__heading">
+        <a href="#" alt="">
+          This is a great piece of art
+        </a>
+      </h3>
+
+      <div class="teaser__description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, voluptate, ullam, accusamus praesentium expedita blanditiis ipsam...
+      </div>
+
+      <ul class="teaser__meta">
+        <li><span>Label1</span> Value1</li>
+        <li><span>Label2</span> Value2</li>
+        <li><span>Label3</span> Value3</li>
+      </ul>
+    </article><!-- teaser--grid -->
   </div><!-- subsection -->
 
   <div class="subsection">

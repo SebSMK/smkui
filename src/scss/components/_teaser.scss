@@ -1,0 +1,74 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ § Teaser
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*
+ § Base styles (default to grid)
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+// Layout
+.teaser,
+.teaser--grid {
+  width: 100%;
+  border-bottom: 2px solid $black;
+  padding-bottom: .75em;
+}
+
+// Thumbnail
+.teaser__thumbnail {
+  margin-bottom: .75em;
+}
+
+// Category
+.teaser__category {
+  @extend .type--small;
+  color: $gray-dark;
+  text-transform: uppercase;
+  margin-bottom: .25em;
+
+  li {
+    display: inline-block;
+    border-right: 1px solid $gray-dark;
+    margin-right: $s * .75;
+    padding-right: $s * 1.1;
+    line-height: normal;
+  }
+
+  // Remove border from last item.
+  li:last-child { border: 0; }
+
+  a {
+    color: $gray-dark;
+    display: inline-block;
+
+    &:hover,
+    &:focus {
+      color: $purple;
+      text-decoration: none;   
+    }
+  }
+} // teaser__category
+
+// Title
+.teaser__heading {
+  @extend .type--bold;
+}
+
+// Description 
+.teaser__description {
+  margin-bottom: .5em;
+}
+
+// Metainformation
+.teaser__meta {
+  @extend .type--small;
+  @extend .type--weak;
+  
+  // Label
+  span {
+    text-transform: uppercase;
+    &:after {
+      content: ":";
+    }
+  }
+}

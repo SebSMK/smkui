@@ -186,6 +186,15 @@ module.exports = function(grunt) {
             dest: '<%= app.dev %>/images/'
           },
 
+          // Artwork thumbnails
+          {
+            expand: true,
+            cwd: '<%= app.src %>/images/artworks/',
+            src: ['**'],
+            dest: '<%= app.dev %>/images/artworks/',
+            filter: 'isFile'
+          },
+
           // Favicons
           {
             expand: true,
@@ -251,6 +260,15 @@ module.exports = function(grunt) {
             cwd: '<%= app.src %>/images/1x/',
             src: ['**'],
             dest: '<%= app.prod %>/images/'
+          },
+
+          // Artwork thumbnails
+          {
+            expand: true,
+            cwd: '<%= app.src %>/images/artworks/',
+            src: ['**'],
+            dest: '<%= app.prod %>/images/artworks/',
+            filter: 'isFile'
           },
 
           // Favicons
@@ -387,14 +405,14 @@ module.exports = function(grunt) {
   ]);
 
   // Production build.
-  grunt.registerTask('production', [  
+  grunt.registerTask('production', [
     'sprite:production_1x',
     'sprite:production_2x',
     'compass:production',
     'uglify:production',
     'assemble',
     'htmlmin',
-    // 'imageoptim', // TODO: Turn on permanently for when going live
+    'imageoptim',
     'copy:production'
   ]);
 
