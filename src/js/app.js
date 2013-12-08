@@ -1,17 +1,16 @@
-  /*
-   § Screen widths
-  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  // These corresponds to the variables set in _settings.scss
-  var screenXs  =  '300px';
-  var screenS   =  '700px';
-  var screenM   = '1000px';
-  var screenL   = '1300px';
-  var screenXl  = '1600px';
+/*
+ § Screen widths
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// These corresponds to the variables set in /scss/_settings.scss
+var screenXs  =  '300px';
+var screenS   =  '700px';
+var screenM   = '1000px';
+var screenL   = '1300px';
+var screenXl  = '1600px';
 
 // When the DOM is ready do this...
 // http://api.jquery.com/ready/
 $(document).ready(function() {
-
 
   /*
    § Remove 300ms touch delay for touch devices.
@@ -43,6 +42,7 @@ $(document).ready(function() {
 
   // Show drawer
   function showDrawer() {
+    $('body').css('overflow', 'hidden');
     $('.drawer').toggleClass('drawer--open'); // Show drawer
     $('.article, .main-header, .main-footer').css('right', '-' + drawerWidth); // Push page elements aside
     $('.main-header .smkui-logo').toggleClass('active');
@@ -50,6 +50,7 @@ $(document).ready(function() {
 
   // Hide drawer
   function hideDrawer() {
+    $('body').css('overflow', 'visible');
     $('.drawer').toggleClass('drawer--open'); // Show drawer
     $('.article, .main-header, .main-footer').css('right', '0'); // Push page elements aside
     $('.main-header .smkui-logo').toggleClass('active');
@@ -75,6 +76,76 @@ $(document).ready(function() {
     }); // enquire
   }); // click event
 
+  /*
+   § Typeahead demo page
+  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  // Being used on /templates/pages/typeahead.hbs
+  // https://github.com/twitter/typeahead.js
+
+  // The template engine being used is Mustache.
+  // https://github.com/janl/mustache.js
+  var ttTemplateNames     = Mustache.compile('<div>{{name}}</div>');
+  var ttTemplateCountries = Mustache.compile('<div>{{name}} ({{code}})</div>');
+  var ttTemplateStrings   = Mustache.compile('<div>{{title}}</div>');
+
+  // Names
+  $('.typeahead-example--names .typeahead').typeahead([
+    {
+      name: 'names6',
+      valueKey: 'name',
+      prefetch: {
+        url: '../db/names.json',
+        ttl: 1 // Time to live in milliseconds
+      },
+      cache: false,
+      template: ttTemplateNames
+    }
+  ]);
+
+  // Countries
+  $('.typeahead-example--countries .typeahead').typeahead([
+    {
+      name: 'countries6',
+      valueKey: 'name',
+      prefetch: {
+        url: '../db/countries.json',
+        ttl: 1 // Time to live in milliseconds
+      },
+      cache: false,
+      template: ttTemplateCountries,
+    }
+  ]);
+
+  // Strings
+  $('.typeahead-example--strings .typeahead').typeahead([
+    {
+      name: 'strings2',
+      valueKey: 'title',
+      prefetch: {
+        url: '../db/strings.json',
+        ttl: 1 // Time to live in milliseconds
+      },
+      cache: false,
+      template: ttTemplateStrings,
+    }
+  ]);
+
+  /*
+   § Search box demo page
+  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  // Strings
+  $('.search-box .typeahead').typeahead([
+    {
+      name: 'strings3',
+      valueKey: 'title',
+      prefetch: {
+        url: '../db/strings.json',
+        ttl: 1 // Time to live in milliseconds
+      },
+      cache: false,
+      template: ttTemplateStrings,
+    }
+  ]);
   
 }); // When the DOM is ready.
 

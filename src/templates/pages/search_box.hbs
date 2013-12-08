@@ -1,0 +1,25 @@
+---
+slug:     search_box
+category: components
+title:    Search box
+---
+
+<article id="{{slug}}" class="article article--{{slug}}">
+  <header>
+    <h1 class="heading--l">{{title}}</h1>
+    <p class="lead">The search box uses Twitter's <a href="https://github.com/twitter/typeahead.js">Typeahead</a> for autocompletion. Autocompetion fields are also available as a <a href="/typeahead.html">standalone component</a>.</p>
+  </header>
+
+  <div class="subsection">
+    <h2 class="heading">Search field</h2>
+
+    <!-- Search box -->
+    <form role="search" method="get" class="search-box" action="">
+      <label for="search">Search for</label>
+      <input class="typeahead field" type="text" value="" name="search" id="search" placeholder="Search for anything..." autocomplete="off" spellcheck="false" dir="auto" />
+      <input class="button" type="submit" value="Search" />
+    </form>
+
+  </div><!-- subsection -->
+
+</article>

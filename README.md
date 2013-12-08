@@ -17,7 +17,7 @@ This code is made publically available for educational and inspirational purpose
 
 ### Components
 - <s>Buttons (small, medium, large, Get more results)</s>
-- Search field (with suggestions...)
+- <s>Search field (with suggestions...)</s>
 - grid item
 - list item
 - chosen (open, closed, full width, narrow)

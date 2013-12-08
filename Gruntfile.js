@@ -100,6 +100,8 @@ module.exports = function(grunt) {
           '<%= app.dev %>/js/app.min.js': [
             '<%= app.src %>/js/vendor/**/*.js',
             '<%= app.src %>/bower_components/enquire/dist/enquire.js',
+            '<%= app.src %>/bower_components/mustache/mustache.js',
+            '<%= app.src %>/bower_components/typeahead.js/dist/typeahead.js',
             '<%= app.src %>/js/app.js'
           ]
         },
@@ -109,6 +111,8 @@ module.exports = function(grunt) {
           '<%= app.prod %>/js/app.min.js': [
             '<%= app.src %>/js/vendor/**/*.js',
             '<%= app.src %>/bower_components/enquire/dist/enquire.js',
+            '<%= app.src %>/bower_components/mustache/mustache.js',
+            '<%= app.src %>/bower_components/typeahead.js/dist/typeahead.js',
             '<%= app.src %>/js/app.js'
           ]
         },
@@ -181,7 +185,14 @@ module.exports = function(grunt) {
           { expand: true, cwd: '<%= app.src %>/fonts/', src: ['**'], dest: '<%= app.dev %>/fonts/', filter: 'isFile' },
 
           // crossdomain.xml and robots.txt
-          { expand: true, cwd: '<%= app.src %>/misc/', src: ['**'], dest: '<%= app.dev %>/', filter: 'isFile' }
+          { expand: true, cwd: '<%= app.src %>/misc/', src: ['**'], dest: '<%= app.dev %>/', filter: 'isFile' },
+
+          // Data
+          { expand: true, cwd: '<%= app.src %>/db/', src: ['**'], dest: '<%= app.dev %>/db/', filter: 'isFile' },
+
+          // Copy jQuery from src/bower_components.
+          // This is used as a fallback when the CDN fails to deliver jQuery (see src/templates/partials/scripts.hbs).
+          { expand: true, cwd: '<%= app.src %>/bower_components/jquery/', src: ['jquery.min.js'], dest: '<%= app.prod %>/js/vendor/', filter: 'isFile' }
         ]
       },
       production: {
@@ -196,7 +207,14 @@ module.exports = function(grunt) {
           { expand: true, cwd: '<%= app.src %>/fonts/', src: ['**'], dest: '<%= app.prod %>/fonts/', filter: 'isFile' },
 
           // crossdomain.xml and robots.txt
-          { expand: true, cwd: '<%= app.src %>/misc/', src: ['**'], dest: '<%= app.prod %>/', filter: 'isFile' }
+          { expand: true, cwd: '<%= app.src %>/misc/', src: ['**'], dest: '<%= app.prod %>/', filter: 'isFile' },
+
+          // Data
+          { expand: true, cwd: '<%= app.src %>/db/', src: ['**'], dest: '<%= app.prod %>/db/', filter: 'isFile' },
+
+          // Copy jQuery from src/bower_components.
+          // This is used as a fallback when the CDN fails to deliver jQuery (see src/templates/partials/scripts.hbs).
+          { expand: true, cwd: '<%= app.src %>/bower_components/jquery/', src: ['jquery.min.js'], dest: '<%= app.dev %>/js/vendor/', filter: 'isFile' }
         ]
       }
     },
@@ -213,7 +231,12 @@ module.exports = function(grunt) {
         src: '<%= app.prod %>',
         dest: '/smk',
         // Exclude files that don't change very often (fonts and favicons)
-        exclusions: ['.DS_Store']
+        exclusions: [
+          '.DS_Store',
+          '<%= app.prod %>/fonts/*',
+          '<%= app.prod %>/*.png',
+          '<%= app.prod %>/*.ico'
+        ]
       }
     },
 
@@ -283,7 +306,7 @@ module.exports = function(grunt) {
     'uglify:production',
     'assemble',
     'htmlmin',
-    'imageoptim',
+    // 'imageoptim', // TODO: Turn on permanently for when going live
     'copy:production'
   ]);
 

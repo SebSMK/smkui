@@ -105,7 +105,7 @@ html {
 
 body {
   background: $body-background;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 /*
@@ -176,6 +176,7 @@ button,
 input {
   line-height: normal;
   -webkit-appearance: none; // Prevent iOS user agent styles.
+  border-radius: 0;
 }
 
 

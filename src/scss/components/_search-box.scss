@@ -1,0 +1,36 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ § Search box
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*form*/.search-box {
+  position: relative;
+
+  // Label
+  label { display: none; }
+
+  // Input field
+  input[type="text"] {
+    //...
+  } // input field
+
+  // Submit button
+  input[type="submit"] {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+  } // submit button
+
+   // Typeahead dropdown menu (see also _typeahead.scss)
+  .tt-dropdown-menu {
+
+
+    .tt-suggesttion {
+
+    }
+  }
+}

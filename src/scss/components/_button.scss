@@ -18,6 +18,7 @@
   border-radius: 2px;
   position: relative;
   vertical-align: top;
+  @include transition(all $time-s ease-in-out);
 
   // When hovered
   &:hover{
@@ -30,7 +31,9 @@
 
   // When in focus
   &:focus {
-    // ...
+    @include focus;
+    color: #fff;
+    background: $gray-darkest;
   }
   
   // When the button is clicked

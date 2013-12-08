@@ -5,20 +5,18 @@
 /*
  § @font-face
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-// https://github.com/thesedays/scss-mixins/blob/master/fonts.scss
-
 @mixin font-face($font-family, $font-url, $font-file-name) {
-  @font-face {
-    font: {
-      family: $font-family;
-      style: normal;
-      weight: normal;
-    }
 
-    src: url($font-url + '/' + $font-file-name + '.eot')  format('eot'), 
-         url($font-url + '/' + $font-file-name + '.woff') format('woff'), 
-         url($font-url + '/' + $font-file-name + '.ttf')  format('truetype'),
-         url($font-url + '/' + $font-file-name + '.svg#' + $font-file-name) format('svg');
+  @font-face {
+      font-family: '#{$font-family}';
+      src: url('#{$font-url}/#{$font-file-name}.eot');
+      src: url('#{$font-url}/#{$font-file-name}.eot?#iefix') format('embedded-opentype'),
+           url('#{$font-url}/#{$font-file-name}.woff') format('woff'),
+           url('#{$font-url}/#{$font-file-name}.ttf') format('truetype'),
+           url('#{$font-url}/#{$font-file-name}.svg##{$font-file-name}') format('svg');
+      font-weight: normal;
+      font-style: normal;
+
   }
 } // font-face
 
