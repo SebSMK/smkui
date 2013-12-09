@@ -17,19 +17,13 @@ $(document).ready(function() {
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   $(".clickable").click(function(){
     window.location=$(this).find("a").attr("href");
+  }).children("a").click(function(e) {
     return false;
   });
 
   /*
-   § Remove 300ms touch delay for touch devices.
-  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  // https://github.com/ftlabs/fastclick
-  // FastClick.attach(document.body);
-
-  /*
    § Add the class 'current' to links that point to the current url.
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
   // Get the current url.
   var currentUrl = location.pathname;
   
@@ -73,7 +67,7 @@ $(document).ready(function() {
         // Prevent link from directing to the home page.
         e.preventDefault();
         
-        // If the drawer is drawer--openpen
+        // If the drawer is open
         if( $('.drawer').hasClass('drawer--open') ) {
           hideDrawer();
         } else {
@@ -83,6 +77,22 @@ $(document).ready(function() {
       } // match
     }); // enquire
   }); // click event
+
+  /*
+   § Teaser templating
+  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  // Using Mustache - https://github.com/janl/mustache.js
+
+  // Get data and populate template (see src/templates/pages/teasers.hbs)
+  function getSearchResults() {
+    $.getJSON('../db/artworks_1.json', function(data) {
+      var template = $('#teaserGridTemplate').html();
+      var html = Mustache.to_html(template, data);
+      $('#teasersGrid').html(html);
+    });
+  }
+
+  getSearchResults();
 
   /*
    § Typeahead demo page
@@ -156,5 +166,3 @@ $(document).ready(function() {
   ]);
   
 }); // When the DOM is ready.
-
-

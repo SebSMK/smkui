@@ -15,6 +15,44 @@ title:    Teasers
     <h2 class="heading">Grid style</h2>
     <p>This is a single teaser in the 'grid' style, which allows for large thumbnails. By default the teaser will take up the entire width of its parent element, however, in this example <a href="https://github.com/desandro/masonry">Masonry</a> is used to create a tile-like layout.</p>
 
+    <div id="teasersGrid"></div>
+
+    <script id="teaserGridTemplate" type="text/template">
+      \{{#artworks}}
+        <article class="teaser--grid clickable">
+          <div class="teaser__wrapper">
+            <div class="teaser__thumbnail">
+              <a href="\{{url}}" alt="\{{title}}">
+                <img src="/images/artworks/\{{thumbnail}}" alt="\{{title}}">
+              </a>
+            </div>
+            
+            <div class="teaser__content">
+              <ul class="teaser__category">
+                <li><a href="http://stackoverflow.com/">Category 1</a></li>
+                <li><a href="http://meta.stackoverflow.com/">Category 2</a></li>
+                <li>What up?</li>
+              </ul>
+              
+              <h3 class="teaser__heading">
+                <a href="\{{url}}" alt="\{{title}}">\{{title}}</a>
+              </h3>
+
+              <div class="teaser__description">
+                \{{description}}
+              </div>
+
+              <ul class="teaser__meta">
+                <li><span>Label1</span> Value1</li>
+                <li><span>Label2</span> Value2</li>
+                <li><span>Label3</span> Value3</li>
+              </ul>
+            </div><!-- teaser__content -->
+          </div><!-- teaser__wrapper -->
+        </article><!-- teaser -->      
+      \{{/artworks}}
+    </script>
+
     <article class="teaser--grid clickable">
       <div class="teaser__wrapper">
         <div class="teaser__thumbnail">
