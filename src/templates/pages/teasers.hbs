@@ -13,51 +13,48 @@ title:    Teasers
   
   <div class="subsection">
     <h2 class="heading">Grid style</h2>
-    <p>This is a single teaser in the 'grid' style, which allows for large thumbnails. By default the teaser will take up the entire width of its parent item, however, in this example <a href="https://github.com/desandro/masonry">Masonry</a> is used to create a tile-like layout.</p>
+    <p>This is a single teaser in the 'grid' style, which allows for large thumbnails. By default the teaser will take up the entire width of its parent element, however, in this example <a href="https://github.com/desandro/masonry">Masonry</a> is used to create a tile-like layout.</p>
 
-    <article class="teaser--grid">
-      <div class="teaser__thumbnail">
-        <a href="#" alt="">
-          <img src="/images/artworks/a_w320.jpg" alt="">
-        </a>
-      </div>
+    <article class="teaser--grid clickable">
+      <div class="teaser__wrapper">
+        <div class="teaser__thumbnail">
+          <a href="#" alt="">
+            <img src="/images/artworks/a_w320.jpg" alt="">
+          </a>
+        </div>
+        
+        <div class="teaser__content">
+          <ul class="teaser__category">
+            <li><a href="http://stackoverflow.com/">Category 1</a></li>
+            <li><a href="http://meta.stackoverflow.com/">Category 2</a></li>
+            <li>What up?</li>
+          </ul>
+          
+          <h3 class="teaser__heading">
+            <a href="#" alt="">
+              This is a great piece of art
+            </a>
+          </h3>
 
-      <ul class="teaser__category">
-        <li><a href="#">Category 1</a></li>
-        <li><a href="#">Category 2</a></li>
-        <li>What up?</li>
-      </ul>
-      
-      <h3 class="teaser__heading">
-        <a href="#" alt="">
-          This is a great piece of art
-        </a>
-      </h3>
+          <div class="teaser__description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, voluptate, ullam, accusamus praesentium expedita blanditiis ipsam...
+          </div>
 
-      <div class="teaser__description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, voluptate, ullam, accusamus praesentium expedita blanditiis ipsam...
-      </div>
+          <ul class="teaser__meta">
+            <li><span>Label1</span> Value1</li>
+            <li><span>Label2</span> Value2</li>
+            <li><span>Label3</span> Value3</li>
+          </ul>
+        </div><!-- teaser__content -->
+      </div><!-- teaser__wrapper -->
+    </article><!-- teaser -->
 
-      <ul class="teaser__meta">
-        <li><span>Label1</span> Value1</li>
-        <li><span>Label2</span> Value2</li>
-        <li><span>Label3</span> Value3</li>
-      </ul>
-    </article><!-- teaser--grid -->
   </div><!-- subsection -->
 
   <div class="subsection">
     <h2 class="heading">List style</h2>
     <p>This is a single teaser in the 'list' style, which is more compace than the 'grid' style. On the other hand thumbnails have much less emphasis.</p>
-
-    <article class="teaser--list">
-      <!-- Thumb -->
-      <!-- Title -->
-      <!-- description -->
-      <!-- Categories -->
-      <!-- Meta -->
-      <!-- Link it to someplace -->
-    </article>
+    <p>Missing...</p>
   </div><!-- subsection -->
   
 </article>

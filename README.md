@@ -18,8 +18,11 @@ This code is made publically available for educational and inspirational purpose
 ### Components
 - <s>Buttons (small, medium, large, Get more results)</s>
 - <s>Search field (with suggestions...)</s>
-- grid item
-- list item
+- <s>teaser (grid)</s>
+- <s>teaser (list)</s>
+- <s>make grid and list teasers clickable</s>
+- To the above: avoid that all links link to the node
+- mustache loading  
 - chosen (open, closed, full width, narrow)
 - dropdown
 - Tabs

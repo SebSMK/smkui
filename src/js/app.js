@@ -13,6 +13,14 @@ var screenXl  = '1600px';
 $(document).ready(function() {
 
   /*
+   § Make entire element clickable
+  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  $(".clickable").click(function(){
+    window.location=$(this).find("a").attr("href");
+    return false;
+  });
+
+  /*
    § Remove 300ms touch delay for touch devices.
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   // https://github.com/ftlabs/fastclick

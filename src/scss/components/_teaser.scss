@@ -3,7 +3,7 @@
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /*
- § Base styles (default to grid)
+ § Grid layout (default)
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 // Layout
@@ -12,6 +12,29 @@
   width: 100%;
   border-bottom: 2px solid $black;
   padding-bottom: .75em;
+  margin-bottom: 1em;
+  position: relative;
+
+  // Hover styles
+  &.clickable:hover,
+  &.clickable:focus {
+
+    .teaser__wrapper {
+      cursor: pointer;
+      background: $yellow-dim;
+      @include box-shadow(0 0 0 7px $yellow-dim);
+    }
+
+    .teaser__heading a {
+      color: $black;  
+    }
+  }
+}
+
+// Inner wrapper
+.teaser__wrapper {
+  @include clearfix;
+  @include transition(all $time-s ease-in-out);
 }
 
 // Thumbnail
@@ -56,13 +79,14 @@
 
 // Description 
 .teaser__description {
-  margin-bottom: .5em;
+  // ...
 }
 
-// Metainformation
+// Meta-information
 .teaser__meta {
   @extend .type--small;
   @extend .type--weak;
+  margin-top: .5em;
   
   // Label
   span {
@@ -70,5 +94,36 @@
     &:after {
       content: ":";
     }
+  }
+}
+
+/*
+ § List layout
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.teaser--list {
+  @extend .teaser;
+  @include clearfix;
+  padding-bottom: 1em;
+
+  // Thumbnail
+  .teaser__thumbnail {
+    float: right;
+    margin-left: 4%;
+    margin-bottom: 0;
+    width: 16%;
+
+    img { float: right; }
+  }
+
+  // Content (title, description etc.)
+  .teaser__content {
+    width: 80%;
+    float: left;
+  }
+
+  // Meta-information
+  .teaser__meta {
+    @extend .teaser__category; // Display inline.
+    display: none;
   }
 }
