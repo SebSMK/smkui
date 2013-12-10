@@ -21,19 +21,22 @@ This code is made publically available for educational and inspirational purpose
 - <s>teaser (grid)</s>
 - <s>teaser (list)</s>
 - <s>make grid and list teasers clickable</s>
-- To the above: avoid that all links link to the node
-- mustache loading  
-- chosen (open, closed, full width, narrow)
-- dropdown
+
+- <s>dropdown (chosen)</s>
+- <s>chosen (open, closed, full width, narrow)</s>
+- <s>chosen open (multiselect)</s>
 - Tabs
 - Data pair (key + value)
 - Gallery
 - Social links
+
 - include http://quojs.tapquo.com/
 - Drawer: make it work on iPhone
 - Drawer: Close when touching page
 - Drawer: open/close on swipe
 
+- BUG: mustache: clickable not working.
+- BUG: chosen:open also triggers focus - this is bad.
 
 ### Views
 - Grid (Filters on top)

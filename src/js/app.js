@@ -79,6 +79,22 @@ $(document).ready(function() {
   }); // click event
 
   /*
+   § Chosen
+  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  $('.chosen select').chosen({
+    width: "180px"
+  });
+
+  // Multiple select
+  $('.chosen--multiple select').chosen({
+    width: "100%"
+  });
+
+  // Multiple select (always open)
+  // $('.chosen--multiple.chosen--open select').trigger('chosen:open');
+  // TODO: chosen:open also triggers focus - this is bad.
+
+  /*
    § Teaser templating
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   // Using Mustache - https://github.com/janl/mustache.js

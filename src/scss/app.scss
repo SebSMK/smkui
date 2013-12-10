@@ -45,9 +45,10 @@
 
 // Form elements
 // TODO: Form
-@import "components/field";     // Form field
-@import "components/typeahead"; // Typeahead - https://github.com/twitter/typeahead.js
+@import "components/field";      // Form field
+@import "components/typeahead";  // Typeahead - https://github.com/twitter/typeahead.js
 @import "components/search-box"; // Typeahead - https://github.com/twitter/typeahead.js
+@import "components/chosen";     // Chosen - http://harvesthq.github.io/chosen/
 
 // Docs.
 // These styles are for SMKUI itself and should not be included in production.
