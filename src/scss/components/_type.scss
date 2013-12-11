@@ -29,11 +29,11 @@ body {
   letter-spacing: .02em;
 
   // Decrease font sizes when the screen gets bigger
-  @media (min-width: $screen-s) { font-size: $font-size * 1.1; }
+  // @media (min-width: $screen-s) { font-size: $font-size * 1.1; }
   
   @media (min-width: $screen-m) {
-    font-size: $font-size * 1.15;
-    line-height: $line-height * 1.075;
+    font-size: 17px;
+    // line-height: $line-height * 1.075;
   }
 }
 
