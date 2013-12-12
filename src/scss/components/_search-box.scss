@@ -15,8 +15,9 @@
 
   // Submit button
   input[type="submit"] {
+    @extend .button;
     margin: 0;
-    padding-top: 0;
+    padding-top: .1em;
     padding-bottom: 0;
     position: absolute;
     top: 0;

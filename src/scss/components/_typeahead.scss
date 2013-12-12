@@ -43,11 +43,11 @@
 .tt-suggestions {
   .tt-suggestion {
     color: $gray-dark;
-    padding: .375em .55em;
+    padding: .45em .55em;
     border-bottom: 1px solid $gray-light;
 
     // Decrease the padding on larger screens.
-    @media (min-width: $screen-m) { padding: .2em .45em .225em; }
+    // @media (min-width: $screen-m) { padding: .2em .45em .225em; }
   }
 
   // Remove the border form the last suggestion
