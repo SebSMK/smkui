@@ -40,7 +40,7 @@ $(document).ready(function() {
    § Drawer
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   // Configuration
-  var drawerWidth = '15em';
+  var drawerWidth = '20em';
 
   // Show drawer
   function showDrawer() {

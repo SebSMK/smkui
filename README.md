@@ -28,6 +28,7 @@ This code is made publically available for educational and inspirational purpose
 - Tabs
 - Data pair (key + value)
 - Gallery
+- tooltip
 - Social links
 
 - include http://quojs.tapquo.com/
