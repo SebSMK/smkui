@@ -93,3 +93,8 @@ sub {
   font-size: 75%;
   bottom: -0.25em;
 }
+
+// Code (or monospaced text)
+.type--code {
+  font-family: "Courier New", Courier, monospace;
+}

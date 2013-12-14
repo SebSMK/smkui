@@ -1,0 +1,47 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ § Tabs
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*ul*/.tabs {
+  @include clearfix;
+  border-bottom: 1px solid $black;
+  margin-bottom: 2em;
+
+  // List items
+  li {
+    float: left;
+    font-size: 1.5em;
+    font-family: 'hill regular', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+
+  // Links
+  a {
+    display: inline-block;
+    padding: .4em .5em .333em;
+    color: $black;
+    white-space: nowrap;
+
+    // Meta info
+    span {
+      color: $gray-dark;
+      font-size: .7em;
+    }
+    
+    // Hover
+    &:hover,
+    &:focus {
+      background: $yellow-dim;
+      text-decoration: none;
+    }
+  }
+
+  // Active tab
+  .tab--active {
+    a {
+      background: $black;
+      color: #fff;
+    }
+  }
+}

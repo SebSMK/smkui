@@ -25,9 +25,10 @@ This code is made publically available for educational and inspirational purpose
 - <s>dropdown (chosen)</s>
 - <s>chosen (open, closed, full width, narrow)</s>
 - <s>chosen open (multiselect)</s>
-- Tabs
+- <s>Tabs</s>
 - Data pair (key + value)
 - Gallery
+
 - tooltip
 - Social links
 - refactor chosen (to select2 - test first to fix options display problem)
@@ -49,7 +50,6 @@ This code is made publically available for educational and inspirational purpose
 - Before searching.
 
 ### Design
-- Logo
-- Colors
-- Text elements
-- Copy
+- <s>Logo</s>
+- <s>Colors</s>
+- <s>Text elements</s>
