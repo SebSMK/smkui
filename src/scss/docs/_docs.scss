@@ -1,5 +1,5 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
- § Tweaks
+ § Docs
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 // Small tweaks and nudges to the docs pages.
 
@@ -45,5 +45,20 @@
   // Adding a black blackground to the MS Application Tiles on the 'logo' page.
   .ms-application-tiles {
     img { background: #000; padding: 1em; }
+  }
+}
+
+/*
+ § Colors page
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.color {
+  padding: 14px 14px 14px 2px;
+  line-height: normal;
+  background: $gray;
+  margin-bottom: .5em;
+
+  span {
+    background: #fff;
+    padding: 12px;
   }
 }

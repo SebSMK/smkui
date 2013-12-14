@@ -33,6 +33,18 @@ $(document).ready(function() {
   });
 
   /*
+   § Colors page
+  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  $(".color").each(function( index ) {
+    // Get the content of the color element
+    var colorString =  $(this).text();
+    // Extract the hex color
+    var colorMatch = colorString.match( /#([0-9a-f]{3}|[0-9a-f]{6})$/i );
+    // Apply the hex color as a css background
+    $(this).css('background-color', colorMatch[0] );
+  });
+
+  /*
    § Make entire element clickable
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   $(".clickable").click(function(){

@@ -33,7 +33,6 @@
   background-color: #fff;
   border: 1px solid $black;
   // margin-top: 5px;
-  padding-top: 1px; // Stop .tt-is-under-cursor's box-shadow from going over the border.
   @include box-shadow(0 4px 3px 0 rgba(0, 0, 0, .2));
 }
 
@@ -43,21 +42,13 @@
 .tt-suggestions {
   .tt-suggestion {
     color: $gray-dark;
-    padding: .45em .55em;
-    border-bottom: 1px solid $gray-light;
-
-    // Decrease the padding on larger screens.
-    // @media (min-width: $screen-m) { padding: .2em .45em .225em; }
+    padding: .5em .55em;
   }
-
-  // Remove the border form the last suggestion
-  .tt-suggestion:last-child { border: 0; }
 
   // Item 'under cursor' (also works for keyboard navigation)
   .tt-is-under-cursor {
     color: $black;
     background-color: $yellow-dim;
     border-color: $yellow-dim;
-    @include box-shadow(0 -1px 0 0 $yellow-dim);
   }
 }
