@@ -26,11 +26,11 @@ This code is made publically available for educational and inspirational purpose
 - <s>chosen (open, closed, full width, narrow)</s>
 - <s>chosen open (multiselect)</s>
 - <s>Tabs</s>
-- Data pair (key + value)
-- Gallery
+- <s>Data pair (key + value)</s>
 
-- tooltip
 - Social links
+- tooltip
+- Gallery
 - refactor chosen (to select2 - test first to fix options display problem)
 
 - include http://quojs.tapquo.com/
