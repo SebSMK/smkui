@@ -98,3 +98,10 @@ sub {
 .type--code {
   font-family: "Courier New", Courier, monospace;
 }
+
+// Highlighted text
+.type--highlight {
+  background: $yellow-dim;
+  padding-right: .1em;
+  padding-left: .1em;
+}
