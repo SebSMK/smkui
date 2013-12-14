@@ -30,6 +30,7 @@ This code is made publically available for educational and inspirational purpose
 - Gallery
 - tooltip
 - Social links
+- refactor chosen (to select2 - test first to fix options display problem)
 
 - include http://quojs.tapquo.com/
 - Drawer: make it work on iPhone
