@@ -3,6 +3,39 @@
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 // Small tweaks and nudges to the docs pages.
 
+/*
+ § Frontpage
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.frontpage-image {
+  position: relative;
+  margin-top: -2.5em;
+  margin-right: -7%;
+  margin-bottom: 2em;
+  margin-left: -7%;
+  
+  // Adding the semi-transparent frame.
+  &:after {
+    content: "";
+    @include box-shadow( inset 0 0 0 28px rgba(79, 131, 255, .4));
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  @media (min-width: $screen-s) {
+    // Broadening frame on larger screens
+    &:after {
+      @include box-shadow( inset 0 0 0 35px rgba(79, 131, 255, .4));
+    }
+
+    // Adjust layout on larger screens
+    margin-top: 0;  
+    margin-right: 0;  
+    margin-left: 0;  
+  }
+}
 
 /*
  § Logo page

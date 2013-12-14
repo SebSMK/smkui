@@ -124,7 +124,7 @@ module.exports = function(grunt) {
     imageoptim: {
       all: {
         options: { quitAfter: true },
-        src: ['<%= app.prod %>/images', '<%= app.prod %>/favicons']
+        src: ['<%= app.prod %>/images/**', '<%= app.prod %>/favicons']
       }
     },
 
@@ -175,7 +175,17 @@ module.exports = function(grunt) {
     copy: {
       development: {
         files: [
-          // Images.
+          // Image in root images folder (src/images)
+          {
+            expand: true,
+            flatten: true,
+            cwd: '<%= app.src %>/images/',
+            src: ['*'],
+            dest: '<%= app.dev %>/images/',
+            filter: 'isFile'
+          },
+
+          // Images in the low-res sprite folder.
           // The 'sprite' task will generate two sprites (one for both low and
           // high pixel density). This task will copy over the low density images
           // to the 'images' folder, so that IE8 has a fallback
@@ -184,15 +194,16 @@ module.exports = function(grunt) {
             expand: true,
             flatten: true,
             cwd: '<%= app.src %>/images/1x/',
-            src: ['**'],
-            dest: '<%= app.dev %>/images/'
+            src: ['*'],
+            dest: '<%= app.dev %>/images/',
+            filter: 'isFile'
           },
 
           // Artwork thumbnails
           {
             expand: true,
             cwd: '<%= app.src %>/images/artworks/',
-            src: ['**'],
+            src: ['*'],
             dest: '<%= app.dev %>/images/artworks/',
             filter: 'isFile'
           },
@@ -255,20 +266,31 @@ module.exports = function(grunt) {
 
       production: {
         files: [
-          // Images.
+          // Image in root images folder (src/images)
+          {
+            expand: true,
+            flatten: true,
+            cwd: '<%= app.src %>/images/',
+            src: ['*'],
+            dest: '<%= app.prod %>/images/',
+            filter: 'isFile'
+          },
+
+          // Images in the low-res sprite folder.
           {
             expand: true,
             flatten: true,
             cwd: '<%= app.src %>/images/1x/',
-            src: ['**'],
-            dest: '<%= app.prod %>/images/'
+            src: ['*'],
+            dest: '<%= app.prod %>/images/',
+            filter: 'isFile'
           },
 
           // Artwork thumbnails
           {
             expand: true,
             cwd: '<%= app.src %>/images/artworks/',
-            src: ['**'],
+            src: ['*'],
             dest: '<%= app.prod %>/images/artworks/',
             filter: 'isFile'
           },

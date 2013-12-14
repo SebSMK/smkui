@@ -13,6 +13,26 @@ var screenXl  = '1600px';
 $(document).ready(function() {
 
   /*
+   § Frontpage of SMKUI
+  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  // This code is not necessary for any of the SMKUI components. It it purely
+  // here to add some cosmetic niceness to the home page of SMKUI.
+
+  // Replace front page image with a desktop friendly version on larger screens.
+  enquire.register("screen and (min-width: 500px)", {
+
+      // Replace the home page image if the screen is wider than 500px.
+      match : function() {
+        $('#home img').attr('src', 'images/frontpage_desktop.jpg');
+      },
+
+      // Reverse the above action if the screen is narrower than 500px.
+      unmatch : function() {
+        $('#home img').attr('src', 'images/frontpage_mobile.jpg');
+      }
+  });
+
+  /*
    § Make entire element clickable
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   $(".clickable").click(function(){
