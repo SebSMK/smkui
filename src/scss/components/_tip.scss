@@ -1,0 +1,53 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ § Tip
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+// Selecting all elements with an attribute called 'data-tip'
+[data-tip] {
+  position: relative;
+
+  // The tooptip box
+  &:before {
+    content:attr(data-tip);
+    position:absolute;
+    @extend .type--small;
+    bottom: 2.5em;
+    left: -9999px;
+    width: 16em;
+    padding:.75em 1em 1em;
+    background: $black;
+    color: #fff;
+    z-index:99;
+    word-wrap:normal;
+    opacity: 0;
+    @include transition(opacity $time-m ease);
+    text-decoration: none;
+    text-indent: 0;
+  }
+  
+  // Adding the triangle
+  &:after {
+    content: "";
+    position: absolute;
+    left: -9999px;
+    bottom: 2.5em;
+    margin-bottom: -12px;
+    @include image-replacement($triangle_down);
+    opacity: 0;
+    @include transition(opacity $time-m ease);
+  }
+
+  // Show on hover
+  &:hover {
+    &:before {
+      opacity: 1;
+      left: -1em;
+      text-decoration: none;
+    }
+
+   &:after {
+    opacity: 1;
+    left: 0;
+   }
+  } // hover
+} // [data-tip]

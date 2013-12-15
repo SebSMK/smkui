@@ -1,0 +1,24 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ § Cutoff
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*div*/.cutoff {
+  max-height: 150px;
+  overflow: hidden;
+  border-bottom: 1px solid red;
+  position: relative;
+  margin-bottom: 2em;
+  @include transition(all $time-m linear);
+}
+
+
+// Show more link
+// This eleement is being generated with js (see app.js)
+.cutoff__show-more {
+  position: absolute;
+  background: red;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+
+}

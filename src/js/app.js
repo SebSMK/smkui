@@ -54,6 +54,25 @@ $(document).ready(function() {
   });
 
   /*
+   § Cutoff
+  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  // This script is used together with src/scss/components/_cufoff.scss to cut
+  // of large chunks of text.
+
+  // Add the 'Show more' link
+  $('.cutoff__show-more').click( function(e) {
+
+    e.preventDefault();
+
+    // Show the entire content
+    $(this).parent('.cutoff').css('max-height', '9999px');
+    $(this).parent('.cutoff').css('padding-bottom', $(this).outerHeight() + 10);
+  });
+
+  // Show more when clicking the 'Show more' link
+
+
+  /*
    § Add the class 'current' to links that point to the current url.
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   // Get the current url.

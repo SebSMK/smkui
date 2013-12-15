@@ -28,8 +28,9 @@ This code is made publically available for educational and inspirational purpose
 - <s>Tabs</s>
 - <s>Data pair (key + value)</s>
 
-- Social links
-- tooltip
+- <s>Social links</s>
+- <s>tooltip</s>
+- show more 
 - Gallery
 - refactor chosen (to select2 - test first to fix options display problem)
 
