@@ -32,15 +32,6 @@ This code is made publically available for educational and inspirational purpose
 - <s>tooltip</s>
 - show more 
 - Gallery
-- refactor chosen (to select2 - test first to fix options display problem)
-
-- include http://quojs.tapquo.com/
-- Drawer: make it work on iPhone
-- Drawer: Close when touching page
-- Drawer: open/close on swipe
-
-- BUG: mustache: clickable not working.
-- BUG: chosen:open also triggers focus - this is bad.
 
 ### Views
 - Grid (Filters on top)
