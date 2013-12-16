@@ -19,7 +19,7 @@ title:    Teasers
 
     <script id="teaserGridTemplate" type="text/template">
       \{{#artworks}}
-        <article class="teaser--grid clickable">
+        <article class="teaser--grid">
           <div class="teaser__wrapper">
             <div class="teaser__thumbnail">
               <a href="\{{url}}" alt="\{{title}}">
@@ -29,9 +29,11 @@ title:    Teasers
             
             <div class="teaser__content">
               <ul class="teaser__category">
-                <li><a href="http://stackoverflow.com/">Category 1</a></li>
-                <li><a href="http://meta.stackoverflow.com/">Category 2</a></li>
-                <li>What up?</li>
+                \{{#categories}}
+                  <li>
+                    <a href="\{{url}}">\{{name}}</a>
+                  </li>
+                \{{/categories}}
               </ul>
               
               <h3 class="teaser__heading">
@@ -43,50 +45,15 @@ title:    Teasers
               </div>
 
               <ul class="teaser__meta">
-                <li><span>Label1</span> Value1</li>
-                <li><span>Label2</span> Value2</li>
-                <li><span>Label3</span> Value3</li>
+                \{{#meta}}
+                  <li><span>\{{key}}</span> \{{value}}</li>
+                \{{/meta}}
               </ul>
             </div><!-- teaser__content -->
           </div><!-- teaser__wrapper -->
         </article><!-- teaser -->      
       \{{/artworks}}
     </script>
-
-    <article class="teaser--grid clickable">
-      <div class="teaser__wrapper">
-        <div class="teaser__thumbnail">
-          <a href="#" alt="">
-            <img src="/images/artworks/a_w320.jpg" alt="">
-          </a>
-        </div>
-        
-        <div class="teaser__content">
-          <ul class="teaser__category">
-            <li><a href="http://stackoverflow.com/">Category 1</a></li>
-            <li><a href="http://meta.stackoverflow.com/">Category 2</a></li>
-            <li>What up?</li>
-          </ul>
-          
-          <h3 class="teaser__heading">
-            <a href="#" alt="">
-              This is a great piece of art
-            </a>
-          </h3>
-
-          <div class="teaser__description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, voluptate, ullam, accusamus praesentium expedita blanditiis ipsam...
-          </div>
-
-          <ul class="teaser__meta">
-            <li><span>Label1</span> Value1</li>
-            <li><span>Label2</span> Value2</li>
-            <li><span>Label3</span> Value3</li>
-          </ul>
-        </div><!-- teaser__content -->
-      </div><!-- teaser__wrapper -->
-    </article><!-- teaser -->
-
   </div><!-- subsection -->
 
   <div class="subsection">
