@@ -133,7 +133,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   padding: 0;
-  max-height: 240px;
+  max-height: 164px;
   -webkit-overflow-scrolling: touch;
 }
 .chosen-container .chosen-results li {
@@ -188,8 +188,8 @@
     speak: none;
     @include image-replacement($search);
     position: absolute;
-    top: .5em;
-    right: .55em;
+    top: .55em;
+    right: .65em;
     opacity: .3;
   }
 }
@@ -307,6 +307,6 @@
     @include box-shadow(none);
     z-index: 1000;
 
-    .chosen-results { height: 240px; }
+    .chosen-results { height: 164px; }
   }
 }

@@ -26,7 +26,7 @@
     }
 
     .teaser__heading a {
-      color: $black;  
+      color: $black;
     }
   }
 }
@@ -47,7 +47,7 @@
   @extend .type--small;
   color: $gray-dark;
   text-transform: uppercase;
-  margin-bottom: .25em;
+  margin-bottom: .75em;
 
   li {
     display: inline-block;
@@ -75,11 +75,12 @@
 // Title
 .teaser__heading {
   @extend .type--bold;
+  margin-bottom: .5em;
 }
 
 // Description 
 .teaser__description {
-  // ...
+  margin-bottom: .5em;
 }
 
 // Meta-information

@@ -141,9 +141,33 @@ $(document).ready(function() {
     width: "100%"
   });
 
-  // Multiple select (always open)
-  // $('.chosen--multiple.chosen--open select').trigger('chosen:open');
-  // TODO: chosen:open also triggers focus - this is bad.
+  // Multiple select (always open).
+  $('.chosen--multiple.chosen--open').each( function() {
+    
+    // This 'fix' allows the user to see the select options before he has
+    // interacted with the select box.
+    // 
+    // Chosen do not show the contents of the select boxes by default, so we
+    // have to show them ourselves. In the code below we loop through the options
+    // in the select boxes, adds these to an array, and append each array item
+    // to the <ul> called .chosen-results. Chosen uses .chosen-results to show
+    // the options.
+
+    var chosenResults = $(this).find('.chosen-results');
+    var selectOptions = [];
+    
+    // Put all select options in an array
+    $(this).find('select option').each( function() {
+      selectOptions.push( $(this).text() );
+    });
+
+    // For each item in the array, append a <li> to .chosen-results
+    $.each(selectOptions, function(i, val) {
+      if(this != "") {
+        chosenResults.append('<li class="active-result" data-option-array-index="' + i + '">' + this + '</li>');
+      }
+    });
+  });
 
   /*
    § Teaser templating
