@@ -1,17 +1,29 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § Teaser
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#container {
+  margin-right: -1.6%;
+  margin-left: -1.6%;
+}
 
 /*
  § Grid layout (default)
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+// Container required by Masonry (see http://masonry.desandro.com/)
+#teaser-container-grid {
+  margin-right: -1.6%;
+  margin-left: -1.6%;  
+}
+
 // Layout
 .teaser,
 .teaser--grid {
-  width: 100%;
+  width: 30.12%;
   border-bottom: 2px solid $black;
   padding-bottom: 1.35em;
+  margin-right: 1.6%;
+  margin-left: 1.6%;
   margin-bottom: 1.35em;
   position: relative;
 
@@ -29,10 +41,7 @@
       // color: $black;
     }
   }
-
-  // Hide empty elements
-  & ul:empty { display: none; }
-}
+} // teaser--grid
 
 // Inner wrapper
 .teaser__wrapper {

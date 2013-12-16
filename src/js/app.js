@@ -170,20 +170,23 @@ $(document).ready(function() {
   });
 
   /*
-   § Teaser templating
+   § Rendering artworks
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  // Using Mustache - https://github.com/janl/mustache.js
+  // Using Mustache for templating - https://github.com/janl/mustache.js
+  // and Masonry for layout - http://masonry.desandro.com/
 
   // Get data and populate template (see src/templates/pages/teasers.hbs)
-  function getSearchResults() {
+  function renderArtworks() {
     $.getJSON('../db/artworks_1.json', function(data) {
       var template = $('#teaserGridTemplate').html();
       var html = Mustache.to_html(template, data);
-      $('#teasersGrid').html(html);
+
+      $('#teaser-container-grid').html(html);
     });
   }
 
-  getSearchResults();
+  renderArtworks();
+  // $('#teaser-container-grid').masonry();
 
   /*
    § Typeahead demo page
