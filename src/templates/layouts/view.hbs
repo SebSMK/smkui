@@ -16,10 +16,7 @@
     {{> ie_fixes }}
   </head>
   <body>
-
-    {{> view_header }}
-
-    <section role="main" class="section--main">
+    <div class="container">
       <!--[if lt IE 8]>
         <div class="browsehappy">
           <div class="browsehappy-inner">
@@ -27,11 +24,16 @@
           </div>
         </div>
       <![endif]-->
-          
-      {{> body }}
-    </section>
 
-    {{> view_footer }}
+      {{> view_header }}
+      {{> view_search_form }}
+
+      <section role="main" class="section--main">
+        {{> body }}
+      </section>
+
+      {{> view_footer }}
+    </div><!-- container -->
 
     {{> scripts }}
 

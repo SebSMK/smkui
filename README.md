@@ -14,24 +14,8 @@ Before diving into SMKUI to make changes or optimizations, you should be comfort
 This code is made publically available for educational and inspirational purposes only. While you are free to download, modify, and play around with the entire codebase it remains the intellectual property of [The National Gallery of Denmark](http://smk.dk/en). Note that the open source projects used in this project (like Grunt, Bower etc.) all fall under other usage licenses.
 
 ## Todos
-
-### Components
-- <s>Buttons (small, medium, large, Get more results)</s>
-- <s>Search field (with suggestions...)</s>
-- <s>teaser (grid)</s>
-- <s>teaser (list)</s>
-- <s>make grid and list teasers clickable</s>
-
-- <s>dropdown (chosen)</s>
-- <s>chosen (open, closed, full width, narrow)</s>
-- <s>chosen open (multiselect)</s>
-- <s>Tabs</s>
-- <s>Data pair (key + value)</s>
-
-- <s>Social links</s>
-- <s>tooltip</s>
-- show more 
-- Gallery
+- subtle chosen (for 'sort by')
+- view icons (grid, list, images only)
 
 ### Views
 - Grid (Filters in left column)

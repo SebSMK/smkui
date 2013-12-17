@@ -40,7 +40,7 @@
   // Show on hover
   &:hover {
     &:before {
-      opacity: 1;
+      opacity: 1 !important;
       left: -1em;
       text-decoration: none;
     }

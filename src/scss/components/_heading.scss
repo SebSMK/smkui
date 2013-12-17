@@ -68,3 +68,9 @@ $font-family-heading: 'hill bold', sans-serif;
   text-transform: uppercase;
   margin-bottom: 1em;
 }
+
+.heading--widget {
+  @extend .heading--section;
+  border: 0;
+  margin-bottom: .25em;
+}

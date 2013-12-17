@@ -6,6 +6,7 @@
   @include clearfix;
   border-bottom: 1px solid $black;
   margin-bottom: 2em;
+  position: relative;
 
   // List items
   li {
@@ -44,4 +45,16 @@
       color: #fff;
     }
   }
-}
+
+  /*
+   § Right aligned tabs item
+  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  /*li*/.tabs__right {
+    font-size: $font-size;
+    position: absolute;
+    right: 0;
+    bottom: .7em;
+    text-transform: none;
+    font-family: sans-serif;
+  }
+} // tabs
