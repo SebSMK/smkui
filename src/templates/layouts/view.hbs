@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="view">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,8 @@
     {{> ie_fixes }}
   </head>
   <body>
-    {{> header }}
+
+    {{> view_header }}
 
     <section role="main" class="section--main">
       <!--[if lt IE 8]>
@@ -30,9 +31,7 @@
       {{> body }}
     </section>
 
-    {{> footer}}
-
-    {{> drawer }}
+    {{> view_footer }}
 
     {{> scripts }}
 
