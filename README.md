@@ -15,7 +15,9 @@ This code is made publically available for educational and inspirational purpose
 
 ## Todos
 - subtle chosen (for 'sort by')
-- view icons (grid, list, images only)
+- view icons: set/get url parameter and change to list view
+- Get more button (at the end of search results)
+- copyright notice for images on single view
 
 ### Views
 - Grid (Filters in left column)
