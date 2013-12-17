@@ -1,4 +1,29 @@
 /*
+ § Rendering artworks
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// Using Mustache for templating - https://github.com/janl/mustache.js
+// and Masonry for layout - http://masonry.desandro.com/
+
+// Get data and populate template (see src/templates/pages/teasers.hbs)
+function renderArtworks() {
+  $.getJSON('../db/artworks_1.json', function(data) {
+    var template = $('#teaserGridTemplate').html();
+    var html = Mustache.to_html(template, data);
+    $('#teaser-container-grid').html(html);
+  });
+}
+
+renderArtworks();
+
+// Initialize Masonry.
+$(window).load(function() {
+  // Executes when complete page is fully loaded, including all frames, objects
+  // and images. This ensures that Masonry knows about elements heights and can
+  // do its layouting properly.
+  $('#teaser-container-grid').masonry();
+});
+
+/*
  § Screen widths
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 // These corresponds to the variables set in /scss/_settings.scss
@@ -11,6 +36,7 @@ var screenXl  = '1600px';
 // When the DOM is ready do this...
 // http://api.jquery.com/ready/
 $(document).ready(function() {
+  $('#teaser-container-grid').masonry();
 
   /*
    § Frontpage of SMKUI
@@ -168,25 +194,6 @@ $(document).ready(function() {
       }
     });
   });
-
-  /*
-   § Rendering artworks
-  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  // Using Mustache for templating - https://github.com/janl/mustache.js
-  // and Masonry for layout - http://masonry.desandro.com/
-
-  // Get data and populate template (see src/templates/pages/teasers.hbs)
-  function renderArtworks() {
-    $.getJSON('../db/artworks_1.json', function(data) {
-      var template = $('#teaserGridTemplate').html();
-      var html = Mustache.to_html(template, data);
-
-      $('#teaser-container-grid').html(html);
-    });
-  }
-
-  renderArtworks();
-  // $('#teaser-container-grid').masonry();
 
   /*
    § Typeahead demo page

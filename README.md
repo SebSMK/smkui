@@ -34,7 +34,6 @@ This code is made publically available for educational and inspirational purpose
 - Gallery
 
 ### Views
-- Grid (Filters on top)
 - Grid (Filters in left column)
 - List
 - Single
