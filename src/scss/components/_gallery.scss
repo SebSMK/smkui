@@ -1,0 +1,32 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ § Gallery
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// Image gallery.
+
+.gallery {
+  @include clearfix;
+  width: 400px;
+}
+
+// Thumbnails
+.gallery__thumbnails {
+  a {
+    display: block;
+    width: 25%;
+    float: left;
+
+    img {
+      opacity: .5;
+    }
+
+    &:hover,
+    &:focus {
+      img { opacity: .6; }      
+    }
+    
+    // Current thumbnail being viewed
+    &.current {
+      img { opacity: 1; }
+    }  
+  }
+}

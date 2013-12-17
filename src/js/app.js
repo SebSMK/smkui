@@ -73,11 +73,52 @@ $(document).ready(function() {
   /*
    § Make entire element clickable
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  $(".clickable").click(function(){
-    window.location=$(this).find("a").attr("href");
-  }).children("a").click(function(e) {
-    return false;
+  // $(".clickable").click(function(){
+  //   window.location=$(this).find("a").attr("href");
+  // }).children("a").click(function(e) {
+  //   return false;
+  // });
+
+
+  /*
+   § Gallery
+  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  // See src/scss/components/_gallery.scss and src/templates/pages/gallery.hbs
+  // for reference.
+
+  // Set current thumbnail by adding a class to the currently viewed thumbnail.
+  function setCurrentGalleryThumbnail() {
+    var galleryMainImageUrl = $('.gallery__main img').attr('src');
+
+    $('.gallery__thumbnails a').each( function() {
+      // First, remove all previously added 'current' classes
+      $(this).removeClass('current');
+
+      if( $(this).attr('href') == galleryMainImageUrl ) {
+        $(this).addClass('current');
+      }
+    });
+  }
+
+  // Initialize
+  setCurrentGalleryThumbnail();
+
+  // When the user clicks a thumbnail
+  $('.gallery__thumbnails a').click( function(e) {
+    // Prevent the browser from direction away from the page
+    e.preventDefault();
+
+    // Get the href of the wrapping <a> tag
+    var galleryThumbnailUrl = $(this).attr('href');
+    
+
+    // Replace the main image src with the galleryImageUrl
+    $('.gallery__main img').attr('src', galleryThumbnailUrl);
+
+    // Set current thumbnail.
+    setCurrentGalleryThumbnail();
   });
+
 
   /*
    § Cutoff
