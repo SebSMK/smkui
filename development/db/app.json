@@ -1,0 +1,31 @@
+{
+  "name": "SMKUI",
+  "repo": "https://github.com/jacquesmourier/smkui",
+
+  "src": "src",
+  "dev": "development",
+  "prod": "production",
+
+  "owner": "The National Gallery of Denmark",
+  "owner_url": "http://smk.dk/en",
+  
+  "contributors": [
+    {
+      "name": "Sébastien Brossard",
+      "title": "Development",
+      "url": ""
+    },
+    {
+      "name": "Jacques Mourier",
+      "title": "Frontend development",
+      "url": ""
+    },
+    {
+      "name": "Thorbjørn Wulff",
+      "title": "System administration",
+      "url": ""
+    }
+  ],
+
+  "faviconVersion": "1"
+}

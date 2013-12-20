@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SMKUI</title>
+    <meta name="description" content="Etiquette is a toolbox for creating frontend libraries.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=1" />
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=1" />
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=1" />
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=1" />
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=1" />
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=1" />
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=1" />
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=1" />
+<link rel="icon" type="image/png" href="/favicon-96x96.png?v=1" sizes="96x96" />
+<link rel="icon" type="image/png" href="/favicon-160x160.png?v=1" sizes="160x160" />
+<meta name="msapplication-TileColor" content="#000000" />
+<meta name="msapplication-TileImage" content="/mstile-144x144.png?v=1" />
+<meta name="msapplication-square70x70logo" content="/mstile-70x70.png?v=1" />
+<meta name="msapplication-square150x150logo" content="/mstile-150x150.png?v=1" />
+<meta name="msapplication-wide310x150logo" content="/mstile-310x150.png?v=1" />
+<meta name="msapplication-square310x310logo" content="/mstile-310x310.png?v=1" />
+
+    <!-- Handling IE inadequacies -->
+    <!-- Handling IE inadequacies -->
+
+<!--[if lt IE 9]>
+  <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+  <script>window.IE7 || document.write('<script src="js/vendor/ie9.min.js">\x3C/script>')</script>
+
+  <link rel="stylesheet" href="css/ie8.css">
+<![endif]-->
+
+<!--[if lt IE 8]>
+  <link rel="stylesheet" href="css/browsehappy.css">
+<![endif]-->
+
+<!-- If less than IE10 -->
+<!--[if IE]>
+  <script src="js/vendor/media.match.min.js"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.min.js"></script>
+  <script>window.respond || document.write('<script src="js/vendor/respond.min.js">\x3C/script>')</script>
+<![endif]-->
+
+
+  </head>
+  <body>
+    <header class="header main-header">
+  <section>
+    <h3><a class="smkui-logo" alt="SMKUI" href="/">SMKUI</a></h3>
+  </section>
+</header>
+
+    <section role="main" class="section--main">
+      <!--[if lt IE 8]>
+        <div class="browsehappy">
+          <div class="browsehappy-inner">
+            <p>You are using an <strong>outdated</strong> browser. You can <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+          </div>
+        </div>
+      <![endif]-->
+          
+      
+
+<article id="search_box" class="article article--search_box">
+  <header>
+    <h1 class="heading--l">Search box</h1>
+    <p class="lead">The search box uses Twitter's <a href="https://github.com/twitter/typeahead.js">Typeahead</a> for autocompletion. Autocompetion fields are also available as a <a href="/typeahead.html">standalone component</a>.</p>
+  </header>
+
+  <div class="subsection">
+    <h2 class="heading">A search box</h2>
+    <p>Start typing in the field to try out the autocompletion. Be default the search box will take up the entire width of its parent element.</p>
+
+    <!-- Search box -->
+    <form role="search" method="get" class="search-box" action="">
+      <label for="search">Search for</label>
+      <input class="typeahead field" type="text" value="" name="search" id="search" placeholder="Search for anything..." autocomplete="off" spellcheck="false" dir="auto" />
+      <input class="button" type="submit" value="Search" />
+    </form>
+
+  </div><!-- subsection -->
+
+</article>
+
+    </section>
+
+    <footer class="main-footer">
+  <section role="contentinfo">
+    <p class="copyright">Copyright <a href="http://smk.dk/en" alt="The National Gallery of Denmark">The National Gallery of Denmark</a></p>
+  </section>
+</footer>
+
+    <div class="drawer drawer--inverse">
+
+  <!-- Pages -->
+  <nav>
+    <a href="/">Home</a>
+  </nav>
+
+  <!-- Components -->
+    <h3 class="heading">Components</h3>
+    <nav>
+      
+        
+          <a href="/search_box.html">Search box</a>
+        
+      
+        
+          <a href="/buttons.html">Buttons</a>
+        
+      
+        
+      
+        
+          <a href="/cutoff.html">Cutoff</a>
+        
+      
+        
+          <a href="/data_pair.html">Data pair</a>
+        
+      
+        
+      
+        
+      
+        
+          <a href="/chosen.html">Chosen</a>
+        
+      
+        
+          <a href="/sharing.html">Sharing</a>
+        
+      
+        
+          <a href="/tabs.html">Tabs</a>
+        
+      
+        
+          <a href="/teasers.html">Teasers</a>
+        
+      
+        
+      
+        
+          <a href="/tips.html">Tips</a>
+        
+      
+        
+          <a href="/typeahead.html">Typeahead</a>
+        
+      
+        
+      
+    </nav>
+
+  <!-- Design -->
+    <h3 class="heading">Design</h3>
+    <nav>
+      
+        
+      
+        
+      
+        
+          <a href="/colors.html">Colors</a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <a href="/logo.html">Logo</a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <a href="/text_elements.html">Text elements</a>
+        
+      
+        
+      
+        
+      
+        
+      
+    </nav>
+
+  <!-- Views -->
+    <h3 class="heading">Views</h3>
+    <nav>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <a href="/view_search_results.html">Search Results</a>
+        
+      
+    </nav>
+
+    <!-- Fetch jQuery from CDN -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- If the CDN id down, fetch a local copy of jQuery -->
+<script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js">\x3C/script>')</script>
+
+<!-- Load app javascript (initializers, configuration and custom code) -->
+<script src="js/app.min.js"></script>
+
+<!-- Add placeholder functionality to form fiels in lt IE10 (try fetching through CDN and fall back to local version if unsuccessful) -->
+<!--[if IE]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-placeholder/2.0.7/jquery.placeholder.min.js"></script>
+  <script>window.IE7 || document.write('<script src="js/vendor/jquery.placeholder.min.js">\x3C/script>')</script>
+
+  <script>
+    // Initalize jQuery placeholder polyfill
+    $('input, textarea').placeholder();
+  </script>
+
+  <style>
+    /* Adding styles for jQuery placeholder polyfill */
+    .placeholder { color: #919191; }
+  </style>
+<![endif]-->
+
+
+    <script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+  </body>
+</html>
