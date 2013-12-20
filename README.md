@@ -17,7 +17,8 @@ This code is made publically available for educational and inspirational purpose
 - subtle chosen (for 'sort by')
 - view icons: set/get url parameter and change to list view
 - Get more button (at the end of search results)
-- copyright notice for images on single view
+- Copyright notice for images on single view
+- Cutoff (show more text)
 
 ### Views
 - Grid (Filters in left column)

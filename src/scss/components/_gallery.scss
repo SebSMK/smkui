@@ -5,15 +5,19 @@
 
 .gallery {
   @include clearfix;
-  width: 400px;
+  width: 300px;
 }
 
 // Thumbnails
 .gallery__thumbnails {
+  margin-right: -2%;
+  margin-left: -2%;
+
   a {
     display: block;
-    width: 25%;
+    width: 21%;
     float: left;
+    margin: 4% 2% 0;
 
     img {
       opacity: .5;

@@ -23,6 +23,7 @@ $drawer-width: 20em;
   left: -$drawer-width; // Hide the drawer.
   width: $drawer-width;
   @include transition (all $time-s ease-in-out);
+  overflow: scroll;
 
   // Headings
   .heading {

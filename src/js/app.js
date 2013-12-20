@@ -36,7 +36,7 @@ var screenXl  = '1600px';
 // When the DOM is ready do this...
 // http://api.jquery.com/ready/
 $(document).ready(function() {
-  $('#teaser-container-grid').masonry();
+  // $('#teaser-container-grid').masonry();
 
   /*
    § Frontpage of SMKUI

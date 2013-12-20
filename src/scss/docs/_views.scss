@@ -88,4 +88,53 @@
     }
   }
 
+  /*
+   § Artwork (single view)
+  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  // Artwork media
+  #media-container {
+    width: 418px;
+    float: left;
+
+    .gallery {
+      width: 418px;
+      
+      // Overriding the default gallery layout to adjust to smk.dk's
+      // desktop-first design.
+      .gallery__thumbnails {
+        margin-right: -6px;
+        margin-left: -6px;
+
+        a {
+          width: 95.5px;
+          margin: 12px 6px 0;
+        }
+      } // gallery__thumbnails
+    } // gallery
+  } // #media-container
+
+  // Artwork information
+  #info-container {
+    width: 418px;
+    float: right;
+
+    // Adding space to clear the heading
+    .sharing--iconified { margin-bottom: 1.5em; }
+    .data-pairs { margin-top: 2em; }
+  }
+
+  #related-artworks {
+    clear: both;
+
+    > [class*="heading"] {
+      padding-top: 2em;
+    }
+
+    #teaser-container-grid {
+      margin-top: 0;
+      width: 882px;
+      float: none;
+    }
+  }
+
 } // view
