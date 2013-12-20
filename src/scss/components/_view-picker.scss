@@ -1,0 +1,39 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ § View picker
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// An iconified radio button group to set the view style.
+
+.view-picker {
+  @include clearfix;
+
+  input[type="radio"] {
+    opacity: .3;
+    @include image-replacement($grid);
+    display: block;
+    float: left;
+    margin-right: .65em;
+
+    // Hover state
+    &:hover,
+    &:focus {
+      opacity: .4;
+      outline: none;   
+    }
+  }
+
+  // List
+  input[value="list"] {
+    @include image-replacement($list);
+  }
+  
+  // Images only
+  input[value="image"] {
+    @include image-replacement($image);
+  }
+
+
+  // When checked
+  input[type="radio"]:checked {
+    opacity: 1;
+  }
+}

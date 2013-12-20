@@ -8,7 +8,7 @@
 /*
  § Configuration
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-$drawer-width: 15em;
+$drawer-width: 20em;
 
 /*
  § Looks
@@ -23,6 +23,7 @@ $drawer-width: 15em;
   left: -$drawer-width; // Hide the drawer.
   width: $drawer-width;
   @include transition (all $time-s ease-in-out);
+  overflow: scroll;
 
   // Headings
   .heading {
@@ -40,6 +41,8 @@ $drawer-width: 15em;
 
     // Links
     a {
+      font-family: 'hill regular', sans-serif;
+      font-size: 1.5em;
       display: block;
       padding-right: 8%;
       padding-top: 0.085em;
@@ -60,7 +63,7 @@ $drawer-width: 15em;
       // Current link
       &.current {
         color: $black;
-        background: $gray-light;
+        background: $gray;
       }
     } // a
   } // nav

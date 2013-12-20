@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="view">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{app.name}}</title>
+    <meta name="description" content="Etiquette is a toolbox for creating frontend libraries.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="css/app.css">
+
+    {{> favicons }}
+
+    <!-- Handling IE inadequacies -->
+    {{> ie_fixes }}
+  </head>
+  <body>
+    <div class="container">
+      <!--[if lt IE 8]>
+        <div class="browsehappy">
+          <div class="browsehappy-inner">
+            <p>You are using an <strong>outdated</strong> browser. You can <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+          </div>
+        </div>
+      <![endif]-->
+
+      {{> view_header }}
+      {{> view_search_form }}
+
+      <section role="main" class="section--main">
+        {{> body }}
+      </section>
+
+      {{> view_footer }}
+    </div><!-- container -->
+
+    {{> scripts }}
+
+    {{> google_analytics }}
+  </body>
+</html>

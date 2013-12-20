@@ -26,19 +26,19 @@ $font-family-heading: 'hill bold', sans-serif;
 // Small
 .heading--s {
   @extend .heading;
-  font-size: 1em;
+  font-size: 1.25em;
 }
 
 // Medium
 .heading--m {
   @extend .heading;
-  font-size: 1.25em;
+  font-size: 1.75em;
 }
 
 // Large
 .heading--l {
   @extend .heading;
-  font-size: 2.1em;
+  font-size: 2.75em;
   margin-bottom: .5em;
   letter-spacing: -.01em;
 }
@@ -61,10 +61,16 @@ $font-family-heading: 'hill bold', sans-serif;
 // Heading for sections.
 .heading--section {
   @extend .heading;
+  font-size: 1.1em;
   @extend .heading--bordered; // Add bottom border.
-  font-size: .75em;
   font-weight: normal;
   letter-spacing: .075em;
   text-transform: uppercase;
   margin-bottom: 1em;
+}
+
+.heading--widget {
+  @extend .heading--section;
+  border: 0;
+  margin-bottom: .25em;
 }

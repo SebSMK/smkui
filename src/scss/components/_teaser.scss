@@ -6,13 +6,21 @@
  § Grid layout (default)
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+// Container required by Masonry (see http://masonry.desandro.com/)
+#teaser-container-grid {
+  margin-right: -1.6%;
+  margin-left: -1.6%;  
+}
+
 // Layout
 .teaser,
 .teaser--grid {
-  width: 100%;
+  width: 30.12%;
   border-bottom: 2px solid $black;
-  padding-bottom: .75em;
-  margin-bottom: 1em;
+  padding-bottom: 1.35em;
+  margin-right: 1.6%;
+  margin-left: 1.6%;
+  margin-bottom: 1.35em;
   position: relative;
 
   // Hover styles
@@ -20,16 +28,16 @@
   &.clickable:focus {
 
     .teaser__wrapper {
-      cursor: pointer;
-      background: $yellow-dim;
-      @include box-shadow(0 0 0 7px $yellow-dim);
+      // cursor: pointer;
+      // background: $yellow-dim;
+      // @include box-shadow(0 0 0 7px $yellow-dim);
     }
 
     .teaser__heading a {
-      color: $black;  
+      // color: $black;
     }
   }
-}
+} // teaser--grid
 
 // Inner wrapper
 .teaser__wrapper {
@@ -39,7 +47,13 @@
 
 // Thumbnail
 .teaser__thumbnail {
-  margin-bottom: .75em;
+  margin-bottom: 1.5em;
+  @include transition(all $time-s ease-in-out);
+
+  &:hover,
+  &:focus {
+    opacity: .85;
+  }
 }
 
 // Category
@@ -47,7 +61,7 @@
   @extend .type--small;
   color: $gray-dark;
   text-transform: uppercase;
-  margin-bottom: .25em;
+  margin-bottom: .5em;
 
   li {
     display: inline-block;
@@ -75,11 +89,12 @@
 // Title
 .teaser__heading {
   @extend .type--bold;
+  margin-bottom: .5em;
 }
 
 // Description 
 .teaser__description {
-  // ...
+  margin-bottom: 1em;
 }
 
 // Meta-information

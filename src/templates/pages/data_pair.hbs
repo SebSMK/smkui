@@ -1,0 +1,60 @@
+---
+slug:     data_pair
+category: components
+title:    Data pair
+---
+
+<article id="{{slug}}" class="article article--{{slug}}">
+  <header>
+    <h1 class="heading--l">{{title}}</h1>
+    <p class="lead">A simple component that diplays key/value pairs using a label for the key and a content area for the value.</p>
+  </header>
+  
+  <div class="subsection">
+    <h2 class="heading">Default look</h2>
+
+    <div class="data-pair">
+      <div class="data-pair__key">
+        This is the key
+      </div>
+      <div class="data-pair__value">
+        This is the value
+      </div>
+    </div>
+  </div><!-- subsection -->
+
+  <div class="subsection">
+    <h2 class="heading">Different types of values</h2>
+
+    <!-- Simple data -->
+    <div class="data-pair">
+      <div class="data-pair__key">
+        Serial ID
+      </div>
+      <div class="data-pair__value type--code">
+        83JFHW678J11
+      </div>
+    </div>
+
+    <!-- With links -->
+    <div class="data-pair">
+      <div class="data-pair__key">
+        Some links
+      </div>
+      <div class="data-pair__value">
+        You can go <a href="#">here</a> and check out <a href="#">this</a>.
+      </div>
+    </div>
+
+    <!-- Long text -->
+    <div class="data-pair">
+      <div class="data-pair__key">
+        The picture of Dorian Gray
+      </div>
+      <div class="data-pair__value">
+        The studio was filled with the rich odour of roses, and when the light summer wind stirred amidst the trees of the garden, there came through the open door the heavy scent of the lilac, or the more delicate perfume of the pink-flowering thorn.
+      </div>
+    </div>
+
+  </div><!-- subsection -->
+</article>

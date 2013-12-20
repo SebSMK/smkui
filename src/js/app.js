@@ -1,4 +1,29 @@
 /*
+ § Rendering artworks
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// Using Mustache for templating - https://github.com/janl/mustache.js
+// and Masonry for layout - http://masonry.desandro.com/
+
+// Get data and populate template (see src/templates/pages/teasers.hbs)
+function renderArtworks() {
+  $.getJSON('../db/artworks_1.json', function(data) {
+    var template = $('#teaserGridTemplate').html();
+    var html = Mustache.to_html(template, data);
+    $('#teaser-container-grid').html(html);
+  });
+}
+
+renderArtworks();
+
+// Initialize Masonry.
+$(window).load(function() {
+  // Executes when complete page is fully loaded, including all frames, objects
+  // and images. This ensures that Masonry knows about elements heights and can
+  // do its layouting properly.
+  $('#teaser-container-grid').masonry();
+});
+
+/*
  § Screen widths
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 // These corresponds to the variables set in /scss/_settings.scss
@@ -11,15 +36,108 @@ var screenXl  = '1600px';
 // When the DOM is ready do this...
 // http://api.jquery.com/ready/
 $(document).ready(function() {
+  // $('#teaser-container-grid').masonry();
+
+  /*
+   § Frontpage of SMKUI
+  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  // This code is not necessary for any of the SMKUI components. It it purely
+  // here to add some cosmetic niceness to the home page of SMKUI.
+
+  // Replace front page image with a desktop friendly version on larger screens.
+  enquire.register("screen and (min-width: 500px)", {
+
+      // Replace the home page image if the screen is wider than 500px.
+      match : function() {
+        $('#home img').attr('src', 'images/frontpage_desktop.jpg');
+      },
+
+      // Reverse the above action if the screen is narrower than 500px.
+      unmatch : function() {
+        $('#home img').attr('src', 'images/frontpage_mobile.jpg');
+      }
+  });
+
+  /*
+   § Colors page
+  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  $(".color").each(function( index ) {
+    // Get the content of the color element
+    var colorString =  $(this).text();
+    // Extract the hex color
+    var colorMatch = colorString.match( /#([0-9a-f]{3}|[0-9a-f]{6})$/i );
+    // Apply the hex color as a css background
+    $(this).css('background-color', colorMatch[0] );
+  });
 
   /*
    § Make entire element clickable
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  $(".clickable").click(function(){
-    window.location=$(this).find("a").attr("href");
-  }).children("a").click(function(e) {
-    return false;
+  // $(".clickable").click(function(){
+  //   window.location=$(this).find("a").attr("href");
+  // }).children("a").click(function(e) {
+  //   return false;
+  // });
+
+
+  /*
+   § Gallery
+  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  // See src/scss/components/_gallery.scss and src/templates/pages/gallery.hbs
+  // for reference.
+
+  // Set current thumbnail by adding a class to the currently viewed thumbnail.
+  function setCurrentGalleryThumbnail() {
+    var galleryMainImageUrl = $('.gallery__main img').attr('src');
+
+    $('.gallery__thumbnails a').each( function() {
+      // First, remove all previously added 'current' classes
+      $(this).removeClass('current');
+
+      if( $(this).attr('href') == galleryMainImageUrl ) {
+        $(this).addClass('current');
+      }
+    });
+  }
+
+  // Initialize
+  setCurrentGalleryThumbnail();
+
+  // When the user clicks a thumbnail
+  $('.gallery__thumbnails a').click( function(e) {
+    // Prevent the browser from direction away from the page
+    e.preventDefault();
+
+    // Get the href of the wrapping <a> tag
+    var galleryThumbnailUrl = $(this).attr('href');
+    
+
+    // Replace the main image src with the galleryImageUrl
+    $('.gallery__main img').attr('src', galleryThumbnailUrl);
+
+    // Set current thumbnail.
+    setCurrentGalleryThumbnail();
   });
+
+
+  /*
+   § Cutoff
+  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  // This script is used together with src/scss/components/_cufoff.scss to cut
+  // of large chunks of text.
+
+  // Add the 'Show more' link
+  $('.cutoff__show-more').click( function(e) {
+
+    e.preventDefault();
+
+    // Show the entire content
+    $(this).parent('.cutoff').css('max-height', '9999px');
+    $(this).parent('.cutoff').css('padding-bottom', $(this).outerHeight() + 10);
+  });
+
+  // Show more when clicking the 'Show more' link
+
 
   /*
    § Add the class 'current' to links that point to the current url.
@@ -40,7 +158,7 @@ $(document).ready(function() {
    § Drawer
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   // Configuration
-  var drawerWidth = '15em';
+  var drawerWidth = '20em';
 
   // Show drawer
   function showDrawer() {
@@ -90,25 +208,33 @@ $(document).ready(function() {
     width: "100%"
   });
 
-  // Multiple select (always open)
-  // $('.chosen--multiple.chosen--open select').trigger('chosen:open');
-  // TODO: chosen:open also triggers focus - this is bad.
+  // Multiple select (always open).
+  $('.chosen--multiple.chosen--open').each( function() {
+    
+    // This 'fix' allows the user to see the select options before he has
+    // interacted with the select box.
+    // 
+    // Chosen do not show the contents of the select boxes by default, so we
+    // have to show them ourselves. In the code below we loop through the options
+    // in the select boxes, adds these to an array, and append each array item
+    // to the <ul> called .chosen-results. Chosen uses .chosen-results to show
+    // the options.
 
-  /*
-   § Teaser templating
-  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  // Using Mustache - https://github.com/janl/mustache.js
-
-  // Get data and populate template (see src/templates/pages/teasers.hbs)
-  function getSearchResults() {
-    $.getJSON('../db/artworks_1.json', function(data) {
-      var template = $('#teaserGridTemplate').html();
-      var html = Mustache.to_html(template, data);
-      $('#teasersGrid').html(html);
+    var chosenResults = $(this).find('.chosen-results');
+    var selectOptions = [];
+    
+    // Put all select options in an array
+    $(this).find('select option').each( function() {
+      selectOptions.push( $(this).text() );
     });
-  }
 
-  getSearchResults();
+    // For each item in the array, append a <li> to .chosen-results
+    $.each(selectOptions, function(i, val) {
+      if(this != "") {
+        chosenResults.append('<li class="active-result" data-option-array-index="' + i + '">' + this + '</li>');
+      }
+    });
+  });
 
   /*
    § Typeahead demo page

@@ -69,8 +69,6 @@
 // Use single image files for screens with low pixel density (1x) instead of
 // the sprite.
 
-
-
 // SMK logo
 .smk-logo { @include spriteless-image-replacement('smk_logo.png'); }
 
@@ -83,3 +81,18 @@
 
 // Menu icon
 .main-header .smkui-logo:after { @include spriteless-image-replacement('menu.png'); }
+
+// Sharing icons (overriding _sharing.scss)
+.sharing--iconified {
+  // Facaebook
+  a[href*="facebook.com"] { @include spriteless-image-replacement('facebook.png'); }
+
+  // Twitter
+  a[href*="twitter.com"] { @include spriteless-image-replacement('twitter.png'); }
+
+  // Google+
+  a[href*="plus.google.com"] { @include spriteless-image-replacement('google_plus.png'); }
+
+  // Pinterest
+  a[href*="pinterest.com"] { @include spriteless-image-replacement('pinterest.png'); }
+}

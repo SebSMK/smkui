@@ -14,32 +14,13 @@ Before diving into SMKUI to make changes or optimizations, you should be comfort
 This code is made publically available for educational and inspirational purposes only. While you are free to download, modify, and play around with the entire codebase it remains the intellectual property of [The National Gallery of Denmark](http://smk.dk/en). Note that the open source projects used in this project (like Grunt, Bower etc.) all fall under other usage licenses.
 
 ## Todos
-
-### Components
-- <s>Buttons (small, medium, large, Get more results)</s>
-- <s>Search field (with suggestions...)</s>
-- <s>teaser (grid)</s>
-- <s>teaser (list)</s>
-- <s>make grid and list teasers clickable</s>
-
-- <s>dropdown (chosen)</s>
-- <s>chosen (open, closed, full width, narrow)</s>
-- <s>chosen open (multiselect)</s>
-- Tabs
-- Data pair (key + value)
-- Gallery
-- Social links
-
-- include http://quojs.tapquo.com/
-- Drawer: make it work on iPhone
-- Drawer: Close when touching page
-- Drawer: open/close on swipe
-
-- BUG: mustache: clickable not working.
-- BUG: chosen:open also triggers focus - this is bad.
+- subtle chosen (for 'sort by')
+- view icons: set/get url parameter and change to list view
+- Get more button (at the end of search results)
+- Copyright notice for images on single view
+- Cutoff (show more text)
 
 ### Views
-- Grid (Filters on top)
 - Grid (Filters in left column)
 - List
 - Single
@@ -47,7 +28,6 @@ This code is made publically available for educational and inspirational purpose
 - Before searching.
 
 ### Design
-- Logo
-- Colors
-- Text elements
-- Copy
+- <s>Logo</s>
+- <s>Colors</s>
+- <s>Text elements</s>

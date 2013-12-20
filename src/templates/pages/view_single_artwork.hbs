@@ -1,0 +1,129 @@
+---
+layout:   view.hbs
+slug:     view_single_artwork
+category: views
+title:    Single artwork
+---
+
+<div id="media-container">
+  <div class="gallery">
+    <div class="gallery__main">
+      <img src="images/artworks/k_w500.jpg">
+    </div>
+    
+    <!-- Images -->
+    <div class="gallery__thumbnails">
+      <ul>
+        <li><a href="images/artworks/k_w500.jpg"><img src="images/artworks/k_thumbnail_e_200.jpg"></a></li>
+        <li><a href="images/artworks/k_flipped_vertically_w500.jpg"><img src="images/artworks/k_thumbnail_a_200.jpg"></a></li>
+        <li><a href="images/artworks/k_flipped_horisontally_w500.jpg"><img src="images/artworks/k_thumbnail_b_200.jpg"></a></li>
+        <li><a href="images/artworks/k_green_w500.jpg"><img src="images/artworks/k_thumbnail_c_200.jpg"></a></li>
+        <li><a href="images/artworks/k_red_w500.jpg"><img src="images/artworks/k_thumbnail_d_200.jpg"></a></li>
+        <li><a href="images/artworks/k_funky_w500.jpg"><img src="images/artworks/k_thumbnail_f_200.jpg"></a></li>
+      </ul>
+    </div>
+  </div><!-- gallery -->
+</div><!-- #media-container -->
+
+<div id="info-container">
+
+  <!-- Sharing links -->
+  <div class="sharing--iconified">
+    <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=INSERT_URL">Share on Facebook</a>
+    <a target="_blank" href="https://twitter.com/intent/tweet?text=INSERT_DESCRIPTION&amp;url=INSERT_URL&amp;via=INSERT_TWITTER_HANDLE">Tweet This</a>
+    <a target="_blank" href="https://plus.google.com/share?url=INSERT_URL">Plus on Google+</a>
+    <a target="_blank" href="http://pinterest.com/pin/create/button/?url=INSERT_URL&amp;description=INSERT_DESCRIPTION">Pin on Pinterest</a>
+  </div>
+
+  <!-- Heading -->
+  <h1 class="heading--m">Giovanni Pisano (ca. 1248 - før 1319), Hoved af en skægget mand</h1>
+  <p>I stil og teknisk udførelse ligner det de mange skulpturer, som findes i relieffer og søjlefodstykker på hans hovedværk, prædikestolen i baptisteriet i Pisa hugget i marmor mellem 1302 og 1310. 
+Den nyeste forskning har vist, at hovedet formentlig stammer fra Margrethe af Luxembourgs nu destruerede gravmæle fra 1311.
+Giovanni Pisano var sin tids største billedhugger, fordi han forstod at indoptage antikkens reliefstil, sådan som den for eksempel ses på sarkofager, og kombinere den med sin egen dramatiske og stærkt fortællende stil. 
+For sin tid er ansigtet udtryksfuldt og levende. Dramaet forstærkes af den kontrastfulde lys- og skyggevirkning, der fremkommer af de borede huller i hår og skæg. Selv øjnene har fået liv gennem et par borede huller. 
+Giovanni Pisano var oplært i faderen Nicola Pisanos værksted, hans såkaldte "botecca".</p>
+
+  <!-- Data pairs (metainformation) -->
+  <div class="data-pairs">
+    <div class="data-pair">
+      <div class="data-pair__key">
+        This is the key
+      </div>
+      <div class="data-pair__value">
+        This is the value
+      </div>
+    </div>
+    <div class="data-pair">
+      <div class="data-pair__key">
+        Serial ID
+      </div>
+      <div class="data-pair__value type--code">
+        83JFHW678J11
+      </div>
+    </div>
+    <div class="data-pair">
+      <div class="data-pair__key">
+        Some links
+      </div>
+      <div class="data-pair__value">
+        You can go <a href="#">here</a> and check out <a href="#">this</a>.
+      </div>
+    </div>
+    <div class="data-pair">
+      <div class="data-pair__key">
+        The picture of Dorian Gray
+      </div>
+      <div class="data-pair__value">
+        The studio was filled with the rich odour of roses, and when the light summer wind stirred amidst the trees of the garden, there came through the open door the heavy scent of the lilac, or the more delicate perfume of the pink-flowering thorn.
+      </div>
+    </div>
+  </div><!-- data-pairs -->
+
+</div><!-- #info-container -->
+
+<div id="related-artworks">
+  <h3 class="heading--l heading--bordered">Relaterede værker</h3>
+
+  <!-- Render the artworks in this div -->
+  <div id="teaser-container-grid"></div>
+
+  <!-- Template for artworks (this can also be put in an external .js file) -->
+  <script id="teaserGridTemplate" type="text/template">
+    \{{#artworks}}
+      <article class="teaser--grid">
+        <div class="teaser__wrapper">
+          <div class="teaser__thumbnail">
+            <a href="\{{url}}" alt="\{{title}}">
+              <img src="/images/artworks/\{{thumbnail}}" alt="\{{title}}">
+            </a>
+          </div>
+          
+          <div class="teaser__content">
+            <ul class="teaser__category">
+              \{{#categories}}
+                <li>
+                  <a href="\{{url}}">\{{name}}</a>
+                </li>
+              \{{/categories}}
+            </ul>
+            
+            <h3 class="teaser__heading">
+              <a href="\{{url}}" alt="\{{title}}">\{{title}}</a>
+            </h3>
+
+            <div class="teaser__description">
+              \{{description}}
+            </div>
+
+            <ul class="teaser__meta">
+              \{{#meta}}
+                <li><span>\{{key}}</span> \{{value}}</li>
+              \{{/meta}}
+            </ul>
+          </div><!-- teaser__content -->
+        </div><!-- teaser__wrapper -->
+      </article><!-- teaser -->      
+    \{{/artworks}}
+  </script>
+  
+</div><!-- #related-artworks -->

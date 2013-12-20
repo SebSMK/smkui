@@ -1,0 +1,140 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ § Views
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// Views specific styles. These styles are not part of SMKUI itself, but helps
+// piece together complete views containing the different UI elements.
+
+/*html*/.view {
+
+  // Body background color
+  body {
+    background: $gray;
+  }
+
+  // Basic layout
+  .container {
+    margin: 0 auto;
+    width: 882px;
+  }
+
+  // Header
+  .view-main-header {
+    margin-bottom: 10px;
+  }
+
+  // Footer
+  .view-main-footer {
+    margin-top: 40px;
+  }
+
+  // Search form
+  .search-box {
+    margin-bottom: 10px;
+  }
+
+  // Main section
+  .section--main {
+    @include clearfix;
+    background-color: #fff;
+    max-width: auto;
+    min-width: auto;
+    padding: 12px;
+    position: relative;
+  }
+
+  // Tabs
+  .tabs {
+    margin-bottom: 1em;
+  }
+
+  // View picker (float it to the right)
+  .view-picker {
+    position: absolute;
+    right: 11px;
+
+    input {
+      margin-right: 0;
+      margin-left: .65em;
+    }
+  } // view-picker
+
+  // Adjust the width of the teaser's container to make room for a fourth column
+  // for search filters. Here we also override the grid's default column width
+  // to adabt it for smk.dk's desktop-first design. See _teasers.scss for reference.
+  #teaser-container-grid {
+    margin-top: 27px;
+    margin-right: -11px;
+    margin-left: -11px;
+    width: 660px;
+    float: right;
+
+    .teaser--grid {
+      width: 198px;
+      margin-right: 11px;
+      margin-left: 11px;
+    }
+  } // teaser-container-grid
+
+  // Search filters
+  #search-filters {
+    margin-top: 27px;
+    width: 198px;
+    float: left;
+
+    // Filter headings
+    .search-filter {
+      margin-top: -.3em; // For alignment with top of teaser grid
+      margin-bottom: 2em;
+    }
+  }
+
+  /*
+   § Artwork (single view)
+  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  // Artwork media
+  #media-container {
+    width: 418px;
+    float: left;
+
+    .gallery {
+      width: 418px;
+      
+      // Overriding the default gallery layout to adjust to smk.dk's
+      // desktop-first design.
+      .gallery__thumbnails {
+        margin-right: -6px;
+        margin-left: -6px;
+
+        a {
+          width: 95.5px;
+          margin: 12px 6px 0;
+        }
+      } // gallery__thumbnails
+    } // gallery
+  } // #media-container
+
+  // Artwork information
+  #info-container {
+    width: 418px;
+    float: right;
+
+    // Adding space to clear the heading
+    .sharing--iconified { margin-bottom: 1.5em; }
+    .data-pairs { margin-top: 2em; }
+  }
+
+  #related-artworks {
+    clear: both;
+
+    > [class*="heading"] {
+      padding-top: 2em;
+    }
+
+    #teaser-container-grid {
+      margin-top: 0;
+      width: 882px;
+      float: none;
+    }
+  }
+
+} // view

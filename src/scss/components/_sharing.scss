@@ -1,0 +1,45 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ § Sharing
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// Sharing links and icon buttons
+
+/*div*/.sharing {
+  a {
+    display: inline-block;
+    margin-right: .75em;
+  }
+}
+
+/*div*/.sharing--iconified {
+  @extend .sharing;
+
+  // Facebook (default icon)
+  a {
+    @include image-replacement($facebook);
+    display: inline-block;
+    margin-right: .75em;
+    opacity: .3;   
+    @include transition(opacity $time-s ease);
+
+    // Hover
+    &:hover,
+    &:focus {
+      opacity: 1;   
+    }
+  }
+
+  // Twitter
+  a[href*="twitter.com"] {
+    background-position: $twitter-offset-x $twitter-offset-y;
+  }
+
+  // Google+
+  a[href*="plus.google.com"] {
+    background-position: $google_plus-offset-x $google_plus-offset-y;
+  }
+
+  // Pinterest
+  a[href*="pinterest.com"] {
+    background-position: $pinterest-offset-x $pinterest-offset-y;
+  }
+} // sharing--iconified

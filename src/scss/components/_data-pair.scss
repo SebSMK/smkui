@@ -1,0 +1,21 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ § Data pair
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// A simple key/value display.
+
+.data-pair {
+  border-top: 1px solid $gray;
+  padding: 1em 0;
+  
+  // Key (or 'label')
+  .data-pair__key {
+    @extend .heading--section;
+    border: 0;
+    margin-bottom: .35em;
+  }
+
+  // Value (or 'content')
+  .data-pair__value {
+    
+  }
+}

@@ -10,9 +10,9 @@
 // Note: To change the base font size and base line height, configure the
 // Flowtype call in app.js. The styles in here only work as no-js fallbacks.
 // http://simplefocus.com/flowtype/
-$font-size:   16px;
+$font-size:   12px;
 $line-height: 1.45;
-$font-family: 'hill regular', sans-serif;
+$font-family: sans-serif;
 $font-color:  $black;
 
 /*
@@ -32,7 +32,7 @@ body {
   // @media (min-width: $screen-s) { font-size: $font-size * 1.1; }
   
   @media (min-width: $screen-m) {
-    font-size: 18px;
+    // font-size: 18px;
     // line-height: $line-height * 1.075;
   }
 }
@@ -42,8 +42,7 @@ b,
 strong,
 %type--bold,
 .type--bold {
-    font-weight: normal;
-    font-family: 'hill bold', sans-serif;
+  font-weight: bold;
 }
 
 // Italic
@@ -69,7 +68,7 @@ small,
 .type--s, 
 %type--small,
 .type--small {
-  font-size: .7em;
+  font-size: .85em;
 }
 
 // Weak
@@ -92,4 +91,16 @@ sup {
 sub {
   font-size: 75%;
   bottom: -0.25em;
+}
+
+// Code (or monospaced text)
+.type--code {
+  font-family: "Courier New", Courier, monospace;
+}
+
+// Highlighted text
+.type--highlight {
+  background: $yellow-dim;
+  padding-right: .1em;
+  padding-left: .1em;
 }

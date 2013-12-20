@@ -8,13 +8,13 @@
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*input*/.field {
   background-color: $gray;
-  padding: .45em .55em;
+  padding: .75em .55em;
   border: 1px solid $black;
   width: 100%;
   @include transition(all $time-s ease-in-out);
 
   // Decrease the padding on larger screens.
-  @media (min-width: $screen-m) { padding: .35em .45em .375em; }
+  // @media (min-width: $screen-m) { padding: .35em .45em .375em; }
 }
 
 /*

@@ -1,15 +1,8 @@
 <!-- Handling IE inadequacies -->
-<!-- 1. Make lt IE8 behave more like IE9 (try fetching through CDN and fall back to local version if unsuccessful) -->
-<!-- 2. Create support for basic media queries (try fetching through CDN and fall back to local version if unsuccessful) -->
-<!-- 3. Load IE8 specific styles (fixes and tweaks) -->
-<!-- 4. Load styles for Browse happy (see src/templates/layouts/default.hbs) -->
 
 <!--[if lt IE 9]>
   <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
   <script>window.IE7 || document.write('<script src="js/vendor/ie9.min.js">\x3C/script>')</script>
-
-  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.min.js"></script>
-  <script>window.respond || document.write('<script src="js/vendor/respond.min.js">\x3C/script>')</script>
 
   <link rel="stylesheet" href="css/ie8.css">
 <![endif]-->
@@ -17,3 +10,12 @@
 <!--[if lt IE 8]>
   <link rel="stylesheet" href="css/browsehappy.css">
 <![endif]-->
+
+<!-- If less than IE10 -->
+<!--[if IE]>
+  <script src="js/vendor/media.match.min.js"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.min.js"></script>
+  <script>window.respond || document.write('<script src="js/vendor/respond.min.js">\x3C/script>')</script>
+<![endif]-->
+

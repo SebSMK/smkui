@@ -40,11 +40,18 @@
 @import "components/button";
 @import "components/drawer";
 @import "components/copyright";
-@import "components/smk-logo";  // SMK logo
-@import "components/teaser";    // The teaser (both grid and list styles)
+@import "components/smk-logo";  
+@import "components/teaser";      // The teaser (both grid and list styles)
+@import "components/tabs";
+@import "components/data-pair";
+@import "components/sharing";     // Sharing links and icon buttons
+@import "components/tip";         // Tooltips
+@import "components/cutoff";      // Cut off large chunks of text
+@import "components/view-picker"; // An iconified radio button group to set the view style
+@import "components/gallery";     // Image gallery
+@import "components/test.scss";
 
 // Form elements
-// TODO: Form
 @import "components/field";      // Form field
 @import "components/typeahead";  // Typeahead - https://github.com/twitter/typeahead.js
 @import "components/search-box"; // Typeahead - https://github.com/twitter/typeahead.js
@@ -57,7 +64,8 @@
 @import "docs/main-footer"; // The main footer.
 @import "docs/subsection";  // For dividing content into chunks (aka. subsections).
 @import "docs/smkui-logo";  // SMKUI logo.
-@import "docs/tweaks";      // Small tweaks and nudges.
+@import "docs/docs";        // Documentation specific styles.
+@import "docs/views";       // Views specific styling.
 
 // For development.
 // @import "components/debug"; // Debugging styles.
