@@ -1,4 +1,4 @@
-/*! Thursday, January 2nd, 2014, 13:04 */
+/*! Thursday, January 2nd, 2014, 13:06 */
 @charset "UTF-8";
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § App
@@ -2383,7 +2383,7 @@ samp {
 /* line 51, ../../src/scss/docs/_views.scss */
 .view .view-picker {
   position: absolute;
-  right: 11px;
+  right: 5px;
 }
 /* line 55, ../../src/scss/docs/_views.scss */
 .view .view-picker input {
