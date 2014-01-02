@@ -24,3 +24,4 @@ This code is made publically available for educational and inspirational purpose
 - <s>Subtle chosen (for 'sort by')</s>
 - <s>View icons: change between list/grid view</s>
 - <s>Bug fix: Making view icons display nicely in IE8 and IE9</s>
+- <s>Adding teasers (list style) to docs</s>
