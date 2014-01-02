@@ -4,16 +4,28 @@
 // Using Mustache for templating - https://github.com/janl/mustache.js
 // and Masonry for layout - http://masonry.desandro.com/
 
+// Grid:
 // Get data and populate template (see src/templates/pages/teasers.hbs)
-function renderArtworks() {
+function renderArtworksGrid() {
   $.getJSON('../db/artworks_1.json', function(data) {
-    var template = $('#teaserGridTemplate').html();
+    var template = $('#teaserTemplateGrid').html();
     var html = Mustache.to_html(template, data);
     $('#teaser-container-grid').html(html);
   });
 }
 
-renderArtworks();
+// List:
+function renderArtworksList() {
+  $.getJSON('../db/artworks_1.json', function(data) {
+    var template = $('#teaserTemplateList').html();
+    var html = Mustache.to_html(template, data);
+    $('#teaser-container-list').html(html);
+  });
+}
+
+// Render away!
+renderArtworksGrid();
+renderArtworksList();
 
 // Initialize Masonry.
 $(window).load(function() {
@@ -31,8 +43,6 @@ $(window).load(function() {
 
 // Grid view
 function setTeaserViewGrid() {
-
-  // renderArtworks();
 
   // Restyling articles
   var teasers = $('article').each( function() {

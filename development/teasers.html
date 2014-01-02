@@ -82,7 +82,7 @@
 
     <div id="teaser-container-grid"></div>
 
-    <script id="teaserGridTemplate" type="text/template">
+    <script id="teaserTemplateGrid" type="text/template">
       {{#artworks}}
         <article class="teaser--grid">
           <div class="teaser__wrapper">
@@ -124,7 +124,47 @@
   <div class="subsection">
     <h2 class="heading">List style</h2>
     <p>This is a single teaser in the 'list' style, which is more compace than the 'grid' style. On the other hand thumbnails have much less emphasis.</p>
-    <p>Missing...</p>
+    
+    <div id="teaser-container-list"></div>
+
+    <script id="teaserTemplateList" type="text/template">
+      {{#artworks}}
+        <article class="teaser--list">
+          <div class="teaser__wrapper">
+            <div class="teaser__thumbnail">
+              <a href="{{url}}" alt="{{title}}">
+                <img src="/images/artworks/{{thumbnail}}" alt="{{title}}">
+              </a>
+            </div>
+            
+            <div class="teaser__content">
+              <ul class="teaser__category">
+                {{#categories}}
+                  <li>
+                    <a href="{{url}}">{{name}}</a>
+                  </li>
+                {{/categories}}
+              </ul>
+              
+              <h3 class="teaser__heading">
+                <a href="{{url}}" alt="{{title}}">{{title}}</a>
+              </h3>
+
+              <div class="teaser__description">
+                {{description}}
+              </div>
+
+              <ul class="teaser__meta">
+                {{#meta}}
+                  <li><span>{{key}}</span> {{value}}</li>
+                {{/meta}}
+              </ul>
+            </div><!-- teaser__content -->
+          </div><!-- teaser__wrapper -->
+        </article><!-- teaser -->      
+      {{/artworks}}
+    </script>
+
   </div><!-- subsection -->
   
 </article>

@@ -1,4 +1,4 @@
-/*! Thursday, January 2nd, 2014, 12:52 */
+/*! Thursday, January 2nd, 2014, 13:04 */
 @charset "UTF-8";
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § App
@@ -1196,6 +1196,7 @@ samp {
 /* line 118, ../../src/scss/components/_teaser.scss */
 .teaser--list {
   *zoom: 1;
+  width: 100%;
   margin-bottom: 0;
   padding-top: 1.35em;
   padding-bottom: 1.35em;
@@ -1209,23 +1210,23 @@ samp {
 .teaser--list:after {
   clear: both;
 }
-/* line 126, ../../src/scss/components/_teaser.scss */
+/* line 127, ../../src/scss/components/_teaser.scss */
 .teaser--list .teaser__thumbnail {
   float: right;
   margin-left: 4%;
   margin-bottom: 0;
   width: 16%;
 }
-/* line 132, ../../src/scss/components/_teaser.scss */
+/* line 133, ../../src/scss/components/_teaser.scss */
 .teaser--list .teaser__thumbnail img {
   float: right;
 }
-/* line 136, ../../src/scss/components/_teaser.scss */
+/* line 137, ../../src/scss/components/_teaser.scss */
 .teaser--list .teaser__content {
   width: 80%;
   float: left;
 }
-/* line 142, ../../src/scss/components/_teaser.scss */
+/* line 143, ../../src/scss/components/_teaser.scss */
 .teaser--list .teaser__meta {
   display: none;
 }

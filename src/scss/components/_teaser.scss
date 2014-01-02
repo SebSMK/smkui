@@ -118,6 +118,7 @@
 .teaser--list {
   @extend .teaser;
   @include clearfix;
+  width: 100%;
   margin-bottom: 0;
   padding-top: 1.35em;
   padding-bottom: 1.35em;
