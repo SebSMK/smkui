@@ -58,6 +58,13 @@
     }
   } // view-picker
 
+  // Sort by select options (place to the right)
+  .sort-by-picker {
+    position: absolute;
+    top: 20px;
+    right: 11px;
+  }
+
   // Adjust the width of the teaser's container to make room for a fourth column
   // for search filters. Here we also override the grid's default column width
   // to adabt it for smk.dk's desktop-first design. See _teasers.scss for reference.

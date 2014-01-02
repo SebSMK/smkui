@@ -1,4 +1,4 @@
-/*! Thursday, January 2nd, 2014, 08:51 */
+/*! Thursday, January 2nd, 2014, 09:04 */
 @charset "UTF-8";
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § App
@@ -2149,7 +2149,11 @@ samp {
     background-size: auto;
   }
 }
-/* line 350, ../../src/scss/components/chosen.scss */
+/* line 351, ../../src/scss/components/chosen.scss */
+.chosen--simple.chosen--small .chosen-container-single .chosen-single span {
+  margin-right: 17px;
+}
+/* line 355, ../../src/scss/components/chosen.scss */
 .chosen--simple.chosen--small .chosen-container .chosen-results li {
   padding-right: .45em;
   padding-left: .45em;
@@ -2378,7 +2382,13 @@ samp {
   margin-right: 0;
   margin-left: .65em;
 }
-/* line 64, ../../src/scss/docs/_views.scss */
+/* line 62, ../../src/scss/docs/_views.scss */
+.view .sort-by-picker {
+  position: absolute;
+  top: 20px;
+  right: 11px;
+}
+/* line 71, ../../src/scss/docs/_views.scss */
 .view #teaser-container-grid {
   margin-top: 27px;
   margin-right: -11px;
@@ -2386,64 +2396,64 @@ samp {
   width: 660px;
   float: right;
 }
-/* line 71, ../../src/scss/docs/_views.scss */
+/* line 78, ../../src/scss/docs/_views.scss */
 .view #teaser-container-grid .teaser--grid {
   width: 198px;
   margin-right: 11px;
   margin-left: 11px;
 }
-/* line 79, ../../src/scss/docs/_views.scss */
+/* line 86, ../../src/scss/docs/_views.scss */
 .view #search-filters {
   margin-top: 27px;
   width: 198px;
   float: left;
 }
-/* line 85, ../../src/scss/docs/_views.scss */
+/* line 92, ../../src/scss/docs/_views.scss */
 .view #search-filters .search-filter {
   margin-top: -.3em;
   margin-bottom: 2em;
 }
-/* line 95, ../../src/scss/docs/_views.scss */
+/* line 102, ../../src/scss/docs/_views.scss */
 .view #media-container {
   width: 418px;
   float: left;
 }
-/* line 99, ../../src/scss/docs/_views.scss */
+/* line 106, ../../src/scss/docs/_views.scss */
 .view #media-container .gallery {
   width: 418px;
 }
-/* line 104, ../../src/scss/docs/_views.scss */
+/* line 111, ../../src/scss/docs/_views.scss */
 .view #media-container .gallery .gallery__thumbnails {
   margin-right: -6px;
   margin-left: -6px;
 }
-/* line 108, ../../src/scss/docs/_views.scss */
+/* line 115, ../../src/scss/docs/_views.scss */
 .view #media-container .gallery .gallery__thumbnails a {
   width: 95.5px;
   margin: 12px 6px 0;
 }
-/* line 117, ../../src/scss/docs/_views.scss */
+/* line 124, ../../src/scss/docs/_views.scss */
 .view #info-container {
   width: 418px;
   float: right;
 }
-/* line 122, ../../src/scss/docs/_views.scss */
+/* line 129, ../../src/scss/docs/_views.scss */
 .view #info-container .sharing--iconified {
   margin-bottom: 1.5em;
 }
-/* line 123, ../../src/scss/docs/_views.scss */
+/* line 130, ../../src/scss/docs/_views.scss */
 .view #info-container .data-pairs {
   margin-top: 2em;
 }
-/* line 126, ../../src/scss/docs/_views.scss */
+/* line 133, ../../src/scss/docs/_views.scss */
 .view #related-artworks {
   clear: both;
 }
-/* line 129, ../../src/scss/docs/_views.scss */
+/* line 136, ../../src/scss/docs/_views.scss */
 .view #related-artworks > [class*="heading"] {
   padding-top: 2em;
 }
-/* line 133, ../../src/scss/docs/_views.scss */
+/* line 140, ../../src/scss/docs/_views.scss */
 .view #related-artworks #teaser-container-grid {
   margin-top: 0;
   width: 882px;

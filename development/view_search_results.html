@@ -82,8 +82,19 @@
   <li><a href="#">Blog <span>(20)</span></a></li>
   <li><a href="#">Artikler <span>(30)</span></a></li>
   <li><a href="#">Kalender <span>(30)</span></a></li>
-  <li class="tabs__right">Sorter efter: Relevans</li>
+  <li class="tabs__right">
+  </li>
 </ul>   
+
+<div class="sort-by-picker chosen--simple chosen--small">
+  <label>Sort by:</label>
+  <select>
+    <option value=""></option>
+    <option value="Relevans" selected>Relevans</option>
+    <option value="Dato">Dato</option>
+    <option value="Popularitet">Popularitet</option>
+  </select>
+</div><!-- chosen -->
 
 <form class="view-picker" method="post">
   <fieldset>

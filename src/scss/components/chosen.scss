@@ -347,6 +347,11 @@
     margin-left: 2px;
   }
 
+  // Making room for the arrow
+  .chosen-container-single .chosen-single span {
+    margin-right: 17px;
+  }
+  
   .chosen-container .chosen-results li {
     padding-right: .45em;
     padding-left: .45em;
