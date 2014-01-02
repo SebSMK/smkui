@@ -199,9 +199,7 @@ $(document).ready(function() {
   /*
    § Chosen
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  $('.chosen select').chosen({
-    width: "180px"
-  });
+  $('.chosen select').chosen();
 
   // Multiple select
   $('.chosen--multiple select').chosen({
@@ -235,6 +233,11 @@ $(document).ready(function() {
       }
     });
   });
+
+  // Subtle select
+  $('.chosen--simple select').chosen({
+    disable_search: true
+  });  
 
   /*
    § Typeahead demo page

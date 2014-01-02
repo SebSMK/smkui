@@ -1,3 +1,10 @@
+// Label
+.chosen {
+  label {
+    margin-right: .5em;
+  }
+}
+
 .chosen-container {
   position: relative;
   display: inline-block;
@@ -12,7 +19,7 @@
 }
 
 .chosen-container.chosen-with-drop {
-  width: 270px !important;
+  // min-width: 270px;
 }
 
 .chosen-container .chosen-drop {
@@ -88,9 +95,9 @@
 .chosen-container-single .chosen-single div b {
   @include image-replacement($arrow_down_black);
   position: relative;
-  top: .1em;
+  top: .195em;
   left: 50%;
-  margin-left: -5px;
+  margin-left: -2px;
   opacity: .3;
 }
 .chosen-container-single .chosen-search {
@@ -308,5 +315,40 @@
     z-index: 1000;
 
     .chosen-results { height: 164px; }
+  }
+}
+
+/*
+ § Chosen simple select
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// For selects without search.
+
+.chosen--simple {
+  @extend .chosen; 
+}
+
+/*
+ § Chosen simple select (small version)
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// For more crammy places.
+
+.chosen--simple.chosen--small {
+
+  // Reducing height
+  .chosen-single {
+    padding: 0 .45em;
+    line-height: 20px;
+  }
+
+  // Smaller arrow 
+  .chosen-container-single .chosen-single div b {
+    @include image-replacement($arrow_down_small);
+    top: 0;
+    margin-left: 2px;
+  }
+
+  .chosen-container .chosen-results li {
+    padding-right: .45em;
+    padding-left: .45em;
   }
 }

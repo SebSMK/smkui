@@ -1,4 +1,4 @@
-/*! Friday, December 20th, 2013, 15:00 */
+/*! Thursday, January 2nd, 2014, 08:51 */
 @charset "UTF-8";
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § App
@@ -942,7 +942,7 @@ samp {
 /* line 75, ../../src/scss/components/_drawer.scss */
 .main-header .smkui-logo:after {
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -338px;
+  background-position: 0px -356px;
   width: 23px;
   height: 22px;
   text-indent: -9999em;
@@ -1065,7 +1065,7 @@ samp {
 /* line 6, ../../src/scss/components/_smk-logo.scss */
 .smk-logo {
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -464px;
+  background-position: 0px -482px;
   width: 215px;
   height: 108px;
   text-indent: -9999em;
@@ -1320,7 +1320,7 @@ samp {
 /* line 17, ../../src/scss/components/_sharing.scss */
 .sharing--iconified a {
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -278px;
+  background-position: 0px -296px;
   width: 20px;
   height: 20px;
   text-indent: -9999em;
@@ -1346,15 +1346,15 @@ samp {
 }
 /* line 32, ../../src/scss/components/_sharing.scss */
 .sharing--iconified a[href*="twitter.com"] {
-  background-position: 0px -308px;
+  background-position: 0px -326px;
 }
 /* line 37, ../../src/scss/components/_sharing.scss */
 .sharing--iconified a[href*="plus.google.com"] {
-  background-position: 0px -218px;
+  background-position: 0px -236px;
 }
 /* line 42, ../../src/scss/components/_sharing.scss */
 .sharing--iconified a[href*="pinterest.com"] {
-  background-position: 0px -248px;
+  background-position: 0px -266px;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
@@ -1391,7 +1391,7 @@ samp {
   bottom: 2.5em;
   margin-bottom: -12px;
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px 0px;
+  background-position: 0px -18px;
   width: 16px;
   height: 8px;
   text-indent: -9999em;
@@ -1466,7 +1466,7 @@ samp {
 .view-picker input[type="radio"] {
   opacity: .3;
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -142px;
+  background-position: 0px -160px;
   width: 17px;
   height: 15px;
   text-indent: -9999em;
@@ -1491,7 +1491,7 @@ samp {
 /* line 25, ../../src/scss/components/_view-picker.scss */
 .view-picker input[value="list"] {
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -117px;
+  background-position: 0px -135px;
   width: 17px;
   height: 15px;
   text-indent: -9999em;
@@ -1508,7 +1508,7 @@ samp {
 /* line 30, ../../src/scss/components/_view-picker.scss */
 .view-picker input[value="image"] {
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -167px;
+  background-position: 0px -185px;
   width: 18px;
   height: 15px;
   text-indent: -9999em;
@@ -1568,16 +1568,6 @@ samp {
 /* line 33, ../../src/scss/components/_gallery.scss */
 .gallery__thumbnails a.current img {
   opacity: 1;
-}
-
-/* line 1, ../../src/scss/components/_test.scss */
-#search-filters-2 {
-  width: 198px;
-  float: left;
-}
-/* line 5, ../../src/scss/components/_test.scss */
-#search-filters-2 .search-filter-2 {
-  margin-bottom: 24px;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
@@ -1688,7 +1678,12 @@ samp {
   border-radius: 0;
 }
 
-/* line 1, ../../src/scss/components/chosen.scss */
+/* line 3, ../../src/scss/components/chosen.scss */
+.chosen label, .chosen--simple label {
+  margin-right: .5em;
+}
+
+/* line 8, ../../src/scss/components/chosen.scss */
 .chosen-container {
   position: relative;
   display: inline-block;
@@ -1703,12 +1698,7 @@ samp {
   transition: width 200ms ease-in-out;
 }
 
-/* line 14, ../../src/scss/components/chosen.scss */
-.chosen-container.chosen-with-drop {
-  width: 270px !important;
-}
-
-/* line 18, ../../src/scss/components/chosen.scss */
+/* line 25, ../../src/scss/components/chosen.scss */
 .chosen-container .chosen-drop {
   position: absolute;
   top: 100%;
@@ -1721,19 +1711,19 @@ samp {
   box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* line 29, ../../src/scss/components/chosen.scss */
+/* line 36, ../../src/scss/components/chosen.scss */
 .chosen-container.chosen-with-drop .chosen-drop {
   left: 0;
 }
 
-/* line 32, ../../src/scss/components/chosen.scss */
+/* line 39, ../../src/scss/components/chosen.scss */
 .chosen-container a {
   cursor: pointer;
 }
 
 /* @end */
 /* @group Single Chosen */
-/* line 38, ../../src/scss/components/chosen.scss */
+/* line 45, ../../src/scss/components/chosen.scss */
 .chosen-container-single .chosen-single {
   position: relative;
   display: block;
@@ -1748,12 +1738,12 @@ samp {
   line-height: 24px;
 }
 
-/* line 51, ../../src/scss/components/chosen.scss */
+/* line 58, ../../src/scss/components/chosen.scss */
 .chosen-container-single .chosen-default {
   color: #999;
 }
 
-/* line 54, ../../src/scss/components/chosen.scss */
+/* line 61, ../../src/scss/components/chosen.scss */
 .chosen-container-single .chosen-single span {
   display: block;
   overflow: hidden;
@@ -1762,12 +1752,12 @@ samp {
   white-space: nowrap;
 }
 
-/* line 61, ../../src/scss/components/chosen.scss */
+/* line 68, ../../src/scss/components/chosen.scss */
 .chosen-container-single .chosen-single-with-deselect span {
   margin-right: 38px;
 }
 
-/* line 64, ../../src/scss/components/chosen.scss */
+/* line 71, ../../src/scss/components/chosen.scss */
 .chosen-container-single .chosen-single abbr {
   position: absolute;
   top: 6px;
@@ -1779,17 +1769,17 @@ samp {
   font-size: 1px;
 }
 
-/* line 74, ../../src/scss/components/chosen.scss */
+/* line 81, ../../src/scss/components/chosen.scss */
 .chosen-container-single .chosen-single abbr:hover {
   background-position: -42px -10px;
 }
 
-/* line 77, ../../src/scss/components/chosen.scss */
+/* line 84, ../../src/scss/components/chosen.scss */
 .chosen-container-single.chosen-disabled .chosen-single abbr:hover {
   background-position: -42px -10px;
 }
 
-/* line 80, ../../src/scss/components/chosen.scss */
+/* line 87, ../../src/scss/components/chosen.scss */
 .chosen-container-single .chosen-single div {
   position: absolute;
   top: 0;
@@ -1799,30 +1789,30 @@ samp {
   height: 100%;
 }
 
-/* line 88, ../../src/scss/components/chosen.scss */
+/* line 95, ../../src/scss/components/chosen.scss */
 .chosen-container-single .chosen-single div b {
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -97px;
+  background-position: 0px -115px;
   width: 11px;
   height: 10px;
   text-indent: -9999em;
   display: inline-block;
   background-size: 215px;
   position: relative;
-  top: .1em;
+  top: .195em;
   left: 50%;
-  margin-left: -5px;
+  margin-left: -2px;
   opacity: .3;
 }
 @media (-webkit-max-device-pixel-ratio: 1), (max-resolution: 96dpi) {
-  /* line 88, ../../src/scss/components/chosen.scss */
+  /* line 95, ../../src/scss/components/chosen.scss */
   .chosen-container-single .chosen-single div b {
     background-image: url("../images/sprite_1x.png");
     background-size: auto;
   }
 }
 
-/* line 96, ../../src/scss/components/chosen.scss */
+/* line 103, ../../src/scss/components/chosen.scss */
 .chosen-container-single .chosen-search {
   position: relative;
   z-index: 1010;
@@ -1831,12 +1821,12 @@ samp {
   white-space: nowrap;
   box-shadow: 0 0.2em 3px 0 rgba(0, 0, 0, 0.1);
 }
-/* line 105, ../../src/scss/components/chosen.scss */
+/* line 112, ../../src/scss/components/chosen.scss */
 .chosen-container-single .chosen-search:after {
   content: "Search";
   speak: none;
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -192px;
+  background-position: 0px -210px;
   width: 16px;
   height: 16px;
   text-indent: -9999em;
@@ -1848,25 +1838,25 @@ samp {
   opacity: .3;
 }
 @media (-webkit-max-device-pixel-ratio: 1), (max-resolution: 96dpi) {
-  /* line 105, ../../src/scss/components/chosen.scss */
+  /* line 112, ../../src/scss/components/chosen.scss */
   .chosen-container-single .chosen-search:after {
     background-image: url("../images/sprite_1x.png");
     background-size: auto;
   }
 }
 
-/* line 115, ../../src/scss/components/chosen.scss */
+/* line 122, ../../src/scss/components/chosen.scss */
 .chosen-container-single .chosen-search input[type="text"] {
   line-height: normal;
 }
 
-/* line 120, ../../src/scss/components/chosen.scss */
+/* line 127, ../../src/scss/components/chosen.scss */
 .chosen-container-single .chosen-drop {
   margin-top: -1px;
   background-clip: padding-box;
 }
 
-/* line 124, ../../src/scss/components/chosen.scss */
+/* line 131, ../../src/scss/components/chosen.scss */
 .chosen-container-single.chosen-container-single-nosearch .chosen-search {
   position: absolute;
   left: -9999px;
@@ -1874,7 +1864,7 @@ samp {
 
 /* @end */
 /* @group Results */
-/* line 131, ../../src/scss/components/chosen.scss */
+/* line 138, ../../src/scss/components/chosen.scss */
 .chosen-container .chosen-results {
   position: relative;
   overflow-x: hidden;
@@ -1884,7 +1874,7 @@ samp {
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 139, ../../src/scss/components/chosen.scss */
+/* line 146, ../../src/scss/components/chosen.scss */
 .chosen-container .chosen-results li {
   display: none;
   margin: 0;
@@ -1892,43 +1882,43 @@ samp {
   line-height: normal;
 }
 
-/* line 145, ../../src/scss/components/chosen.scss */
+/* line 152, ../../src/scss/components/chosen.scss */
 .chosen-container .chosen-results li.active-result {
   display: list-item;
   cursor: pointer;
 }
 
-/* line 149, ../../src/scss/components/chosen.scss */
+/* line 156, ../../src/scss/components/chosen.scss */
 .chosen-container .chosen-results li.disabled-result {
   display: list-item;
   color: #a2a2a5;
   cursor: default;
 }
 
-/* line 154, ../../src/scss/components/chosen.scss */
+/* line 161, ../../src/scss/components/chosen.scss */
 .chosen-container .chosen-results li.highlighted {
   background-color: #fff8ac;
 }
 
-/* line 157, ../../src/scss/components/chosen.scss */
+/* line 164, ../../src/scss/components/chosen.scss */
 .chosen-container .chosen-results li.no-results {
   display: list-item;
   background: #ffd9e5;
 }
 
-/* line 161, ../../src/scss/components/chosen.scss */
+/* line 168, ../../src/scss/components/chosen.scss */
 .chosen-container .chosen-results li.group-result {
   display: list-item;
   font-weight: bold;
   cursor: default;
 }
 
-/* line 167, ../../src/scss/components/chosen.scss */
+/* line 174, ../../src/scss/components/chosen.scss */
 .chosen-container .chosen-results li.group-option {
   padding-left: 15px;
 }
 
-/* line 171, ../../src/scss/components/chosen.scss */
+/* line 178, ../../src/scss/components/chosen.scss */
 .chosen-container .chosen-results li em {
   font-style: normal;
   text-decoration: underline;
@@ -1936,7 +1926,7 @@ samp {
 
 /* @end */
 /* @group Multi Chosen */
-/* line 178, ../../src/scss/components/chosen.scss */
+/* line 185, ../../src/scss/components/chosen.scss */
 .chosen-container-multi .chosen-choices {
   border: 1px solid #111111;
   background-color: #ecedf2;
@@ -1944,12 +1934,12 @@ samp {
   overflow: hidden;
   padding-right: 3em;
 }
-/* line 186, ../../src/scss/components/chosen.scss */
+/* line 193, ../../src/scss/components/chosen.scss */
 .chosen-container-multi .chosen-choices:after {
   content: "Search";
   speak: none;
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -192px;
+  background-position: 0px -210px;
   width: 16px;
   height: 16px;
   text-indent: -9999em;
@@ -1961,25 +1951,25 @@ samp {
   opacity: .3;
 }
 @media (-webkit-max-device-pixel-ratio: 1), (max-resolution: 96dpi) {
-  /* line 186, ../../src/scss/components/chosen.scss */
+  /* line 193, ../../src/scss/components/chosen.scss */
   .chosen-container-multi .chosen-choices:after {
     background-image: url("../images/sprite_1x.png");
     background-size: auto;
   }
 }
 
-/* line 197, ../../src/scss/components/chosen.scss */
+/* line 204, ../../src/scss/components/chosen.scss */
 .chosen-container-multi .chosen-choices li {
   float: left;
   list-style: none;
 }
 
-/* line 201, ../../src/scss/components/chosen.scss */
+/* line 208, ../../src/scss/components/chosen.scss */
 .chosen-container-multi .chosen-choices li.search-field {
   white-space: nowrap;
 }
 
-/* line 204, ../../src/scss/components/chosen.scss */
+/* line 211, ../../src/scss/components/chosen.scss */
 .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
   -webkit-transition: none;
   -moz-transition: none;
@@ -1991,12 +1981,12 @@ samp {
   background-color: #ecedf2;
 }
 
-/* line 213, ../../src/scss/components/chosen.scss */
+/* line 220, ../../src/scss/components/chosen.scss */
 .chosen-container-multi .chosen-choices li.search-field .default {
   color: #a2a2a5;
 }
 
-/* line 216, ../../src/scss/components/chosen.scss */
+/* line 223, ../../src/scss/components/chosen.scss */
 .chosen-container-multi .chosen-choices li.search-choice {
   position: relative;
   margin: 0.35em 0 0 0.35em;
@@ -2009,13 +1999,13 @@ samp {
   cursor: default;
 }
 
-/* line 227, ../../src/scss/components/chosen.scss */
+/* line 234, ../../src/scss/components/chosen.scss */
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
   position: absolute;
   top: .45em;
   right: .4em;
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -18px;
+  background-position: 0px -36px;
   width: 9px;
   height: 9px;
   text-indent: -9999em;
@@ -2024,32 +2014,32 @@ samp {
   opacity: .6;
 }
 @media (-webkit-max-device-pixel-ratio: 1), (max-resolution: 96dpi) {
-  /* line 227, ../../src/scss/components/chosen.scss */
+  /* line 234, ../../src/scss/components/chosen.scss */
   .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
     background-image: url("../images/sprite_1x.png");
     background-size: auto;
   }
 }
 
-/* line 234, ../../src/scss/components/chosen.scss */
+/* line 241, ../../src/scss/components/chosen.scss */
 .chosen-container-multi .chosen-choices li.search-choice-disabled {
   border: 1px solid #cccccc;
   background-color: #e4e4e4;
   color: #666;
 }
 
-/* line 239, ../../src/scss/components/chosen.scss */
+/* line 246, ../../src/scss/components/chosen.scss */
 .chosen-container-multi .chosen-choices li.search-choice-focus {
   background: #d4d4d4;
 }
 
-/* line 244, ../../src/scss/components/chosen.scss */
+/* line 251, ../../src/scss/components/chosen.scss */
 .chosen-container-multi .chosen-results {
   margin: 0;
   padding: 0;
 }
 
-/* line 248, ../../src/scss/components/chosen.scss */
+/* line 255, ../../src/scss/components/chosen.scss */
 .chosen-drop .result-selected {
   display: list-item;
   color: #111111;
@@ -2059,23 +2049,23 @@ samp {
 
 /* @end */
 /* @group Active  */
-/* line 259, ../../src/scss/components/chosen.scss */
+/* line 266, ../../src/scss/components/chosen.scss */
 .chosen-container-active.chosen-with-drop .chosen-single {
   background: #fff;
   border: 1px solid #111111;
 }
 
-/* line 263, ../../src/scss/components/chosen.scss */
+/* line 270, ../../src/scss/components/chosen.scss */
 .chosen-container-active.chosen-with-drop .chosen-single div {
   background-color: transparent;
 }
 
-/* line 267, ../../src/scss/components/chosen.scss */
+/* line 274, ../../src/scss/components/chosen.scss */
 .chosen-container-active.chosen-with-drop .chosen-single div b {
   background: none;
 }
 
-/* line 271, ../../src/scss/components/chosen.scss */
+/* line 278, ../../src/scss/components/chosen.scss */
 .chosen-container-active .chosen-choices {
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
@@ -2083,25 +2073,25 @@ samp {
   background: #fff;
 }
 
-/* line 276, ../../src/scss/components/chosen.scss */
+/* line 283, ../../src/scss/components/chosen.scss */
 .chosen-container-active .chosen-choices li.search-field input[type="text"] {
   color: #111111 !important;
 }
 
 /* @end */
 /* @group Disabled Support */
-/* line 282, ../../src/scss/components/chosen.scss */
+/* line 289, ../../src/scss/components/chosen.scss */
 .chosen-disabled {
   opacity: 0.5 !important;
   cursor: default;
 }
 
-/* line 286, ../../src/scss/components/chosen.scss */
+/* line 293, ../../src/scss/components/chosen.scss */
 .chosen-disabled .chosen-single {
   cursor: default;
 }
 
-/* line 289, ../../src/scss/components/chosen.scss */
+/* line 296, ../../src/scss/components/chosen.scss */
 .chosen-disabled .chosen-choices .search-choice .search-choice-close {
   cursor: default;
 }
@@ -2109,7 +2099,7 @@ samp {
 /*
  § Chosen multiselect
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 296, ../../src/scss/components/chosen.scss */
+/* line 303, ../../src/scss/components/chosen.scss */
 .chosen--multiple .chosen-container.chosen-with-drop {
   width: 100% !important;
 }
@@ -2117,16 +2107,52 @@ samp {
 /*
  § Chosen multiselect (always open)
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 304, ../../src/scss/components/chosen.scss */
+/* line 311, ../../src/scss/components/chosen.scss */
 .chosen--multiple.chosen--open .chosen-drop {
   position: relative;
   left: auto;
   box-shadow: none;
   z-index: 1000;
 }
-/* line 310, ../../src/scss/components/chosen.scss */
+/* line 317, ../../src/scss/components/chosen.scss */
 .chosen--multiple.chosen--open .chosen-drop .chosen-results {
   height: 164px;
+}
+
+/*
+ § Chosen simple select
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*
+ § Chosen simple select (small version)
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* line 338, ../../src/scss/components/chosen.scss */
+.chosen--simple.chosen--small .chosen-single {
+  padding: 0 0.45em;
+  line-height: 20px;
+}
+/* line 344, ../../src/scss/components/chosen.scss */
+.chosen--simple.chosen--small .chosen-container-single .chosen-single div b {
+  background-image: url(../images/sprite_2x.png);
+  background-position: 0px 0px;
+  width: 9px;
+  height: 8px;
+  text-indent: -9999em;
+  display: inline-block;
+  background-size: 215px;
+  top: 0;
+  margin-left: 2px;
+}
+@media (-webkit-max-device-pixel-ratio: 1), (max-resolution: 96dpi) {
+  /* line 344, ../../src/scss/components/chosen.scss */
+  .chosen--simple.chosen--small .chosen-container-single .chosen-single div b {
+    background-image: url("../images/sprite_1x.png");
+    background-size: auto;
+  }
+}
+/* line 350, ../../src/scss/components/chosen.scss */
+.chosen--simple.chosen--small .chosen-container .chosen-results li {
+  padding-right: .45em;
+  padding-left: .45em;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
@@ -2193,7 +2219,7 @@ samp {
 .smkui-logo,
 .smkui-logo--s {
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -370px;
+  background-position: 0px -388px;
   width: 112px;
   height: 29px;
   text-indent: -9999em;
@@ -2212,7 +2238,7 @@ samp {
 /* line 12, ../../src/scss/docs/_smkui-logo.scss */
 .smkui-logo--m {
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -409px;
+  background-position: 0px -427px;
   width: 162px;
   height: 45px;
   text-indent: -9999em;
