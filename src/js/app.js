@@ -20,7 +20,74 @@ $(window).load(function() {
   // Executes when complete page is fully loaded, including all frames, objects
   // and images. This ensures that Masonry knows about elements heights and can
   // do its layouting properly.
-  $('#teaser-container-grid').masonry();
+  $('#teaser-container-grid').masonry( {
+    transitionDuration: 0
+  });
+});
+
+/*
+ § View picker (grid or list style for teasers)
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+// Grid view
+function setTeaserViewGrid() {
+
+  // renderArtworks();
+
+  // Restyling articles
+  var teasers = $('article').each( function() {
+    if ( $(this).hasClass('teaser--list') ) {
+
+      // Switching classes
+      $(this).removeClass('teaser--list');
+      $(this).addClass('teaser--grid');
+
+      // Removing list style css
+      $(this).attr('style', '');
+
+      // Adding CSS position (masonry doesn't add this automatically when rerun - see below)
+      $(this).css('position', 'absolute');
+    } // end if
+  });
+
+  // Rerun masonry to enable grid
+  $('#teaser-container-grid').masonry({
+    transitionDuration: 0
+  });
+} // setTeaserViewGrid
+
+// List view
+function setTeaserViewList() {
+  // Resetting the height of the containing element
+  $('#teaser-container-grid').css('height', 'auto');
+
+  // Restyling articles
+  $('article').each( function() {
+    if ( $(this).hasClass('teaser--grid') ) {
+
+      // Switching classes
+      $(this).removeClass('teaser--grid');
+      $(this).addClass('teaser--list');
+
+      // Adjusting CSS
+      $(this).css('position', 'relative');
+      $(this).css('float', 'none');
+      $(this).css('width', 'auto');
+      $(this).css('top', 'auto');
+      $(this).css('right', 'auto');
+      $(this).css('bottom', 'auto');
+      $(this).css('left', 'auto');
+    } // end if
+  });
+} // setTeaserViewGrid
+
+// When the user clicks the view picker (see view_picker.hbs)
+$('.view-picker input[value="list"]').click( function() {
+  setTeaserViewList();
+});
+
+$('.view-picker input[value="grid"]').click( function() {
+  setTeaserViewGrid();
 });
 
 /*
@@ -295,7 +362,7 @@ $(document).ready(function() {
 
   /*
    § Search box demo page
-  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   // Strings
   $('.search-box .typeahead').typeahead([
     {

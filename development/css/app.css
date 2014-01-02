@@ -1,4 +1,4 @@
-/*! Thursday, January 2nd, 2014, 09:04 */
+/*! Thursday, January 2nd, 2014, 10:51 */
 @charset "UTF-8";
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § App
@@ -1129,9 +1129,9 @@ samp {
 /* line 49, ../../src/scss/components/_teaser.scss */
 .teaser__thumbnail {
   margin-bottom: 1.5em;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-in-out;
+  -moz-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 /* line 54, ../../src/scss/components/_teaser.scss */
 .teaser__thumbnail:hover, .teaser__thumbnail:focus {
@@ -1196,7 +1196,9 @@ samp {
 /* line 118, ../../src/scss/components/_teaser.scss */
 .teaser--list {
   *zoom: 1;
-  padding-bottom: 1em;
+  margin-bottom: 0;
+  padding-top: 1.35em;
+  padding-bottom: 1.35em;
 }
 /* line 18, ../../src/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
 .teaser--list:before, .teaser--list:after {
@@ -1207,23 +1209,23 @@ samp {
 .teaser--list:after {
   clear: both;
 }
-/* line 124, ../../src/scss/components/_teaser.scss */
+/* line 126, ../../src/scss/components/_teaser.scss */
 .teaser--list .teaser__thumbnail {
   float: right;
   margin-left: 4%;
   margin-bottom: 0;
   width: 16%;
 }
-/* line 130, ../../src/scss/components/_teaser.scss */
+/* line 132, ../../src/scss/components/_teaser.scss */
 .teaser--list .teaser__thumbnail img {
   float: right;
 }
-/* line 134, ../../src/scss/components/_teaser.scss */
+/* line 136, ../../src/scss/components/_teaser.scss */
 .teaser--list .teaser__content {
   width: 80%;
   float: left;
 }
-/* line 140, ../../src/scss/components/_teaser.scss */
+/* line 142, ../../src/scss/components/_teaser.scss */
 .teaser--list .teaser__meta {
   display: none;
 }

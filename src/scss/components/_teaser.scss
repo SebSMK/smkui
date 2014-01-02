@@ -48,7 +48,7 @@
 // Thumbnail
 .teaser__thumbnail {
   margin-bottom: 1.5em;
-  @include transition(all $time-s ease-in-out);
+  @include transition(opacity $time-s ease-in-out);
 
   &:hover,
   &:focus {
@@ -118,7 +118,9 @@
 .teaser--list {
   @extend .teaser;
   @include clearfix;
-  padding-bottom: 1em;
+  margin-bottom: 0;
+  padding-top: 1.35em;
+  padding-bottom: 1.35em;
 
   // Thumbnail
   .teaser__thumbnail {

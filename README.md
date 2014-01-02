@@ -14,8 +14,12 @@ Before diving into SMKUI to make changes or optimizations, you should be comfort
 This code is made publically available for educational and inspirational purposes only. While you are free to download, modify, and play around with the entire codebase it remains the intellectual property of [The National Gallery of Denmark](http://smk.dk/en). Note that the open source projects used in this project (like Grunt, Bower etc.) all fall under other usage licenses.
 
 ## Todos
-- Subtle chosen (for 'sort by')
-- View icons: set/get url parameter and change to list view
 - Get more button (at the end of search results)
 - Copyright notice for images on single view
 - Cutoff (show more text)
+
+## Dones
+**JAN 2nd:**
+
+- <s>Subtle chosen (for 'sort by')</s>
+- <s>View icons: change between list/grid view</s>
