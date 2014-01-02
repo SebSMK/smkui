@@ -1,4 +1,4 @@
-/*! Thursday, January 2nd, 2014, 10:51 */
+/*! Thursday, January 2nd, 2014, 12:52 */
 @charset "UTF-8";
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § App
@@ -1466,6 +1466,11 @@ samp {
 }
 /* line 9, ../../src/scss/components/_view-picker.scss */
 .view-picker input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+/* line 14, ../../src/scss/components/_view-picker.scss */
+.view-picker label {
   opacity: .3;
   background-image: url(../images/sprite_2x.png);
   background-position: 0px -160px;
@@ -1479,19 +1484,19 @@ samp {
   margin-right: .65em;
 }
 @media (-webkit-max-device-pixel-ratio: 1), (max-resolution: 96dpi) {
-  /* line 9, ../../src/scss/components/_view-picker.scss */
-  .view-picker input[type="radio"] {
+  /* line 14, ../../src/scss/components/_view-picker.scss */
+  .view-picker label {
     background-image: url("../images/sprite_1x.png");
     background-size: auto;
   }
 }
-/* line 18, ../../src/scss/components/_view-picker.scss */
-.view-picker input[type="radio"]:hover, .view-picker input[type="radio"]:focus {
+/* line 23, ../../src/scss/components/_view-picker.scss */
+.view-picker label:hover, .view-picker label:focus {
   opacity: .4;
   outline: none;
 }
-/* line 25, ../../src/scss/components/_view-picker.scss */
-.view-picker input[value="list"] {
+/* line 30, ../../src/scss/components/_view-picker.scss */
+.view-picker label.list, .view-picker label.list--bulleted, .view-picker label.list--tickmarked, .view-picker label.list--numbered {
   background-image: url(../images/sprite_2x.png);
   background-position: 0px -135px;
   width: 17px;
@@ -1501,14 +1506,14 @@ samp {
   background-size: 215px;
 }
 @media (-webkit-max-device-pixel-ratio: 1), (max-resolution: 96dpi) {
-  /* line 25, ../../src/scss/components/_view-picker.scss */
-  .view-picker input[value="list"] {
+  /* line 30, ../../src/scss/components/_view-picker.scss */
+  .view-picker label.list, .view-picker label.list--bulleted, .view-picker label.list--tickmarked, .view-picker label.list--numbered {
     background-image: url("../images/sprite_1x.png");
     background-size: auto;
   }
 }
-/* line 30, ../../src/scss/components/_view-picker.scss */
-.view-picker input[value="image"] {
+/* line 35, ../../src/scss/components/_view-picker.scss */
+.view-picker label.image {
   background-image: url(../images/sprite_2x.png);
   background-position: 0px -185px;
   width: 18px;
@@ -1518,14 +1523,14 @@ samp {
   background-size: 215px;
 }
 @media (-webkit-max-device-pixel-ratio: 1), (max-resolution: 96dpi) {
-  /* line 30, ../../src/scss/components/_view-picker.scss */
-  .view-picker input[value="image"] {
+  /* line 35, ../../src/scss/components/_view-picker.scss */
+  .view-picker label.image {
     background-image: url("../images/sprite_1x.png");
     background-size: auto;
   }
 }
-/* line 36, ../../src/scss/components/_view-picker.scss */
-.view-picker input[type="radio"]:checked {
+/* line 41, ../../src/scss/components/_view-picker.scss */
+.view-picker input[type="radio"]:checked + label {
   opacity: 1;
 }
 

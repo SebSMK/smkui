@@ -96,3 +96,16 @@
   // Pinterest
   a[href*="pinterest.com"] { @include spriteless-image-replacement('pinterest.png'); }
 }
+
+// View picker
+.view-picker {
+
+  // Grid (default)
+  label { @include spriteless-image-replacement('grid.png'); }
+
+  // List
+  label.list { @include spriteless-image-replacement('list.png'); }
+  
+  // Images only
+  label.image { @include spriteless-image-replacement('image.png'); }
+} 

@@ -1,4 +1,4 @@
-/*! Thursday, January 2nd, 2014, 10:51 */
+/*! Thursday, January 2nd, 2014, 12:52 */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § Tweaks for IE8
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -152,6 +152,31 @@
 /* line 97, ../../src/scss/ie8.scss */
 .sharing--iconified a[href*="pinterest.com"] {
   background-image: url("../images/pinterest.png");
+  background-position: 0 0;
+  background-size: auto;
+  text-indent: -9999em;
+  display: inline-block;
+}
+
+/* line 104, ../../src/scss/ie8.scss */
+.view-picker label {
+  background-image: url("../images/grid.png");
+  background-position: 0 0;
+  background-size: auto;
+  text-indent: -9999em;
+  display: inline-block;
+}
+/* line 107, ../../src/scss/ie8.scss */
+.view-picker label.list {
+  background-image: url("../images/list.png");
+  background-position: 0 0;
+  background-size: auto;
+  text-indent: -9999em;
+  display: inline-block;
+}
+/* line 110, ../../src/scss/ie8.scss */
+.view-picker label.image {
+  background-image: url("../images/image.png");
   background-position: 0 0;
   background-size: auto;
   text-indent: -9999em;

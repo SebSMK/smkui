@@ -7,6 +7,11 @@
   @include clearfix;
 
   input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+  }
+
+  label {
     opacity: .3;
     @include image-replacement($grid);
     display: block;
@@ -22,18 +27,18 @@
   }
 
   // List
-  input[value="list"] {
+  label.list {
     @include image-replacement($list);
   }
   
   // Images only
-  input[value="image"] {
+  label.image {
     @include image-replacement($image);
   }
 
 
   // When checked
-  input[type="radio"]:checked {
+  input[type="radio"]:checked + label {
     opacity: 1;
   }
 }
