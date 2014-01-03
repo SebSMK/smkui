@@ -16,7 +16,7 @@ This code is made publically available for educational and inspirational purpose
 ## Todos
 - Get more button (at the end of search results)
 - Copyright notice for images on single view
-- Cutoff (show more text)
+
 
 ## Dones
 **JAN 2nd:**
@@ -25,3 +25,7 @@ This code is made publically available for educational and inspirational purpose
 - <s>View icons: change between list/grid view</s>
 - <s>Bug fix: Making view icons display nicely in IE8 and IE9</s>
 - <s>Adding teasers (list style) to docs</s>
+
+**JAN 3rd**
+
+- <s>Cutoff (show more text)</s>
