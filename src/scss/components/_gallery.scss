@@ -8,6 +8,13 @@
   width: 300px;
 }
 
+// Copyright notice
+.gallery__copyright {
+  @extend .type--small;
+  @extend .type--italic;
+  margin-top: .85em;
+}
+
 // Thumbnails
 .gallery__thumbnails {
   margin-right: -2%;

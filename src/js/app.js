@@ -166,6 +166,10 @@ $(document).ready(function() {
   // Set current thumbnail by adding a class to the currently viewed thumbnail.
   function setCurrentGalleryThumbnail() {
     var galleryMainImageUrl = $('.gallery__main img').attr('src');
+    var galleryMainImageCopyrightNotice = $('.gallery__main img').attr('title');
+
+    // Set current copyright notice
+    $('.gallery__copyright').text(galleryMainImageCopyrightNotice);
 
     $('.gallery__thumbnails a').each( function() {
       // First, remove all previously added 'current' classes
