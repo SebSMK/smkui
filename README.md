@@ -15,8 +15,6 @@ This code is made publically available for educational and inspirational purpose
 
 ## Todos
 - Get more button (at the end of search results)
-- Copyright notice for images on single view
-
 
 ## Dones
 **JAN 2nd:**
@@ -31,3 +29,4 @@ This code is made publically available for educational and inspirational purpose
 - <s>Cutoff (show more text)</s>
 - <s>Adding cutoff to view: single artwork</s>
 - <s>Adding dynamic title (copyright notice) to images on the view 'single artwork'</s>
+- <s>Copyright notice for images on single view</s>
