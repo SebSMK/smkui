@@ -5,7 +5,6 @@
 /*div*/.cutoff {
   overflow: hidden;
   position: relative;
-  margin-bottom: 2em;
   @include transition(all $time-m linear);
 
   // Open state
