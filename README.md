@@ -29,3 +29,5 @@ This code is made publically available for educational and inspirational purpose
 **JAN 3rd**
 
 - <s>Cutoff (show more text)</s>
+- <s>Adding cutoff to view: single artwork</s>
+- Adding dynamic title (copyright notice) to images on the view 'single artwork'
