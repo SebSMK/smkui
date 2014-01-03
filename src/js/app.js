@@ -187,10 +187,14 @@ $(document).ready(function() {
 
     // Get the href of the wrapping <a> tag
     var galleryThumbnailUrl = $(this).attr('href');
+    var galleryThumbnailCopyrightNotice = $(this).attr('data-copyright');
     
 
     // Replace the main image src with the galleryImageUrl
     $('.gallery__main img').attr('src', galleryThumbnailUrl);
+
+    // Set copyright notice as 'title' attribute
+    $('.gallery__main img').attr('title', galleryThumbnailCopyrightNotice);
 
     // Set current thumbnail.
     setCurrentGalleryThumbnail();
