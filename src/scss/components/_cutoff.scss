@@ -3,22 +3,42 @@
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /*div*/.cutoff {
-  max-height: 150px;
   overflow: hidden;
-  border-bottom: 1px solid red;
   position: relative;
   margin-bottom: 2em;
   @include transition(all $time-m linear);
+
+  // Open state
+  &.cutoff--open {
+    padding-bottom: 68px;
+
+    // Hide fade out
+    .cutoff__show-more { background: none; }
+  }
 }
 
+// This element is needed to make the 'show more' button cover over the copy
+.cutoff__button-wrapper {
+  border-top: 1px solid $black;
+  background: #fff;
+  height: 50px;
+  position: relative;
+  bottom: -50px;
+
+  // the 'show more' button
+  .button--s {
+    margin: -1px 0 0 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
 
 // Show more link
 // This eleement is being generated with js (see app.js)
 .cutoff__show-more {
   position: absolute;
-  background: red;
+  background: transparent url(../images/fade_out.png) 0 50px;
   height: 100px;
   bottom: 0;
   width: 100%;
-
 }

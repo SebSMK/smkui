@@ -33,7 +33,7 @@
 
   // When in focus
   &:focus {
-    @include focus;
+    // @include focus;
     color: #fff;
     background: $gray-darkest;
   }
@@ -152,6 +152,12 @@
   @include box-shadow(inset 0 0 0 1px $black);
 
   &:hover {
+    background-color: $gray !important;
+    color: $black;
+    @include box-shadow(inset 0 0 0 1px $black);
+  }
+
+  &:focus {
     background-color: $gray !important;
     color: $black;
     @include box-shadow(inset 0 0 0 1px $black);

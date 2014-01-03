@@ -200,20 +200,48 @@ $(document).ready(function() {
   /*
    § Cutoff
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  // This script is used together with src/scss/components/_cufoff.scss to cut
+  // This script is used together with src/scss/components/_cutoff.scss to cut
   // of large chunks of text.
 
-  // Add the 'Show more' link
+  // If the element with the class 'cutoff' is higher than n
+  $('.cutoff').each( function() {
+    if( $(this).outerHeight() > 150 ) {
+      // Reduce height
+      $(this).css('max-height', '150px');
+
+      // Add a 'show more' button
+      $(this).append('
+        <div class="cutoff__show-more">
+          <div class="cutoff__button-wrapper">
+            <a href="#" class="button--s button--subtle">Show more</a>
+          </div>
+        </div>
+      ');
+    }
+  });
+
+  // When the 'show more' button is clicked
   $('.cutoff__show-more').click( function(e) {
 
     e.preventDefault();
 
-    // Show the entire content
-    $(this).parent('.cutoff').css('max-height', '9999px');
-    $(this).parent('.cutoff').css('padding-bottom', $(this).outerHeight() + 10);
-  });
+    // If the cutoff element is 'open'
+    if( $(this).parent('.cutoff').outerHeight() > 150 ) {
+      $(this).parent('.cutoff').removeClass('cutoff--open');
+      $(this).parent('.cutoff').css('max-height', '150px');
 
-  // Show more when clicking the 'Show more' link
+      // Change text of button
+      $(this).find('.button--s').text('Show more');
+
+    // if closed 
+    } else {
+      $(this).parent('.cutoff').addClass('cutoff--open');
+      $(this).parent('.cutoff').css('max-height', '9999px');
+
+      // Change text of button
+      $(this).find('.button--s').text('Show less');
+    }
+  });
 
 
   /*

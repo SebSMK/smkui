@@ -56,12 +56,21 @@
 .button--subtle {
   border: 1px solid $black;
 
+  &:focus,
   &:hover {
     background-color: $gray !important;
     color: $black;
     border: 1px solid $black;
   }
 }
+
+/*
+ § Cutoff
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// The cutoff have been disabled in IE8 to save development time.
+
+.cutoff { max-height: 9999px !important; } // containing element
+.cutoff__show-more { display: none; } // show more button
 
 /*
  § Image replacements

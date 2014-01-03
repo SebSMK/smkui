@@ -1,4 +1,4 @@
-/*! Thursday, January 2nd, 2014, 13:06 */
+/*! Friday, January 3rd, 2014, 07:32 */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § Browse happy
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -73,7 +73,6 @@
 /* line 35, ../../src/scss/components/_button.scss */
 .button:focus, .button--s:focus, .button--l:focus, .button--disabled:focus, .button--thinking:focus, .button--purple:focus, .button--red:focus, .button--blue:focus, .button--green:focus, .button--yellow:focus, .button--subtle:focus,
 .button--m:focus {
-  outline: 4px solid rgba(14, 167, 226, 0.5);
   color: #fff;
   background: #39393a;
 }
@@ -194,59 +193,65 @@
   color: #111111;
   box-shadow: inset 0 0 0 1px #111111;
 }
+/* line 160, ../../src/scss/components/_button.scss */
+.button--subtle:focus {
+  background-color: #ecedf2 !important;
+  color: #111111;
+  box-shadow: inset 0 0 0 1px #111111;
+}
 
 /*
  § Thinking button
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @-webkit-keyframes thinking {
-  /* line 168, ../../src/scss/components/_button.scss */
+  /* line 174, ../../src/scss/components/_button.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 169, ../../src/scss/components/_button.scss */
+  /* line 175, ../../src/scss/components/_button.scss */
   100% {
     background-position: 40px 40px;
   }
 }
 
 @-moz-keyframes thinking {
-  /* line 168, ../../src/scss/components/_button.scss */
+  /* line 174, ../../src/scss/components/_button.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 169, ../../src/scss/components/_button.scss */
+  /* line 175, ../../src/scss/components/_button.scss */
   100% {
     background-position: 40px 40px;
   }
 }
 
 @-o-keyframes thinking {
-  /* line 168, ../../src/scss/components/_button.scss */
+  /* line 174, ../../src/scss/components/_button.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 169, ../../src/scss/components/_button.scss */
+  /* line 175, ../../src/scss/components/_button.scss */
   100% {
     background-position: 40px 40px;
   }
 }
 
 @keyframes thinking {
-  /* line 168, ../../src/scss/components/_button.scss */
+  /* line 174, ../../src/scss/components/_button.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 169, ../../src/scss/components/_button.scss */
+  /* line 175, ../../src/scss/components/_button.scss */
   100% {
     background-position: 40px 40px;
   }
 }
 
-/* line 177, ../../src/scss/components/_button.scss */
+/* line 183, ../../src/scss/components/_button.scss */
 .button--thinking, .button--thinking:hover {
   background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
   background-size: 40px 40px;

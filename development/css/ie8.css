@@ -1,4 +1,4 @@
-/*! Thursday, January 2nd, 2014, 13:06 */
+/*! Friday, January 3rd, 2014, 07:32 */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § Tweaks for IE8
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -78,17 +78,30 @@
 .button--subtle {
   border: 1px solid #111111;
 }
-/* line 59, ../../src/scss/ie8.scss */
-.button--subtle:hover {
+/* line 60, ../../src/scss/ie8.scss */
+.button--subtle:focus, .button--subtle:hover {
   background-color: #ecedf2 !important;
   color: #111111;
   border: 1px solid #111111;
 }
 
 /*
+ § Cutoff
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* line 72, ../../src/scss/ie8.scss */
+.cutoff {
+  max-height: 9999px !important;
+}
+
+/* line 73, ../../src/scss/ie8.scss */
+.cutoff__show-more {
+  display: none;
+}
+
+/*
  § Image replacements
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 73, ../../src/scss/ie8.scss */
+/* line 82, ../../src/scss/ie8.scss */
 .smk-logo {
   background-image: url("../images/smk_logo.png");
   background-position: 0 0;
@@ -97,7 +110,7 @@
   display: inline-block;
 }
 
-/* line 77, ../../src/scss/ie8.scss */
+/* line 86, ../../src/scss/ie8.scss */
 .smkui-logo,
 .smkui-logo--s {
   background-image: url("../images/smkui_logo_small.png");
@@ -107,7 +120,7 @@
   display: inline-block;
 }
 
-/* line 80, ../../src/scss/ie8.scss */
+/* line 89, ../../src/scss/ie8.scss */
 .smkui-logo--m {
   background-image: url("../images/smkui_logo.png");
   background-position: 0 0;
@@ -116,7 +129,7 @@
   display: inline-block;
 }
 
-/* line 83, ../../src/scss/ie8.scss */
+/* line 92, ../../src/scss/ie8.scss */
 .main-header .smkui-logo:after {
   background-image: url("../images/menu.png");
   background-position: 0 0;
@@ -125,7 +138,7 @@
   display: inline-block;
 }
 
-/* line 88, ../../src/scss/ie8.scss */
+/* line 97, ../../src/scss/ie8.scss */
 .sharing--iconified a[href*="facebook.com"] {
   background-image: url("../images/facebook.png");
   background-position: 0 0;
@@ -133,7 +146,7 @@
   text-indent: -9999em;
   display: inline-block;
 }
-/* line 91, ../../src/scss/ie8.scss */
+/* line 100, ../../src/scss/ie8.scss */
 .sharing--iconified a[href*="twitter.com"] {
   background-image: url("../images/twitter.png");
   background-position: 0 0;
@@ -141,7 +154,7 @@
   text-indent: -9999em;
   display: inline-block;
 }
-/* line 94, ../../src/scss/ie8.scss */
+/* line 103, ../../src/scss/ie8.scss */
 .sharing--iconified a[href*="plus.google.com"] {
   background-image: url("../images/google_plus.png");
   background-position: 0 0;
@@ -149,7 +162,7 @@
   text-indent: -9999em;
   display: inline-block;
 }
-/* line 97, ../../src/scss/ie8.scss */
+/* line 106, ../../src/scss/ie8.scss */
 .sharing--iconified a[href*="pinterest.com"] {
   background-image: url("../images/pinterest.png");
   background-position: 0 0;
@@ -158,7 +171,7 @@
   display: inline-block;
 }
 
-/* line 104, ../../src/scss/ie8.scss */
+/* line 113, ../../src/scss/ie8.scss */
 .view-picker label {
   background-image: url("../images/grid.png");
   background-position: 0 0;
@@ -166,7 +179,7 @@
   text-indent: -9999em;
   display: inline-block;
 }
-/* line 107, ../../src/scss/ie8.scss */
+/* line 116, ../../src/scss/ie8.scss */
 .view-picker label.list {
   background-image: url("../images/list.png");
   background-position: 0 0;
@@ -174,7 +187,7 @@
   text-indent: -9999em;
   display: inline-block;
 }
-/* line 110, ../../src/scss/ie8.scss */
+/* line 119, ../../src/scss/ie8.scss */
 .view-picker label.image {
   background-image: url("../images/image.png");
   background-position: 0 0;
