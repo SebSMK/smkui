@@ -12,21 +12,3 @@ Before diving into SMKUI to make changes or optimizations, you should be comfort
 
 ## Copyright notice
 This code is made publically available for educational and inspirational purposes only. While you are free to download, modify, and play around with the entire codebase it remains the intellectual property of [The National Gallery of Denmark](http://smk.dk/en). Note that the open source projects used in this project (like Grunt, Bower etc.) all fall under other usage licenses.
-
-## Todos
-- Get more button (at the end of search results)
-
-## Dones
-**JAN 2nd:**
-
-- <s>Subtle chosen (for 'sort by')</s>
-- <s>View icons: change between list/grid view</s>
-- <s>Bug fix: Making view icons display nicely in IE8 and IE9</s>
-- <s>Adding teasers (list style) to docs</s>
-
-**JAN 3rd**
-
-- <s>Cutoff (show more text)</s>
-- <s>Adding cutoff to view: single artwork</s>
-- <s>Adding dynamic title (copyright notice) to images on the view 'single artwork'</s>
-- <s>Copyright notice for images on single view</s>
