@@ -1,0 +1,10 @@
+// There are four gif sizes:
+// - loader_small.gif
+// - loader_medium.gif
+// - loader_large.gif
+// - loader_extra_large.gif
+
+.loading {
+  background: #fff url('/images/loader_extra_large.gif') 50% 18px no-repeat;
+  min-height: 76px;
+}

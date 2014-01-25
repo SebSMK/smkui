@@ -1,4 +1,4 @@
-/*! Saturday, January 25th, 2014, 10:15 */
+/*! Saturday, January 25th, 2014, 10:24 */
 @charset "UTF-8";
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § App
@@ -1603,6 +1603,12 @@ samp {
 /* line 40, ../../src/scss/components/_gallery.scss */
 .gallery__thumbnails a.current img {
   opacity: 1;
+}
+
+/* line 7, ../../src/scss/components/_loading.scss */
+.loading {
+  background: white url("/images/loader_extra_large.gif") 50% 18px no-repeat;
+  min-height: 76px;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
