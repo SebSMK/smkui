@@ -103,21 +103,6 @@
     width: 418px;
     float: left;
 
-    .gallery {
-      width: 418px;
-      
-      // Overriding the default gallery layout to adjust to smk.dk's
-      // desktop-first design.
-      .gallery__thumbnails {
-        margin-right: -6px;
-        margin-left: -6px;
-
-        a {
-          width: 95.5px;
-          margin: 12px 6px 0;
-        }
-      } // gallery__thumbnails
-    } // gallery
   } // #media-container
 
   // Artwork information

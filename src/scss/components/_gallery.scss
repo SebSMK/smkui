@@ -5,7 +5,7 @@
 
 .gallery {
   @include clearfix;
-  width: 300px;
+  width: 418px;
 }
 
 // Copyright notice
@@ -17,17 +17,24 @@
 
 // Thumbnails
 .gallery__thumbnails {
-  margin-right: -2%;
-  margin-left: -2%;
+  margin-right: -11px;
+  margin-left: -11px;
+
 
   a {
     display: block;
-    width: 21%;
+    border: 1px solid darken($gray, 5%);
+    width: 88px;
+    height: 88px;
     float: left;
-    margin: 4% 2% 0;
+    margin: 11px 11px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
 
     img {
       opacity: .5;
+      max-height: 66px;
     }
 
     &:hover,

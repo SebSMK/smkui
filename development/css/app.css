@@ -1,4 +1,4 @@
-/*! Sunday, January 26th, 2014, 10:28 */
+/*! Sunday, January 26th, 2014, 11:31 */
 @charset "UTF-8";
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § App
@@ -1559,7 +1559,7 @@ samp {
 /* line 6, ../../src/scss/components/_gallery.scss */
 .gallery {
   *zoom: 1;
-  width: 300px;
+  width: 418px;
 }
 /* line 18, ../../src/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
 .gallery:before, .gallery:after {
@@ -1578,25 +1578,31 @@ samp {
 
 /* line 19, ../../src/scss/components/_gallery.scss */
 .gallery__thumbnails {
-  margin-right: -2%;
-  margin-left: -2%;
+  margin-right: -11px;
+  margin-left: -11px;
 }
-/* line 23, ../../src/scss/components/_gallery.scss */
+/* line 24, ../../src/scss/components/_gallery.scss */
 .gallery__thumbnails a {
   display: block;
-  width: 21%;
+  border: 1px solid #dddfe8;
+  width: 88px;
+  height: 88px;
   float: left;
-  margin: 4% 2% 0;
-}
-/* line 29, ../../src/scss/components/_gallery.scss */
-.gallery__thumbnails a img {
-  opacity: .5;
+  margin: 11px 11px;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
 }
 /* line 35, ../../src/scss/components/_gallery.scss */
+.gallery__thumbnails a img {
+  opacity: .5;
+  max-height: 66px;
+}
+/* line 42, ../../src/scss/components/_gallery.scss */
 .gallery__thumbnails a:hover img, .gallery__thumbnails a:focus img {
   opacity: .6;
 }
-/* line 40, ../../src/scss/components/_gallery.scss */
+/* line 47, ../../src/scss/components/_gallery.scss */
 .gallery__thumbnails a.current img {
   opacity: 1;
 }
@@ -2455,38 +2461,24 @@ samp {
   width: 418px;
   float: left;
 }
-/* line 106, ../../src/scss/docs/_views.scss */
-.view #media-container .gallery {
-  width: 418px;
-}
-/* line 111, ../../src/scss/docs/_views.scss */
-.view #media-container .gallery .gallery__thumbnails {
-  margin-right: -6px;
-  margin-left: -6px;
-}
-/* line 115, ../../src/scss/docs/_views.scss */
-.view #media-container .gallery .gallery__thumbnails a {
-  width: 95.5px;
-  margin: 12px 6px 0;
-}
-/* line 124, ../../src/scss/docs/_views.scss */
+/* line 109, ../../src/scss/docs/_views.scss */
 .view #info-container {
   width: 418px;
   float: right;
 }
-/* line 129, ../../src/scss/docs/_views.scss */
+/* line 114, ../../src/scss/docs/_views.scss */
 .view #info-container .sharing--iconified {
   margin-bottom: 1.5em;
 }
-/* line 132, ../../src/scss/docs/_views.scss */
+/* line 117, ../../src/scss/docs/_views.scss */
 .view #related-artworks {
   clear: both;
 }
-/* line 135, ../../src/scss/docs/_views.scss */
+/* line 120, ../../src/scss/docs/_views.scss */
 .view #related-artworks > [class*="heading"] {
   padding-top: 2em;
 }
-/* line 139, ../../src/scss/docs/_views.scss */
+/* line 124, ../../src/scss/docs/_views.scss */
 .view #related-artworks #teaser-container-grid {
   margin-top: 0;
   width: 882px;

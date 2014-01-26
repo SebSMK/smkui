@@ -163,6 +163,24 @@ $(document).ready(function() {
   // See src/scss/components/_gallery.scss and src/templates/pages/gallery.hbs
   // for reference.
 
+  // Vertically center thumbnails
+  function verticalAlignThumbs() {
+    $('.gallery__thumbnails img').each( function() {
+
+      // Calculating offset that will vertically center the thumb
+      // NOTE: 66 is the maximum thumb height in pixels
+      var thumbHeight = $(this).height();
+      var verticalOffset =  (66 - thumbHeight) / 2;
+
+      if( $(this).height() < 66 ) {
+        $(this).css('margin-top', verticalOffset + 'px');
+      }
+    });
+  }
+
+  verticalAlignThumbs();
+
+
   // Set current thumbnail by adding a class to the currently viewed thumbnail.
   function setCurrentGalleryThumbnail() {
     var galleryMainImageUrl = $('.gallery__main img').attr('src');
