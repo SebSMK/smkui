@@ -1,4 +1,4 @@
-/*! Saturday, January 25th, 2014, 10:24 */
+/*! Sunday, January 26th, 2014, 10:26 */
 @charset "UTF-8";
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § App
@@ -1214,8 +1214,8 @@ samp {
 }
 /* line 127, ../../src/scss/components/_teaser.scss */
 .teaser--list .teaser__thumbnail {
-  float: right;
-  margin-left: 4%;
+  float: left;
+  margin-right: 4%;
   margin-bottom: 0;
   width: 16%;
 }
