@@ -1,4 +1,4 @@
-/*! Sunday, January 26th, 2014, 11:59 */
+/*! Sunday, January 26th, 2014, 12:04 */
 @charset "UTF-8";
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § App
@@ -1103,7 +1103,7 @@ samp {
 .teaser, .teaser--list,
 .teaser--grid {
   width: 30.12%;
-  border-bottom: 2px solid #111111;
+  border-bottom: 1px solid #ced0dd;
   padding-bottom: 1.35em;
   margin-right: 1.6%;
   margin-left: 1.6%;
