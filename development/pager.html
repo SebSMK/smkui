@@ -69,29 +69,57 @@
           
       
 
-<article id="view_picker" class="article article--view_picker">
+<article id="pager" class="article article--pager">
   <header>
-    <h1 class="heading--l">View picker</h1>
-    <p class="lead">An iconified radio button group to select a view style.</p>
+    <h1 class="heading--l">Pager</h1>
+    <p class="lead">For traditional pagination.</p>
   </header>
 
   <div class="subsection">
-    <h2 class="heading">Default look</h2>
+    <h2 class="heading">Default style</h2>
+    <p>
+      <ul class="pager">
+        <li class="pager__previous"><a href="#">Previous</a></li>
+        <li><a href="#">1</a></li>
+        <li class="pager__active"><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li class="pager__next"><a href="#">Next</a></li>
+      </ul>      
+    </p>
+  </div><!-- subsection -->
 
-    <form class="view-picker" method="post">
-      <input type="radio" name="view" value="grid" id="grid" checked />
-      <label for="grid" class="grid">Grid</label>
+  <div class="subsection">
+    <h2 class="heading">Disabled 'Previous' link</h2>
+    <p>
+      <ul class="pager">
+        <li class="pager__active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li class="pager__next"><a href="#">Next</a></li>
+      </ul>      
+    </p>
+  </div><!-- subsection -->
 
-      <input type="radio" name="view" value="list" id="list" />
-      <label for="list" class="list">List</label>
-
-      <input type="radio" name="view" value="image" id="image" />
-      <label for="image" class="image">Image</label>
-    </form>
+  <div class="subsection">
+    <h2 class="heading">Centered</h2>
+    <p>
+      <ul class="pager--center">
+        <li class="pager__previous"><a href="#">Previous</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li class="pager__active"><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li class="pager__next"><a href="#">Next</a></li>
+      </ul>      
+    </p>
   </div><!-- subsection -->
 
 </article>
-
     </section>
 
     <footer class="main-footer">

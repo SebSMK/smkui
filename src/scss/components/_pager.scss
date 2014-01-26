@@ -1,0 +1,44 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ § Pager
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*ul*/.pager {
+
+  li {
+    display: inline-block;
+    @extend .heading--s;
+
+    a {
+      padding: .25em .5em;
+      border-radius: 2px;
+    } 
+
+  } // li
+
+  .pager__active {
+    a {
+      background: $black;
+      color: #fff;
+
+    }
+  } // pager__active
+
+  .pager__previous {
+    a {
+      padding-left: 0;
+    }
+  }
+
+  .pager__next {
+    a {
+      padding-right: 0;
+    }
+  }
+
+} // pager
+
+// Center pager
+.pager--center {
+  @extend .pager;
+  text-align: center;
+}

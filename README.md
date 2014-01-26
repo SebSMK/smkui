@@ -15,10 +15,10 @@ This code is made publically available for educational and inspirational purpose
 
 ## Todos
 - Hvor er sortering på staging? (.5)
-- component: pager (1)
-- opdateret tooltip (det skal virke på view picker) (1)
+- Opdateret tooltip (det skal virke på view picker) (1)
 - Mulighed for multiple fritekst søgninger (skal optræde under søgefelt) (1)
-- view picker: fix bug i ff (1) - De 3 ikoner skal virke i IE (1)
+- View picker: fix bug i ff (1) - De 3 ikoner skal virke i IE (1)
+- view more button
 
 ## Malene
 - Visning af søgeresultater i to kollonner a la http://www.tate.org.uk/art/artworks?aid=199&ws=date&wv=list (2)
