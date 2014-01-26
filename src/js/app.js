@@ -178,7 +178,9 @@ $(document).ready(function() {
     });
   }
 
-  verticalAlignThumbs();
+  $(window).load(function() {
+    verticalAlignThumbs();
+  )};
 
 
   // Set current thumbnail by adding a class to the currently viewed thumbnail.
