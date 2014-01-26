@@ -15,9 +15,9 @@ This code is made publically available for educational and inspirational purpose
 
 ## Todos
 - Mulighed for multiple fritekst søgninger (skal optræde under søgefelt) (1)
-- Opdateret tooltip (det skal virke på view picker) (1)
 - View picker: fix bug i ff (1) - De 3 ikoner skal virke i IE (1)
 - view more button
 
 ## Awaiting
+- Opdateret tooltip (det skal virke på view picker) (1)
 - Visning af søgeresultater i to kollonner a la http://www.tate.org.uk/art/artworks?aid=199&ws=date&wv=list
