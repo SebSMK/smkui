@@ -123,19 +123,30 @@
   padding-top: 1.35em;
   padding-bottom: 1.35em;
 
-  // Thumbnail
   .teaser__thumbnail {
     float: left;
-    margin-right: 4%;
+    width: 88px;
+    margin-right: 20px;
     margin-bottom: 0;
-    width: 16%;
 
-    img { float: right; }
+    > a {
+      display: block;
+      border: 1px solid darken($gray, 5%);
+      width: 88px;
+      height: 88px;
+      overflow: hidden;
+      padding: 10px;
+      text-align: center;
+    }
+
+    img {
+      max-height: 66px;
+    }
   }
 
   // Content (title, description etc.)
   .teaser__content {
-    width: 80%;
+    width: 530px;
     float: left;
   }
 

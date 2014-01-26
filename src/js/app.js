@@ -24,8 +24,11 @@ function renderArtworksList() {
 }
 
 // Render away!
-renderArtworksGrid();
-renderArtworksList();
+$(document).ready(function() {
+  renderArtworksGrid();
+  renderArtworksList();
+});
+
 
 // Initialize Masonry.
 $(window).load(function() {
@@ -57,6 +60,9 @@ function setTeaserViewGrid() {
 
       // Adding CSS position (masonry doesn't add this automatically when rerun - see below)
       $(this).css('position', 'absolute');
+
+      // Removing list style vertical alignment for thumbs
+      $(this).find('img').css('margin-top', 'auto');
     } // end if
   });
 
@@ -94,6 +100,19 @@ function setTeaserViewList() {
 // When the user clicks the view picker (see view_picker.hbs)
 $('.view-picker input[value="list"]').click( function() {
   setTeaserViewList();
+
+  // Vertically align thumbs (in relation to their frames)
+  $('.teaser--list img').each( function() {
+
+    // Calculating offset that will vertically center the thumb
+    // NOTE: 66 is the maximum thumb height in pixels
+    var thumbHeight = $(this).height();
+    var verticalOffset =  (66 - thumbHeight) / 2;
+
+    if( $(this).height() < 66 ) {
+      $(this).css('margin-top', verticalOffset + 'px');
+    }
+  });
 });
 
 $('.view-picker input[value="grid"]').click( function() {
