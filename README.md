@@ -14,14 +14,11 @@ Before diving into SMKUI to make changes or optimizations, you should be comfort
 This code is made publically available for educational and inspirational purposes only. While you are free to download, modify, and play around with the entire codebase it remains the intellectual property of [The National Gallery of Denmark](http://smk.dk/en). Note that the open source projects used in this project (like Grunt, Bower etc.) all fall under other usage licenses.
 
 ## Todos
+- Hvor er sortering på staging? (.5)
 - component: pager (1)
 - opdateret tooltip (det skal virke på view picker) (1)
-- gallery thumbs: ikke beskåret. Se http://www.smk.dk/udforsk-kunsten/highlights/ (.5)
 - Mulighed for multiple fritekst søgninger (skal optræde under søgefelt) (1)
-- view picker: fix bug i ff (1)
-- nederste metainfo: lowercase
-- Hvor er sortering på staging? (.5)
+- view picker: fix bug i ff (1) - De 3 ikoner skal virke i IE (1)
 
 ## Malene
-- De 3 ikoner skal virke i IE (1)
 - Visning af søgeresultater i to kollonner a la http://www.tate.org.uk/art/artworks?aid=199&ws=date&wv=list (2)
