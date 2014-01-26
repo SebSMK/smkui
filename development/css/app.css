@@ -1,4 +1,4 @@
-/*! Sunday, January 26th, 2014, 10:27 */
+/*! Sunday, January 26th, 2014, 10:28 */
 @charset "UTF-8";
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § App
@@ -1182,10 +1182,6 @@ samp {
 /* line 101, ../../src/scss/components/_teaser.scss */
 .teaser__meta {
   margin-top: .5em;
-}
-/* line 107, ../../src/scss/components/_teaser.scss */
-.teaser__meta span {
-  text-transform: uppercase;
 }
 /* line 109, ../../src/scss/components/_teaser.scss */
 .teaser__meta span:after {
