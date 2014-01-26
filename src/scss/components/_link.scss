@@ -4,7 +4,7 @@
 
 // Default look.
 a {
-  color: $purple;
+  color: #000;
   text-decoration: none;
   line-height: inherit;
   @include transition(all $time-s ease-in-out);

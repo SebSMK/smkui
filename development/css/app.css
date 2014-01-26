@@ -1,4 +1,4 @@
-/*! Sunday, January 26th, 2014, 10:26 */
+/*! Sunday, January 26th, 2014, 10:27 */
 @charset "UTF-8";
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § App
@@ -436,7 +436,7 @@ sub {
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* line 6, ../../src/scss/components/_link.scss */
 a {
-  color: #5f66f2;
+  color: #000;
   text-decoration: none;
   line-height: inherit;
   -webkit-transition: all 200ms ease-in-out;

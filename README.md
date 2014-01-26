@@ -15,9 +15,7 @@ This code is made publically available for educational and inspirational purpose
 
 ## Todos
 - component: pager (1)
-- links: underline, sort (ændr style) 
 - opdateret tooltip (det skal virke på view picker) (1)
-- teaser list: venstrejustér 
 - gallery thumbs: ikke beskåret. Se http://www.smk.dk/udforsk-kunsten/highlights/ (.5)
 - Mulighed for multiple fritekst søgninger (skal optræde under søgefelt) (1)
 - view picker: fix bug i ff (1)
