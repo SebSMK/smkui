@@ -1,4 +1,4 @@
-/*! Sunday, January 26th, 2014, 15:01 */
+/*! Monday, January 27th, 2014, 13:52 */
 @charset "UTF-8";
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § App
@@ -62,6 +62,7 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
 figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
 time, mark, audio, video, button, input, select, textarea {
+  color: #111111;
   margin: 0;
   padding: 0;
   border: 0;
@@ -70,7 +71,7 @@ time, mark, audio, video, button, input, select, textarea {
   vertical-align: baseline;
 }
 
-/* line 42, ../../src/scss/components/_base.scss */
+/* line 43, ../../src/scss/components/_base.scss */
 ul,
 ol {
   list-style-type: none;
@@ -80,7 +81,7 @@ ol {
 /*
  § HTML5 box model behaviors.
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 62, ../../src/scss/components/_base.scss */
+/* line 63, ../../src/scss/components/_base.scss */
 article,
 aside,
 details,
@@ -96,20 +97,20 @@ summary {
   display: block;
 }
 
-/* line 69, ../../src/scss/components/_base.scss */
+/* line 70, ../../src/scss/components/_base.scss */
 audio,
 canvas,
 video {
   display: inline-block;
 }
 
-/* line 76, ../../src/scss/components/_base.scss */
+/* line 77, ../../src/scss/components/_base.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 85, ../../src/scss/components/_base.scss */
+/* line 86, ../../src/scss/components/_base.scss */
 [hidden],
 template {
   display: none;
@@ -118,7 +119,7 @@ template {
 /*
  § Base
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 95, ../../src/scss/components/_base.scss */
+/* line 96, ../../src/scss/components/_base.scss */
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -127,20 +128,20 @@ html {
   overflow-y: scroll;
 }
 
-/* line 106, ../../src/scss/components/_base.scss */
+/* line 107, ../../src/scss/components/_base.scss */
 body {
-  background: white;
+  background: #ecedf2;
 }
 
 /*
  § Links
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 114, ../../src/scss/components/_base.scss */
+/* line 115, ../../src/scss/components/_base.scss */
 a {
   background: transparent;
 }
 
-/* line 121, ../../src/scss/components/_base.scss */
+/* line 122, ../../src/scss/components/_base.scss */
 a:focus,
 a:active,
 a:hover {
@@ -150,40 +151,40 @@ a:hover {
 /*
  § Type
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 130, ../../src/scss/components/_base.scss */
+/* line 131, ../../src/scss/components/_base.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 135, ../../src/scss/components/_base.scss */
+/* line 136, ../../src/scss/components/_base.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 140, ../../src/scss/components/_base.scss */
+/* line 141, ../../src/scss/components/_base.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
 
-/* line 147, ../../src/scss/components/_base.scss */
+/* line 148, ../../src/scss/components/_base.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/* line 153, ../../src/scss/components/_base.scss */
+/* line 154, ../../src/scss/components/_base.scss */
 pre {
   white-space: pre-wrap;
 }
 
-/* line 158, ../../src/scss/components/_base.scss */
+/* line 159, ../../src/scss/components/_base.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/* line 164, ../../src/scss/components/_base.scss */
+/* line 165, ../../src/scss/components/_base.scss */
 sub,
 sup {
   line-height: 0;
@@ -194,7 +195,7 @@ sup {
 /*
  § Forms
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 176, ../../src/scss/components/_base.scss */
+/* line 177, ../../src/scss/components/_base.scss */
 button,
 input {
   line-height: normal;
@@ -202,13 +203,13 @@ input {
   border-radius: 0;
 }
 
-/* line 188, ../../src/scss/components/_base.scss */
+/* line 189, ../../src/scss/components/_base.scss */
 button,
 select {
   text-transform: none;
 }
 
-/* line 201, ../../src/scss/components/_base.scss */
+/* line 202, ../../src/scss/components/_base.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -219,13 +220,13 @@ input[type="submit"] {
   /* 3 */
 }
 
-/* line 208, ../../src/scss/components/_base.scss */
+/* line 209, ../../src/scss/components/_base.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-/* line 215, ../../src/scss/components/_base.scss */
+/* line 216, ../../src/scss/components/_base.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -234,7 +235,7 @@ input[type="radio"] {
   /* 2 */
 }
 
-/* line 224, ../../src/scss/components/_base.scss */
+/* line 225, ../../src/scss/components/_base.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -244,20 +245,20 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 234, ../../src/scss/components/_base.scss */
+/* line 235, ../../src/scss/components/_base.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 240, ../../src/scss/components/_base.scss */
+/* line 241, ../../src/scss/components/_base.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 247, ../../src/scss/components/_base.scss */
+/* line 248, ../../src/scss/components/_base.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -268,7 +269,7 @@ textarea {
 /*
  § IE10: Disable double-tap-to-zoom on certain elements.
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 257, ../../src/scss/components/_base.scss */
+/* line 258, ../../src/scss/components/_base.scss */
 a,
 input,
 button {
@@ -278,7 +279,7 @@ button {
 /*
  § Tables
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 265, ../../src/scss/components/_base.scss */
+/* line 266, ../../src/scss/components/_base.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -354,7 +355,6 @@ body {
   font-size: 12px;
   line-height: 1.45;
   color: #111111;
-  letter-spacing: .02em;
 }
 
 /* line 44, ../../src/scss/components/_type.scss */
@@ -396,14 +396,12 @@ small,
 
 /* line 76, ../../src/scss/components/_type.scss */
 .list li small, .list--bulleted li small, .list--tickmarked li small, .copy ul li small, .list--numbered li small, .copy ol li small, .copyright,
-.type--weak,
-.teaser__meta {
+.type--weak {
   color: #a2a2a5;
 }
 /* line 79, ../../src/scss/components/_type.scss */
 .list li small a, .list--bulleted li small a, .list--tickmarked li small a, .copy ul li small a, .list--numbered li small a, .copy ol li small a, .copyright a,
-.type--weak a,
-.teaser__meta a {
+.type--weak a {
   color: #8e93f6;
 }
 
@@ -1182,8 +1180,17 @@ samp {
 /* line 101, ../../src/scss/components/_teaser.scss */
 .teaser__meta {
   margin-top: .5em;
+  color: #a2a2a5;
 }
-/* line 109, ../../src/scss/components/_teaser.scss */
+/* line 106, ../../src/scss/components/_teaser.scss */
+.teaser__meta li {
+  color: #a2a2a5;
+}
+/* line 111, ../../src/scss/components/_teaser.scss */
+.teaser__meta span {
+  color: #a2a2a5;
+}
+/* line 115, ../../src/scss/components/_teaser.scss */
 .teaser__meta span:after {
   content: ":";
 }
@@ -1191,7 +1198,7 @@ samp {
 /*
  § List layout
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 118, ../../src/scss/components/_teaser.scss */
+/* line 124, ../../src/scss/components/_teaser.scss */
 .teaser--list {
   *zoom: 1;
   width: 100%;
@@ -1208,14 +1215,14 @@ samp {
 .teaser--list:after {
   clear: both;
 }
-/* line 126, ../../src/scss/components/_teaser.scss */
+/* line 132, ../../src/scss/components/_teaser.scss */
 .teaser--list .teaser__thumbnail {
   float: left;
   width: 88px;
   margin-right: 20px;
   margin-bottom: 0;
 }
-/* line 132, ../../src/scss/components/_teaser.scss */
+/* line 138, ../../src/scss/components/_teaser.scss */
 .teaser--list .teaser__thumbnail > a {
   display: block;
   border: 1px solid #dddfe8;
@@ -1225,16 +1232,16 @@ samp {
   padding: 10px;
   text-align: center;
 }
-/* line 142, ../../src/scss/components/_teaser.scss */
+/* line 148, ../../src/scss/components/_teaser.scss */
 .teaser--list .teaser__thumbnail img {
   max-height: 66px;
 }
-/* line 148, ../../src/scss/components/_teaser.scss */
+/* line 154, ../../src/scss/components/_teaser.scss */
 .teaser--list .teaser__content {
   width: 530px;
   float: left;
 }
-/* line 154, ../../src/scss/components/_teaser.scss */
+/* line 160, ../../src/scss/components/_teaser.scss */
 .teaser--list .teaser__meta {
   display: none;
 }
@@ -1247,7 +1254,7 @@ samp {
 .tabs {
   *zoom: 1;
   border-bottom: 1px solid #111111;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   position: relative;
   /*
    § Right aligned tabs item
@@ -1763,6 +1770,52 @@ samp {
   border-radius: 0;
 }
 
+/*
+ § Search terms
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* line 43, ../../src/scss/components/_search-box.scss */
+.search-terms {
+  margin-bottom: 12px;
+}
+/* line 46, ../../src/scss/components/_search-box.scss */
+.search-terms ul li {
+  position: relative;
+  margin: 0 0.35em 0.5em 0;
+  padding: 0.25em 1.5em 0.25em 0.4em;
+  background-color: #111111;
+  border-radius: 2px;
+  color: #fff;
+  background-clip: padding-box;
+  line-height: normal;
+  cursor: default;
+  display: inline-block;
+}
+/* line 58, ../../src/scss/components/_search-box.scss */
+.search-terms ul li > span {
+  color: #fff;
+}
+/* line 62, ../../src/scss/components/_search-box.scss */
+.search-terms ul li > a {
+  position: absolute;
+  top: .45em;
+  right: .4em;
+  background-image: url(../images/sprite_2x.png);
+  background-position: 0px -36px;
+  width: 9px;
+  height: 9px;
+  text-indent: -9999em;
+  display: inline-block;
+  background-size: 215px;
+  opacity: .6;
+}
+@media (-webkit-max-device-pixel-ratio: 1), (max-resolution: 96dpi) {
+  /* line 62, ../../src/scss/components/_search-box.scss */
+  .search-terms ul li > a {
+    background-image: url("../images/sprite_1x.png");
+    background-size: auto;
+  }
+}
+
 /* line 3, ../../src/scss/components/chosen.scss */
 .chosen label, .chosen--simple label {
   margin-right: .5em;
@@ -2083,8 +2136,12 @@ samp {
   line-height: normal;
   cursor: default;
 }
-
 /* line 234, ../../src/scss/components/chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice > span {
+  color: #fff;
+}
+
+/* line 238, ../../src/scss/components/chosen.scss */
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
   position: absolute;
   top: .45em;
@@ -2099,32 +2156,32 @@ samp {
   opacity: .6;
 }
 @media (-webkit-max-device-pixel-ratio: 1), (max-resolution: 96dpi) {
-  /* line 234, ../../src/scss/components/chosen.scss */
+  /* line 238, ../../src/scss/components/chosen.scss */
   .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
     background-image: url("../images/sprite_1x.png");
     background-size: auto;
   }
 }
 
-/* line 241, ../../src/scss/components/chosen.scss */
+/* line 245, ../../src/scss/components/chosen.scss */
 .chosen-container-multi .chosen-choices li.search-choice-disabled {
   border: 1px solid #cccccc;
   background-color: #e4e4e4;
   color: #666;
 }
 
-/* line 246, ../../src/scss/components/chosen.scss */
+/* line 250, ../../src/scss/components/chosen.scss */
 .chosen-container-multi .chosen-choices li.search-choice-focus {
   background: #d4d4d4;
 }
 
-/* line 251, ../../src/scss/components/chosen.scss */
+/* line 255, ../../src/scss/components/chosen.scss */
 .chosen-container-multi .chosen-results {
   margin: 0;
   padding: 0;
 }
 
-/* line 255, ../../src/scss/components/chosen.scss */
+/* line 259, ../../src/scss/components/chosen.scss */
 .chosen-drop .result-selected {
   display: list-item;
   color: #111111;
@@ -2134,23 +2191,23 @@ samp {
 
 /* @end */
 /* @group Active  */
-/* line 266, ../../src/scss/components/chosen.scss */
+/* line 270, ../../src/scss/components/chosen.scss */
 .chosen-container-active.chosen-with-drop .chosen-single {
   background: #fff;
   border: 1px solid #111111;
 }
 
-/* line 270, ../../src/scss/components/chosen.scss */
+/* line 274, ../../src/scss/components/chosen.scss */
 .chosen-container-active.chosen-with-drop .chosen-single div {
   background-color: transparent;
 }
 
-/* line 274, ../../src/scss/components/chosen.scss */
+/* line 278, ../../src/scss/components/chosen.scss */
 .chosen-container-active.chosen-with-drop .chosen-single div b {
   background: none;
 }
 
-/* line 278, ../../src/scss/components/chosen.scss */
+/* line 282, ../../src/scss/components/chosen.scss */
 .chosen-container-active .chosen-choices {
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
@@ -2158,25 +2215,25 @@ samp {
   background: #fff;
 }
 
-/* line 283, ../../src/scss/components/chosen.scss */
+/* line 287, ../../src/scss/components/chosen.scss */
 .chosen-container-active .chosen-choices li.search-field input[type="text"] {
   color: #111111 !important;
 }
 
 /* @end */
 /* @group Disabled Support */
-/* line 289, ../../src/scss/components/chosen.scss */
+/* line 293, ../../src/scss/components/chosen.scss */
 .chosen-disabled {
   opacity: 0.5 !important;
   cursor: default;
 }
 
-/* line 293, ../../src/scss/components/chosen.scss */
+/* line 297, ../../src/scss/components/chosen.scss */
 .chosen-disabled .chosen-single {
   cursor: default;
 }
 
-/* line 296, ../../src/scss/components/chosen.scss */
+/* line 300, ../../src/scss/components/chosen.scss */
 .chosen-disabled .chosen-choices .search-choice .search-choice-close {
   cursor: default;
 }
@@ -2184,7 +2241,7 @@ samp {
 /*
  § Chosen multiselect
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 303, ../../src/scss/components/chosen.scss */
+/* line 307, ../../src/scss/components/chosen.scss */
 .chosen--multiple .chosen-container.chosen-with-drop {
   width: 100% !important;
 }
@@ -2192,14 +2249,14 @@ samp {
 /*
  § Chosen multiselect (always open)
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 311, ../../src/scss/components/chosen.scss */
+/* line 315, ../../src/scss/components/chosen.scss */
 .chosen--multiple.chosen--open .chosen-drop {
   position: relative;
   left: auto;
   box-shadow: none;
   z-index: 1000;
 }
-/* line 317, ../../src/scss/components/chosen.scss */
+/* line 321, ../../src/scss/components/chosen.scss */
 .chosen--multiple.chosen--open .chosen-drop .chosen-results {
   height: 164px;
 }
@@ -2210,12 +2267,12 @@ samp {
 /*
  § Chosen simple select (small version)
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 338, ../../src/scss/components/chosen.scss */
+/* line 342, ../../src/scss/components/chosen.scss */
 .chosen--simple.chosen--small .chosen-single {
   padding: 0 0.45em;
   line-height: 20px;
 }
-/* line 344, ../../src/scss/components/chosen.scss */
+/* line 348, ../../src/scss/components/chosen.scss */
 .chosen--simple.chosen--small .chosen-container-single .chosen-single div b {
   background-image: url(../images/sprite_2x.png);
   background-position: 0px 0px;
@@ -2228,17 +2285,17 @@ samp {
   margin-left: 2px;
 }
 @media (-webkit-max-device-pixel-ratio: 1), (max-resolution: 96dpi) {
-  /* line 344, ../../src/scss/components/chosen.scss */
+  /* line 348, ../../src/scss/components/chosen.scss */
   .chosen--simple.chosen--small .chosen-container-single .chosen-single div b {
     background-image: url("../images/sprite_1x.png");
     background-size: auto;
   }
 }
-/* line 351, ../../src/scss/components/chosen.scss */
+/* line 355, ../../src/scss/components/chosen.scss */
 .chosen--simple.chosen--small .chosen-container-single .chosen-single span {
   margin-right: 17px;
 }
-/* line 355, ../../src/scss/components/chosen.scss */
+/* line 359, ../../src/scss/components/chosen.scss */
 .chosen--simple.chosen--small .chosen-container .chosen-results li {
   padding-right: .45em;
   padding-left: .45em;
@@ -2250,21 +2307,180 @@ samp {
 /*
  § Container
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 9, ../../src/scss/docs/_layout.scss */
+/* line 11, ../../src/scss/docs/_layout.scss */
 .main-header section,
 .main-footer, .section--main {
-  max-width: 1300px;
-  min-width: 200px;
   margin: 0 auto;
-  padding: 0 6%;
+  width: 882px;
 }
 
 /*
  § Default layout
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*
- § Layout on small screens
+ § Search box
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* line 35, ../../src/scss/docs/_layout.scss */
+.search-box {
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+/*
+ § Main section
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* line 43, ../../src/scss/docs/_layout.scss */
+.section--main {
+  *zoom: 1;
+  background-color: #fff;
+  max-width: auto;
+  min-width: auto;
+  padding: 12px;
+  position: relative;
+}
+/* line 18, ../../src/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+.section--main:before, .section--main:after {
+  content: " ";
+  display: table;
+}
+/* line 23, ../../src/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+.section--main:after {
+  clear: both;
+}
+
+/*
+ § View picker
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* line 56, ../../src/scss/docs/_layout.scss */
+.view-picker {
+  position: absolute;
+  right: 5px;
+}
+/* line 60, ../../src/scss/docs/_layout.scss */
+.view-picker input {
+  margin-right: 0;
+  margin-left: .65em;
+}
+
+/*
+ § Sort by...
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* line 71, ../../src/scss/docs/_layout.scss */
+.sort-by-picker {
+  position: absolute;
+  top: 20px;
+  right: 11px;
+}
+
+/*
+ § Teaser grid
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* line 84, ../../src/scss/docs/_layout.scss */
+#teaser-container-grid {
+  margin-top: 27px;
+  margin-right: -11px;
+  margin-left: -11px;
+  width: 660px;
+  float: right;
+}
+/* line 91, ../../src/scss/docs/_layout.scss */
+#teaser-container-grid .teaser--grid {
+  width: 198px;
+  margin-right: 11px;
+  margin-left: 11px;
+}
+
+/*
+ § Search filters
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* line 101, ../../src/scss/docs/_layout.scss */
+#search-filters {
+  margin-top: 27px;
+  width: 198px;
+  float: left;
+}
+/* line 107, ../../src/scss/docs/_layout.scss */
+#search-filters .search-filter {
+  margin-top: -.3em;
+  margin-bottom: 2em;
+}
+
+/*
+ § Artwork (single view)
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* line 117, ../../src/scss/docs/_layout.scss */
+#media-container {
+  width: 418px;
+  float: left;
+}
+
+/* line 124, ../../src/scss/docs/_layout.scss */
+#info-container {
+  width: 418px;
+  float: right;
+}
+/* line 129, ../../src/scss/docs/_layout.scss */
+#info-container .sharing--iconified {
+  margin-bottom: 1.5em;
+}
+
+/*
+ § Related artworks
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* line 136, ../../src/scss/docs/_layout.scss */
+#related-artworks {
+  clear: both;
+}
+/* line 139, ../../src/scss/docs/_layout.scss */
+#related-artworks > [class*="heading"] {
+  padding-top: 2em;
+}
+/* line 143, ../../src/scss/docs/_layout.scss */
+#related-artworks #teaser-container-grid {
+  margin-top: 0;
+  width: 882px;
+  float: none;
+}
+
+/*
+ § Header
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* line 155, ../../src/scss/docs/_layout.scss */
+#header,
+#header * {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 160, ../../src/scss/docs/_layout.scss */
+#header_search {
+  position: relative;
+}
+
+/* line 164, ../../src/scss/docs/_layout.scss */
+.search_submit {
+  width: 50px;
+  height: 20px;
+  position: absolute;
+}
+
+/*
+ § Footer
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* line 173, ../../src/scss/docs/_layout.scss */
+#footer {
+  margin-top: 40px;
+}
+
+/* line 179, ../../src/scss/docs/_layout.scss */
+.footer_content,
+.footer_content * {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § Main header
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -2402,127 +2618,4 @@ samp {
 .color span {
   background: #fff;
   padding: 12px;
-}
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
- § Views
-\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/*html*/
-/* line 7, ../../src/scss/docs/_views.scss */
-.view {
-  /*
-   § Artwork (single view)
-  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-}
-/* line 10, ../../src/scss/docs/_views.scss */
-.view body {
-  background: #ecedf2;
-}
-/* line 15, ../../src/scss/docs/_views.scss */
-.view .container {
-  margin: 0 auto;
-  width: 882px;
-}
-/* line 21, ../../src/scss/docs/_views.scss */
-.view .view-main-header {
-  margin-bottom: 10px;
-}
-/* line 26, ../../src/scss/docs/_views.scss */
-.view .view-main-footer {
-  margin-top: 40px;
-}
-/* line 31, ../../src/scss/docs/_views.scss */
-.view .search-box {
-  margin-bottom: 10px;
-}
-/* line 36, ../../src/scss/docs/_views.scss */
-.view .section--main {
-  *zoom: 1;
-  background-color: #fff;
-  max-width: auto;
-  min-width: auto;
-  padding: 12px;
-  position: relative;
-}
-/* line 18, ../../src/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
-.view .section--main:before, .view .section--main:after {
-  content: " ";
-  display: table;
-}
-/* line 23, ../../src/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
-.view .section--main:after {
-  clear: both;
-}
-/* line 46, ../../src/scss/docs/_views.scss */
-.view .tabs {
-  margin-bottom: 1em;
-}
-/* line 51, ../../src/scss/docs/_views.scss */
-.view .view-picker {
-  position: absolute;
-  right: 5px;
-}
-/* line 55, ../../src/scss/docs/_views.scss */
-.view .view-picker input {
-  margin-right: 0;
-  margin-left: .65em;
-}
-/* line 62, ../../src/scss/docs/_views.scss */
-.view .sort-by-picker {
-  position: absolute;
-  top: 20px;
-  right: 11px;
-}
-/* line 71, ../../src/scss/docs/_views.scss */
-.view #teaser-container-grid {
-  margin-top: 27px;
-  margin-right: -11px;
-  margin-left: -11px;
-  width: 660px;
-  float: right;
-}
-/* line 78, ../../src/scss/docs/_views.scss */
-.view #teaser-container-grid .teaser--grid {
-  width: 198px;
-  margin-right: 11px;
-  margin-left: 11px;
-}
-/* line 86, ../../src/scss/docs/_views.scss */
-.view #search-filters {
-  margin-top: 27px;
-  width: 198px;
-  float: left;
-}
-/* line 92, ../../src/scss/docs/_views.scss */
-.view #search-filters .search-filter {
-  margin-top: -.3em;
-  margin-bottom: 2em;
-}
-/* line 102, ../../src/scss/docs/_views.scss */
-.view #media-container {
-  width: 418px;
-  float: left;
-}
-/* line 109, ../../src/scss/docs/_views.scss */
-.view #info-container {
-  width: 418px;
-  float: right;
-}
-/* line 114, ../../src/scss/docs/_views.scss */
-.view #info-container .sharing--iconified {
-  margin-bottom: 1.5em;
-}
-/* line 117, ../../src/scss/docs/_views.scss */
-.view #related-artworks {
-  clear: both;
-}
-/* line 120, ../../src/scss/docs/_views.scss */
-.view #related-artworks > [class*="heading"] {
-  padding-top: 2em;
-}
-/* line 124, ../../src/scss/docs/_views.scss */
-.view #related-artworks #teaser-container-grid {
-  margin-top: 0;
-  width: 882px;
-  float: none;
 }

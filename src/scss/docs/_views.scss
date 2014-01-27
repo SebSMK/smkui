@@ -6,126 +6,37 @@
 
 /*html*/.view {
 
-  // Body background color
-  body {
-    background: $gray;
-  }
+  // // Body background color
+  // body {
+  //   background: $gray;
+  // }
 
-  // Basic layout
-  .container {
-    margin: 0 auto;
-    width: 882px;
-  }
+  // // Basic layout
+  // .container {
+  //   margin: 0 auto;
+  //   width: 882px;
+  // }
 
-  // Header
-  .view-main-header {
-    margin-bottom: 10px;
-  }
+  // // Header
+  // .view-main-header {
+  //   margin-bottom: 10px;
+  // }
 
-  // Footer
-  .view-main-footer {
-    margin-top: 40px;
-  }
+  // // Footer
+  // .view-main-footer {
+  //   margin-top: 40px;
+  // }
 
-  // Search form
-  .search-box {
-    margin-bottom: 10px;
-  }
 
-  // Main section
-  .section--main {
-    @include clearfix;
-    background-color: #fff;
-    max-width: auto;
-    min-width: auto;
-    padding: 12px;
-    position: relative;
-  }
 
-  // Tabs
-  .tabs {
-    margin-bottom: 1em;
-  }
 
-  // View picker (float it to the right)
-  .view-picker {
-    position: absolute;
-    right: 5px;
 
-    input {
-      margin-right: 0;
-      margin-left: .65em;
-    }
-  } // view-picker
 
-  // Sort by select options (place to the right)
-  .sort-by-picker {
-    position: absolute;
-    top: 20px;
-    right: 11px;
-  }
 
-  // Adjust the width of the teaser's container to make room for a fourth column
-  // for search filters. Here we also override the grid's default column width
-  // to adabt it for smk.dk's desktop-first design. See _teasers.scss for reference.
-  #teaser-container-grid {
-    margin-top: 27px;
-    margin-right: -11px;
-    margin-left: -11px;
-    width: 660px;
-    float: right;
 
-    .teaser--grid {
-      width: 198px;
-      margin-right: 11px;
-      margin-left: 11px;
-    }
-  } // teaser-container-grid
 
-  // Search filters
-  #search-filters {
-    margin-top: 27px;
-    width: 198px;
-    float: left;
 
-    // Filter headings
-    .search-filter {
-      margin-top: -.3em; // For alignment with top of teaser grid
-      margin-bottom: 2em;
-    }
-  }
 
-  /*
-   § Artwork (single view)
-  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  // Artwork media
-  #media-container {
-    width: 418px;
-    float: left;
 
-  } // #media-container
-
-  // Artwork information
-  #info-container {
-    width: 418px;
-    float: right;
-
-    // Adding space to clear the heading
-    .sharing--iconified { margin-bottom: 1.5em; }
-  }
-
-  #related-artworks {
-    clear: both;
-
-    > [class*="heading"] {
-      padding-top: 2em;
-    }
-
-    #teaser-container-grid {
-      margin-top: 0;
-      width: 882px;
-      float: none;
-    }
-  }
 
 } // view

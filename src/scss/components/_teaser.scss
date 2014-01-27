@@ -100,11 +100,17 @@
 // Meta-information
 .teaser__meta {
   @extend .type--small;
-  @extend .type--weak;
   margin-top: .5em;
+  color: $gray-dark;
+
+  li {
+    color: $gray-dark;
+  }
   
   // Label
   span {
+    color: $gray-dark;
+
     // text-transform: uppercase;
     &:after {
       content: ":";

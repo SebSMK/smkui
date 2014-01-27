@@ -2,15 +2,15 @@
  § Layout
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 // Use this file to define page layouts.
+// Separating the layout from the components themselves enables the components
+// to be used in many different contexts.
 
 /*
  § Container
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 %container {
-  max-width: 1300px;
-  min-width: 200px;
   margin: 0 auto;
-  padding: 0 6%;
+  width: 882px;
 }
 
 /*
@@ -30,6 +30,152 @@
 } // .article
 
 /*
- § Layout on small screens
+ § Search box
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-// ...
+.search-box {
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+/*
+ § Main section
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.section--main {
+  @include clearfix;
+  background-color: #fff;
+  max-width: auto;
+  min-width: auto;
+  padding: 12px;
+  position: relative;
+}
+
+/*
+ § View picker
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// View picker (float it to the right)
+.view-picker {
+  position: absolute;
+  right: 5px;
+
+  input {
+    margin-right: 0;
+    margin-left: .65em;
+  }
+} // view-picker
+
+
+/*
+ § Sort by...
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// Sort by select options (place to the right)
+.sort-by-picker {
+  position: absolute;
+  top: 20px;
+  right: 11px;
+}
+
+
+/*
+ § Teaser grid
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// Adjust the width of the teaser's container to make room for a fourth column
+// for search filters. Here we also override the grid's default column width
+// to adabt it for smk.dk's desktop-first design. See _teasers.scss for reference.
+#teaser-container-grid {
+  margin-top: 27px;
+  margin-right: -11px;
+  margin-left: -11px;
+  width: 660px;
+  float: right;
+
+  .teaser--grid {
+    width: 198px;
+    margin-right: 11px;
+    margin-left: 11px;
+  }
+} // teaser-container-grid
+
+/*
+ § Search filters
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#search-filters {
+  margin-top: 27px;
+  width: 198px;
+  float: left;
+
+  // Filter headings
+  .search-filter {
+    margin-top: -.3em; // For alignment with top of teaser grid
+    margin-bottom: 2em;
+  }
+}
+
+/*
+ § Artwork (single view)
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// Artwork media
+#media-container {
+  width: 418px;
+  float: left;
+
+} // #media-container
+
+// Artwork information
+#info-container {
+  width: 418px;
+  float: right;
+
+  // Adding space to clear the heading
+  .sharing--iconified { margin-bottom: 1.5em; }
+}
+
+
+/*
+ § Related artworks
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#related-artworks {
+  clear: both;
+
+  > [class*="heading"] {
+    padding-top: 2em;
+  }
+
+  #teaser-container-grid {
+    margin-top: 0;
+    width: 882px;
+    float: none;
+  }
+}
+
+/*
+ § Header
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// Specifying box-model
+#header,
+#header * {
+  @include box-sizing(content-box);
+}
+
+// Search
+#header_search {
+  position: relative;
+}
+
+.search_submit {
+  width: 50px;
+  height: 20px;
+  position: absolute;
+}
+
+/*
+ § Footer
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#footer {
+  margin-top: 40px;
+}
+
+// Specifying box-model
+.footer_content,
+.footer_content * {
+  @include box-sizing(content-box);
+}

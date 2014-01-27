@@ -23,4 +23,34 @@ title:    Search box
 
   </div><!-- subsection -->
 
+  <div class="subsection">
+    <h2 class="heading">With added search terms</h2>
+    <p>Here multiple search temrs have been added to the search.</p>
+
+    <!-- Search box -->
+    <form role="search" method="get" class="search-box" action="">
+      <label for="search">Search for</label>
+      <input class="typeahead field" type="text" value="" name="search" id="search" placeholder="Search for anything..." autocomplete="off" spellcheck="false" dir="auto" />
+      <input class="button" type="submit" value="Search" />
+    </form>
+
+    <div class="search-terms">
+      <ul>
+        <li>
+          <span>Lion</span>
+          <a href="#" class="search-term__close"></a>
+        </li>
+        <li>
+          <span>Giraffe</span>
+          <a href="#" class="search-term__close"></a>
+        </li>
+        <li>
+          <span>Slug</span>
+          <a href="#" class="search-term__close"></a>
+        </li>
+      </ul>
+    </div>
+
+  </div><!-- subsection -->
+
 </article>

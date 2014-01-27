@@ -230,6 +230,10 @@
   background-clip: padding-box;
   line-height: normal;
   cursor: default;
+
+  > span {
+    color: #fff;
+  }
 }
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
   position: absolute;

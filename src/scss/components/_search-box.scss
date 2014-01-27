@@ -35,3 +35,36 @@
     }
   }
 }
+
+/*
+ § Search terms
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.search-terms {
+  margin-bottom: 12px;
+
+  ul li {
+    position: relative;
+    margin: 0 .35em .5em 0;
+    padding: 0.25em 1.5em 0.25em 0.4em;
+    background-color: $black;
+    border-radius: 2px;
+    color: #fff;
+    background-clip: padding-box;
+    line-height: normal;
+    cursor: default;
+    display: inline-block;
+
+    > span {
+      color: #fff;
+    }
+
+    > a {
+      position: absolute;
+      top: .45em;
+      right: .4em;
+      @include image-replacement($cross);
+      opacity: .6;
+    } // a
+  } // li
+} // search-terms
