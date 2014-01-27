@@ -86,13 +86,7 @@ function setTeaserViewList() {
       $(this).addClass('teaser--list');
 
       // Adjusting CSS
-      $(this).css('position', 'relative');
-      $(this).css('float', 'none');
-      $(this).css('width', 'auto');
-      $(this).css('top', 'auto');
-      $(this).css('right', 'auto');
-      $(this).css('bottom', 'auto');
-      $(this).css('left', 'auto');
+      $(this).attr('style', '');
     } // end if
   });
 } // setTeaserViewGrid
