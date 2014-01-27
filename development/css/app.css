@@ -1,4 +1,4 @@
-/*! Monday, January 27th, 2014, 20:37 */
+/*! Monday, January 27th, 2014, 21:07 */
 @charset "UTF-8";
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § App
@@ -1201,7 +1201,7 @@ samp {
 /* line 124, ../../src/scss/components/_teaser.scss */
 .teaser--list {
   *zoom: 1;
-  width: 100%;
+  width: 638px;
   margin-bottom: 0;
   padding-top: 1.35em;
   padding-bottom: 1.35em;
@@ -1244,6 +1244,25 @@ samp {
 /* line 160, ../../src/scss/components/_teaser.scss */
 .teaser--list .teaser__meta {
   display: none;
+}
+
+/* line 168, ../../src/scss/components/_teaser.scss */
+.teaser--two-columns {
+  width: 416px;
+  float: left;
+  margin-right: 12px;
+  margin-left: 12px;
+  min-height: 150px;
+}
+/* line 175, ../../src/scss/components/_teaser.scss */
+.teaser--two-columns .teaser__content {
+  width: 308px;
+}
+
+/* line 183, ../../src/scss/components/_teaser.scss */
+#teaser-container-grid .teaser--two-columns:first-child,
+#teaser-container-grid .teaser--two-columns:nth-child(2) {
+  border-top: 1px solid #ced0dd;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
@@ -2389,17 +2408,21 @@ samp {
   margin-right: 11px;
   margin-left: 11px;
 }
+/* line 98, ../../src/scss/docs/_layout.scss */
+#teaser-container-grid.full-width {
+  width: 880px;
+}
 
 /*
  § Search filters
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 101, ../../src/scss/docs/_layout.scss */
+/* line 106, ../../src/scss/docs/_layout.scss */
 #search-filters {
   margin-top: 27px;
   width: 198px;
   float: left;
 }
-/* line 107, ../../src/scss/docs/_layout.scss */
+/* line 112, ../../src/scss/docs/_layout.scss */
 #search-filters .search-filter {
   margin-top: -.3em;
   margin-bottom: 2em;
@@ -2408,18 +2431,18 @@ samp {
 /*
  § Artwork (single view)
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 117, ../../src/scss/docs/_layout.scss */
+/* line 122, ../../src/scss/docs/_layout.scss */
 #media-container {
   width: 418px;
   float: left;
 }
 
-/* line 124, ../../src/scss/docs/_layout.scss */
+/* line 129, ../../src/scss/docs/_layout.scss */
 #info-container {
   width: 418px;
   float: right;
 }
-/* line 129, ../../src/scss/docs/_layout.scss */
+/* line 134, ../../src/scss/docs/_layout.scss */
 #info-container .sharing--iconified {
   margin-bottom: 1.5em;
 }
@@ -2427,15 +2450,15 @@ samp {
 /*
  § Related artworks
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 136, ../../src/scss/docs/_layout.scss */
+/* line 141, ../../src/scss/docs/_layout.scss */
 #related-artworks {
   clear: both;
 }
-/* line 139, ../../src/scss/docs/_layout.scss */
+/* line 144, ../../src/scss/docs/_layout.scss */
 #related-artworks > [class*="heading"] {
   padding-top: 2em;
 }
-/* line 143, ../../src/scss/docs/_layout.scss */
+/* line 148, ../../src/scss/docs/_layout.scss */
 #related-artworks #teaser-container-grid {
   margin-top: 0;
   width: 882px;
@@ -2445,7 +2468,7 @@ samp {
 /*
  § Header
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 155, ../../src/scss/docs/_layout.scss */
+/* line 160, ../../src/scss/docs/_layout.scss */
 #header,
 #header * {
   -webkit-box-sizing: content-box;
@@ -2453,12 +2476,12 @@ samp {
   box-sizing: content-box;
 }
 
-/* line 160, ../../src/scss/docs/_layout.scss */
+/* line 165, ../../src/scss/docs/_layout.scss */
 #header_search {
   position: relative;
 }
 
-/* line 164, ../../src/scss/docs/_layout.scss */
+/* line 169, ../../src/scss/docs/_layout.scss */
 .search_submit {
   width: 50px;
   height: 20px;
@@ -2468,12 +2491,12 @@ samp {
 /*
  § Footer
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 173, ../../src/scss/docs/_layout.scss */
+/* line 178, ../../src/scss/docs/_layout.scss */
 #footer {
   margin-top: 40px;
 }
 
-/* line 179, ../../src/scss/docs/_layout.scss */
+/* line 184, ../../src/scss/docs/_layout.scss */
 .footer_content,
 .footer_content * {
   -webkit-box-sizing: content-box;

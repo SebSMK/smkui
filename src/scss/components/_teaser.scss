@@ -124,7 +124,7 @@
 .teaser--list {
   @extend .teaser;
   @include clearfix;
-  width: 100%;
+  width: 638px; // One column layout
   margin-bottom: 0;
   padding-top: 1.35em;
   padding-bottom: 1.35em;
@@ -160,5 +160,27 @@
   .teaser__meta {
     @extend .teaser__category; // Display inline.
     display: none;
+  }
+}
+
+// List items in two columns.
+// This is for .teaser--list only.
+.teaser--two-columns {
+  width: 416px;
+  float: left;
+  margin-right: 12px;
+  margin-left: 12px;
+  min-height: 150px;
+
+  .teaser__content {
+    width: 308px;
+  }
+}
+
+// Add a top border to the first two teaser list items in a two column layout
+#teaser-container-grid {
+  .teaser--two-columns:first-child,
+  .teaser--two-columns:nth-child(2) {
+    border-top: 1px solid darken($gray, 10%);
   }
 }

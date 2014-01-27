@@ -53,6 +53,7 @@ function setTeaserViewGrid() {
 
       // Switching classes
       $(this).removeClass('teaser--list');
+      $(this).removeClass('teaser--two-columns');
       $(this).addClass('teaser--grid');
 
       // Removing list style css
@@ -88,6 +89,11 @@ function setTeaserViewList() {
       // Adjusting CSS
       $(this).attr('style', '');
     } // end if
+
+    // If the teaser container is full width, than make a two column layout.
+    if ( $('#teaser-container-grid').hasClass('full-width') ) {
+      $(this).addClass('teaser--two-columns');
+    }
   });
 } // setTeaserViewGrid
 
