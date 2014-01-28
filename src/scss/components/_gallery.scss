@@ -45,6 +45,7 @@
     // Current thumbnail being viewed
     &.current {
       img { opacity: 1; }
+      border-color: $gray-dark;
     }  
   }
 }

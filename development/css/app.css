@@ -1,4 +1,4 @@
-/*! Tuesday, January 28th, 2014, 11:45 */
+/*! Tuesday, January 28th, 2014, 11:57 */
 @charset "UTF-8";
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § App
@@ -1643,6 +1643,10 @@ samp {
 .gallery__thumbnails a:hover img, .gallery__thumbnails a:focus img {
   opacity: .6;
 }
+/* line 46, ../../src/scss/components/_gallery.scss */
+.gallery__thumbnails a.current {
+  border-color: #a2a2a5;
+}
 /* line 47, ../../src/scss/components/_gallery.scss */
 .gallery__thumbnails a.current img {
   opacity: 1;
@@ -2485,18 +2489,24 @@ samp {
   margin-bottom: 1.5em;
 }
 
+/* line 138, ../../src/scss/docs/_layout.scss */
+.gallery__subworks {
+  margin-bottom: .5em;
+  margin-top: 2em;
+}
+
 /*
  § Related artworks
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 141, ../../src/scss/docs/_layout.scss */
+/* line 147, ../../src/scss/docs/_layout.scss */
 #related-artworks {
   clear: both;
 }
-/* line 144, ../../src/scss/docs/_layout.scss */
+/* line 150, ../../src/scss/docs/_layout.scss */
 #related-artworks > [class*="heading"] {
   padding-top: 2em;
 }
-/* line 148, ../../src/scss/docs/_layout.scss */
+/* line 154, ../../src/scss/docs/_layout.scss */
 #related-artworks #teaser-container-grid {
   margin-top: 0;
   width: 882px;
@@ -2506,7 +2516,7 @@ samp {
 /*
  § Header
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 160, ../../src/scss/docs/_layout.scss */
+/* line 166, ../../src/scss/docs/_layout.scss */
 #header,
 #header * {
   -webkit-box-sizing: content-box;
@@ -2514,12 +2524,12 @@ samp {
   box-sizing: content-box;
 }
 
-/* line 165, ../../src/scss/docs/_layout.scss */
+/* line 171, ../../src/scss/docs/_layout.scss */
 #header_search {
   position: relative;
 }
 
-/* line 169, ../../src/scss/docs/_layout.scss */
+/* line 175, ../../src/scss/docs/_layout.scss */
 .search_submit {
   width: 50px;
   height: 20px;
@@ -2529,12 +2539,12 @@ samp {
 /*
  § Footer
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 178, ../../src/scss/docs/_layout.scss */
+/* line 184, ../../src/scss/docs/_layout.scss */
 #footer {
   margin-top: 40px;
 }
 
-/* line 184, ../../src/scss/docs/_layout.scss */
+/* line 190, ../../src/scss/docs/_layout.scss */
 .footer_content,
 .footer_content * {
   -webkit-box-sizing: content-box;
