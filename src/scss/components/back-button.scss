@@ -1,0 +1,17 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ § Back button
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.back-button {
+  position: absolute;
+  top: 12px;
+  left: -52px;
+  background-color: #000;
+  @include image-replacement($back_button);
+  @include transition(opacity 1s .5s ease);
+  opacity: 0; // Opacity is added in app.js - to make the button fade in on page load.
+
+  &:hover {
+    opacity: .85;
+  }
+}

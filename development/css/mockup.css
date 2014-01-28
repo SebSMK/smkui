@@ -1,0 +1,14 @@
+/*! Tuesday, January 28th, 2014, 10:41 */
+/* line 3, ../../src/scss/mockup.scss */
+.search-box,
+.view-main-header,
+.view-main-footer {
+  margin-right: auto;
+  margin-left: auto;
+  width: 882px;
+}
+
+/* line 9, ../../src/scss/mockup.scss */
+.view-main-footer {
+  margin-top: 40px;
+}

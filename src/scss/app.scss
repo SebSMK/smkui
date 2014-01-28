@@ -50,6 +50,7 @@
 @import "components/gallery";     // Image gallery
 @import "components/loading";     // Loading animations
 @import "components/pager";
+@import "components/back-button";
 
 // Form elements
 @import "components/field";      // Form field
@@ -65,7 +66,6 @@
 @import "docs/subsection";  // For dividing content into chunks (aka. subsections).
 @import "docs/smkui-logo";  // SMKUI logo.
 @import "docs/docs";        // Documentation specific styles.
-// @import "docs/views";       // Views specific styling.
 
 // For development.
 // @import "components/debug"; // Debugging styles.

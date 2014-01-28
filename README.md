@@ -14,12 +14,14 @@ Before diving into SMKUI to make changes or optimizations, you should be comfort
 This code is made publically available for educational and inspirational purposes only. While you are free to download, modify, and play around with the entire codebase it remains the intellectual property of [The National Gallery of Denmark](http://smk.dk/en). Note that the open source projects used in this project (like Grunt, Bower etc.) all fall under other usage licenses.
 
 ## Todos
+- Tilbage-knap
 - Opdateret tooltip
 - View more button
-- Visning af søgeresultater i to kollonner
-- Tilbage-knap
 - Delværker overskrift
 
 - print icon
 - print styling
 - print knap: imlpementer
+
+## Dones
+- Visning af søgeresultater i to kollonner

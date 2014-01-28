@@ -2,7 +2,8 @@
  § Rendering artworks
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 // Using Mustache for templating - https://github.com/janl/mustache.js
-// and Masonry for layout - http://masonry.desandro.com/
+// and Masonry for layout - http://masonry.desandro.com
+
 
 // Grid:
 // Get data and populate template (see src/templates/pages/teasers.hbs)
@@ -153,6 +154,15 @@ $(document).ready(function() {
         $('#home img').attr('src', 'images/frontpage_mobile.jpg');
       }
   });
+
+
+  /*
+   § Back button
+  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  // Make the back button stay in view when scrolling.
+  // ...
+  $('.back-button').css('opacity', '1');
+
 
   /*
    § Colors page

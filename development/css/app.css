@@ -1,4 +1,4 @@
-/*! Monday, January 27th, 2014, 21:07 */
+/*! Tuesday, January 28th, 2014, 10:41 */
 @charset "UTF-8";
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § App
@@ -1065,7 +1065,7 @@ samp {
 /* line 6, ../../src/scss/components/_smk-logo.scss */
 .smk-logo {
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -482px;
+  background-position: 0px -532px;
   width: 215px;
   height: 108px;
   text-indent: -9999em;
@@ -1357,7 +1357,7 @@ samp {
 /* line 17, ../../src/scss/components/_sharing.scss */
 .sharing--iconified a {
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -296px;
+  background-position: 0px -266px;
   width: 20px;
   height: 20px;
   text-indent: -9999em;
@@ -1391,7 +1391,7 @@ samp {
 }
 /* line 42, ../../src/scss/components/_sharing.scss */
 .sharing--iconified a[href*="pinterest.com"] {
-  background-position: 0px -266px;
+  background-position: 0px -296px;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
@@ -1528,7 +1528,7 @@ samp {
 .view-picker label {
   opacity: .3;
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -160px;
+  background-position: 0px -185px;
   width: 17px;
   height: 15px;
   text-indent: -9999em;
@@ -1570,7 +1570,7 @@ samp {
 /* line 35, ../../src/scss/components/_view-picker.scss */
 .view-picker label.image {
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -185px;
+  background-position: 0px -160px;
   width: 18px;
   height: 15px;
   text-indent: -9999em;
@@ -1679,6 +1679,39 @@ samp {
 /* line 41, ../../src/scss/components/_pager.scss */
 .pager--center {
   text-align: center;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ § Back button
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* line 5, ../../src/scss/components/back-button.scss */
+.back-button {
+  position: absolute;
+  top: 12px;
+  left: -52px;
+  background-color: #000;
+  background-image: url(../images/sprite_2x.png);
+  background-position: 0px -427px;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999em;
+  display: inline-block;
+  background-size: 215px;
+  -webkit-transition: opacity 1s 0.5s ease;
+  -moz-transition: opacity 1s 0.5s ease;
+  transition: opacity 1s 0.5s ease;
+  opacity: 0;
+}
+@media (-webkit-max-device-pixel-ratio: 1), (max-resolution: 96dpi) {
+  /* line 5, ../../src/scss/components/back-button.scss */
+  .back-button {
+    background-image: url("../images/sprite_1x.png");
+    background-size: auto;
+  }
+}
+/* line 14, ../../src/scss/components/back-button.scss */
+.back-button:hover {
+  opacity: .85;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
@@ -2566,7 +2599,7 @@ samp {
 /* line 12, ../../src/scss/docs/_smkui-logo.scss */
 .smkui-logo--m {
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -427px;
+  background-position: 0px -477px;
   width: 162px;
   height: 45px;
   text-indent: -9999em;
