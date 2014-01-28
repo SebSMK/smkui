@@ -103,6 +103,7 @@ module.exports = function(grunt) {
             '<%= app.src %>/js/vendor/masonry.pkgd.min.js',
             '<%= app.src %>/bower_components/typeahead.js/dist/typeahead.js',
             '<%= app.src %>/js/vendor/chosen.jquery.min.js',
+            '<%= app.src %>/js/vendor/imagesloaded.js',
             '<%= app.src %>/js/app.js'
           ]
         },
@@ -115,6 +116,7 @@ module.exports = function(grunt) {
             '<%= app.src %>/js/vendor/masonry.pkgd.min.js',
             '<%= app.src %>/bower_components/typeahead.js/dist/typeahead.js',
             '<%= app.src %>/js/vendor/chosen.jquery.min.js',
+            '<%= app.src %>/js/vendor/imagesloaded.js',
             '<%= app.src %>/js/app.js'
           ]
         },

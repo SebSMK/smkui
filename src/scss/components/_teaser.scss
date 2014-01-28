@@ -156,10 +156,19 @@
     float: left;
   }
 
+  .teaser__description {
+    margin-bottom: 0;
+  }
+
   // Meta-information
   .teaser__meta {
-    @extend .teaser__category; // Display inline.
-    display: none;
+    @extend .teaser__meta; // Display inline.
+    // display: none;
+
+    li {
+      display: inline-block;
+      margin-right: 1em;
+    }
   }
 }
 

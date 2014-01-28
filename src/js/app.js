@@ -57,7 +57,7 @@ function setTeaserViewGrid() {
       $(this).removeClass('teaser--two-columns');
       $(this).addClass('teaser--grid');
 
-      // Removing list style css
+      // Removing inline css
       $(this).attr('style', '');
 
       // Adding CSS position (masonry doesn't add this automatically when rerun - see below)
@@ -159,8 +159,8 @@ $(document).ready(function() {
   /*
    § Back button
   \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  // Make the back button stay in view when scrolling.
-  // ...
+  // Make the back button fade in on page load.
+  // The delay is set in a css transition.
   $('.back-button').css('opacity', '1');
 
 

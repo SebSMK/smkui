@@ -1,4 +1,4 @@
-/*! Tuesday, January 28th, 2014, 10:41 */
+/*! Tuesday, January 28th, 2014, 11:45 */
 @charset "UTF-8";
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § App
@@ -387,8 +387,8 @@ small,
 .copyright,
 .type--small,
 .teaser__category,
-.teaser--list .teaser__meta,
 .teaser__meta,
+.teaser--list .teaser__meta,
 [data-tip]:before,
 .gallery__copyright {
   font-size: .85em;
@@ -1139,13 +1139,13 @@ samp {
 }
 
 /* line 60, ../../src/scss/components/_teaser.scss */
-.teaser__category, .teaser--list .teaser__meta {
+.teaser__category {
   color: #a2a2a5;
   text-transform: uppercase;
   margin-bottom: .5em;
 }
 /* line 66, ../../src/scss/components/_teaser.scss */
-.teaser__category li, .teaser--list .teaser__meta li {
+.teaser__category li {
   display: inline-block;
   border-right: 1px solid #a2a2a5;
   margin-right: 0.375em;
@@ -1153,16 +1153,16 @@ samp {
   line-height: normal;
 }
 /* line 75, ../../src/scss/components/_teaser.scss */
-.teaser__category li:last-child, .teaser--list .teaser__meta li:last-child {
+.teaser__category li:last-child {
   border: 0;
 }
 /* line 77, ../../src/scss/components/_teaser.scss */
-.teaser__category a, .teaser--list .teaser__meta a {
+.teaser__category a {
   color: #a2a2a5;
   display: inline-block;
 }
 /* line 82, ../../src/scss/components/_teaser.scss */
-.teaser__category a:hover, .teaser--list .teaser__meta a:hover, .teaser__category a:focus, .teaser--list .teaser__meta a:focus {
+.teaser__category a:hover, .teaser__category a:focus {
   color: #5f66f2;
   text-decoration: none;
 }
@@ -1178,20 +1178,20 @@ samp {
 }
 
 /* line 101, ../../src/scss/components/_teaser.scss */
-.teaser__meta {
+.teaser__meta, .teaser--list .teaser__meta {
   margin-top: .5em;
   color: #a2a2a5;
 }
 /* line 106, ../../src/scss/components/_teaser.scss */
-.teaser__meta li {
+.teaser__meta li, .teaser--list .teaser__meta li {
   color: #a2a2a5;
 }
 /* line 111, ../../src/scss/components/_teaser.scss */
-.teaser__meta span {
+.teaser__meta span, .teaser--list .teaser__meta span {
   color: #a2a2a5;
 }
 /* line 115, ../../src/scss/components/_teaser.scss */
-.teaser__meta span:after {
+.teaser__meta span:after, .teaser--list .teaser__meta span:after {
   content: ":";
 }
 
@@ -1241,12 +1241,17 @@ samp {
   width: 530px;
   float: left;
 }
-/* line 160, ../../src/scss/components/_teaser.scss */
-.teaser--list .teaser__meta {
-  display: none;
+/* line 159, ../../src/scss/components/_teaser.scss */
+.teaser--list .teaser__description {
+  margin-bottom: 0;
+}
+/* line 168, ../../src/scss/components/_teaser.scss */
+.teaser--list .teaser__meta li, .teaser--list .teaser__meta li {
+  display: inline-block;
+  margin-right: 1em;
 }
 
-/* line 168, ../../src/scss/components/_teaser.scss */
+/* line 177, ../../src/scss/components/_teaser.scss */
 .teaser--two-columns {
   width: 416px;
   float: left;
@@ -1254,12 +1259,12 @@ samp {
   margin-left: 12px;
   min-height: 150px;
 }
-/* line 175, ../../src/scss/components/_teaser.scss */
+/* line 184, ../../src/scss/components/_teaser.scss */
 .teaser--two-columns .teaser__content {
   width: 308px;
 }
 
-/* line 183, ../../src/scss/components/_teaser.scss */
+/* line 192, ../../src/scss/components/_teaser.scss */
 #teaser-container-grid .teaser--two-columns:first-child,
 #teaser-container-grid .teaser--two-columns:nth-child(2) {
   border-top: 1px solid #ced0dd;

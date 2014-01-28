@@ -91,6 +91,9 @@
     <!-- Copyright notice -->
     <div class="gallery__copyright"></div>
 
+    <!-- Subworks (Delværker) -->
+    <h3 class="gallery__subworks heading--section">Delværker</h3>
+
     <!-- Images -->
     <div class="gallery__thumbnails">
       <ul>
@@ -197,7 +200,7 @@ Giovanni Pisano var oplært i faderen Nicola Pisanos værksted, hans såkaldte "
   <h3 class="heading--l heading--bordered">Relaterede værker</h3>
 
   <!-- Render the artworks in this div -->
-  <div id="teaser-container-grid"></div>
+  <div id="teaser-container-grid" class="full-width"></div>
 
   <!-- Template for artworks (this can also be put in an external .js file) -->
   <script id="teaserTemplateGrid" type="text/template">
@@ -231,6 +234,7 @@ Giovanni Pisano var oplært i faderen Nicola Pisanos værksted, hans såkaldte "
               {{#meta}}
                 <li><span>{{key}}</span> {{value}}</li>
               {{/meta}}
+                <li>Kan ses på museet</li>
             </ul>
           </div><!-- teaser__content -->
         </div><!-- teaser__wrapper -->
