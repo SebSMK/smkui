@@ -50,6 +50,15 @@
 }
 
 /*
+ § Search actions
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// Wrapper element for search actionables.
+.search-actions {
+  @include clearfix;
+
+}
+
+/*
  § View picker
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 // View picker (float it to the right)
@@ -72,6 +81,23 @@
   position: absolute;
   top: 20px;
   right: 11px;
+}
+
+
+/*
+ § Pager
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.pager {
+  float: left;
+  margin-top: -3px;
+  margin-left: 2px;
+}
+
+/*
+ § Search actions
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.search-actions {
+  // ...
 }
 
 

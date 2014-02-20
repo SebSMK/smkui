@@ -1,4 +1,4 @@
-/*! Tuesday, January 28th, 2014, 11:57 */
+/*! Tuesday, January 28th, 2014, 15:13 */
 @charset "UTF-8";
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
  § App
@@ -942,7 +942,7 @@ samp {
 /* line 75, ../../src/scss/components/_drawer.scss */
 .main-header .smkui-logo:after {
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -356px;
+  background-position: 0px -428px;
   width: 23px;
   height: 22px;
   text-indent: -9999em;
@@ -1065,7 +1065,7 @@ samp {
 /* line 6, ../../src/scss/components/_smk-logo.scss */
 .smk-logo {
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -532px;
+  background-position: 0px -604px;
   width: 215px;
   height: 108px;
   text-indent: -9999em;
@@ -1262,9 +1262,10 @@ samp {
 /* line 184, ../../src/scss/components/_teaser.scss */
 .teaser--two-columns .teaser__content {
   width: 308px;
+  float: right;
 }
 
-/* line 192, ../../src/scss/components/_teaser.scss */
+/* line 193, ../../src/scss/components/_teaser.scss */
 #teaser-container-grid .teaser--two-columns:first-child,
 #teaser-container-grid .teaser--two-columns:nth-child(2) {
   border-top: 1px solid #ced0dd;
@@ -1278,7 +1279,7 @@ samp {
 .tabs {
   *zoom: 1;
   border-bottom: 1px solid #111111;
-  margin-bottom: 1em;
+  margin-bottom: 1.25em;
   position: relative;
   /*
    § Right aligned tabs item
@@ -1362,7 +1363,7 @@ samp {
 /* line 17, ../../src/scss/components/_sharing.scss */
 .sharing--iconified a {
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -266px;
+  background-position: 0px -308px;
   width: 20px;
   height: 20px;
   text-indent: -9999em;
@@ -1388,15 +1389,19 @@ samp {
 }
 /* line 32, ../../src/scss/components/_sharing.scss */
 .sharing--iconified a[href*="twitter.com"] {
-  background-position: 0px -326px;
+  background-position: 0px -398px;
 }
 /* line 37, ../../src/scss/components/_sharing.scss */
 .sharing--iconified a[href*="plus.google.com"] {
-  background-position: 0px -236px;
+  background-position: 0px -278px;
 }
 /* line 42, ../../src/scss/components/_sharing.scss */
 .sharing--iconified a[href*="pinterest.com"] {
-  background-position: 0px -296px;
+  background-position: 0px -338px;
+}
+/* line 47, ../../src/scss/components/_sharing.scss */
+.sharing--iconified a[onclick*="print"] {
+  background-position: 0px -368px;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
@@ -1533,7 +1538,7 @@ samp {
 .view-picker label {
   opacity: .3;
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -185px;
+  background-position: 0px -227px;
   width: 17px;
   height: 15px;
   text-indent: -9999em;
@@ -1558,7 +1563,7 @@ samp {
 /* line 30, ../../src/scss/components/_view-picker.scss */
 .view-picker label.list, .view-picker label.list--bulleted, .view-picker label.list--tickmarked, .view-picker label.list--numbered {
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -135px;
+  background-position: 0px -177px;
   width: 17px;
   height: 15px;
   text-indent: -9999em;
@@ -1575,7 +1580,7 @@ samp {
 /* line 35, ../../src/scss/components/_view-picker.scss */
 .view-picker label.image {
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -160px;
+  background-position: 0px -202px;
   width: 18px;
   height: 15px;
   text-indent: -9999em;
@@ -1665,27 +1670,61 @@ samp {
 /* line 7, ../../src/scss/components/_pager.scss */
 .pager li, .pager--center li {
   display: inline-block;
+  margin: 0 -0.1em;
 }
-/* line 11, ../../src/scss/components/_pager.scss */
+/* line 12, ../../src/scss/components/_pager.scss */
 .pager li a, .pager--center li a {
-  padding: 0.25em 0.5em;
+  padding: 0.25em 0.4em;
   border-radius: 2px;
+  color: #a2a2a5;
 }
-/* line 19, ../../src/scss/components/_pager.scss */
+/* line 21, ../../src/scss/components/_pager.scss */
 .pager .pager__active a, .pager--center .pager__active a {
   background: #111111;
   color: #fff;
 }
-/* line 27, ../../src/scss/components/_pager.scss */
+/* line 29, ../../src/scss/components/_pager.scss */
 .pager .pager__previous a, .pager--center .pager__previous a {
-  padding-left: 0;
+  position: relative;
+  top: 6px;
+  margin-right: 3px;
+  background-image: url(../images/sprite_2x.png);
+  background-position: 0px -135px;
+  width: 9px;
+  height: 11px;
+  text-indent: -9999em;
+  display: inline-block;
+  background-size: 215px;
 }
-/* line 33, ../../src/scss/components/_pager.scss */
+@media (-webkit-max-device-pixel-ratio: 1), (max-resolution: 96dpi) {
+  /* line 29, ../../src/scss/components/_pager.scss */
+  .pager .pager__previous a, .pager--center .pager__previous a {
+    background-image: url("../images/sprite_1x.png");
+    background-size: auto;
+  }
+}
+/* line 38, ../../src/scss/components/_pager.scss */
 .pager .pager__next a, .pager--center .pager__next a {
-  padding-right: 0;
+  position: relative;
+  top: 6px;
+  margin-left: 3px;
+  background-image: url(../images/sprite_2x.png);
+  background-position: 0px -156px;
+  width: 9px;
+  height: 11px;
+  text-indent: -9999em;
+  display: inline-block;
+  background-size: 215px;
+}
+@media (-webkit-max-device-pixel-ratio: 1), (max-resolution: 96dpi) {
+  /* line 38, ../../src/scss/components/_pager.scss */
+  .pager .pager__next a, .pager--center .pager__next a {
+    background-image: url("../images/sprite_1x.png");
+    background-size: auto;
+  }
 }
 
-/* line 41, ../../src/scss/components/_pager.scss */
+/* line 49, ../../src/scss/components/_pager.scss */
 .pager--center {
   text-align: center;
 }
@@ -1700,7 +1739,7 @@ samp {
   left: -52px;
   background-color: #000;
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -427px;
+  background-position: 0px -499px;
   width: 40px;
   height: 40px;
   text-indent: -9999em;
@@ -2025,7 +2064,7 @@ samp {
   content: "Search";
   speak: none;
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -210px;
+  background-position: 0px -252px;
   width: 16px;
   height: 16px;
   text-indent: -9999em;
@@ -2138,7 +2177,7 @@ samp {
   content: "Search";
   speak: none;
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -210px;
+  background-position: 0px -252px;
   width: 16px;
   height: 16px;
   text-indent: -9999em;
@@ -2410,14 +2449,31 @@ samp {
 }
 
 /*
- § View picker
+ § Search actions
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* line 56, ../../src/scss/docs/_layout.scss */
+.search-actions {
+  *zoom: 1;
+}
+/* line 18, ../../src/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+.search-actions:before, .search-actions:after {
+  content: " ";
+  display: table;
+}
+/* line 23, ../../src/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+.search-actions:after {
+  clear: both;
+}
+
+/*
+ § View picker
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* line 65, ../../src/scss/docs/_layout.scss */
 .view-picker {
   position: absolute;
   right: 5px;
 }
-/* line 60, ../../src/scss/docs/_layout.scss */
+/* line 69, ../../src/scss/docs/_layout.scss */
 .view-picker input {
   margin-right: 0;
   margin-left: .65em;
@@ -2426,7 +2482,7 @@ samp {
 /*
  § Sort by...
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 71, ../../src/scss/docs/_layout.scss */
+/* line 80, ../../src/scss/docs/_layout.scss */
 .sort-by-picker {
   position: absolute;
   top: 20px;
@@ -2434,9 +2490,22 @@ samp {
 }
 
 /*
+ § Pager
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* line 90, ../../src/scss/docs/_layout.scss */
+.pager, .pager--center {
+  float: left;
+  margin-top: -3px;
+  margin-left: 2px;
+}
+
+/*
+ § Search actions
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*
  § Teaser grid
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 84, ../../src/scss/docs/_layout.scss */
+/* line 110, ../../src/scss/docs/_layout.scss */
 #teaser-container-grid {
   margin-top: 27px;
   margin-right: -11px;
@@ -2444,13 +2513,13 @@ samp {
   width: 660px;
   float: right;
 }
-/* line 91, ../../src/scss/docs/_layout.scss */
+/* line 117, ../../src/scss/docs/_layout.scss */
 #teaser-container-grid .teaser--grid {
   width: 198px;
   margin-right: 11px;
   margin-left: 11px;
 }
-/* line 98, ../../src/scss/docs/_layout.scss */
+/* line 124, ../../src/scss/docs/_layout.scss */
 #teaser-container-grid.full-width {
   width: 880px;
 }
@@ -2458,13 +2527,13 @@ samp {
 /*
  § Search filters
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 106, ../../src/scss/docs/_layout.scss */
+/* line 132, ../../src/scss/docs/_layout.scss */
 #search-filters {
   margin-top: 27px;
   width: 198px;
   float: left;
 }
-/* line 112, ../../src/scss/docs/_layout.scss */
+/* line 138, ../../src/scss/docs/_layout.scss */
 #search-filters .search-filter {
   margin-top: -.3em;
   margin-bottom: 2em;
@@ -2473,23 +2542,23 @@ samp {
 /*
  § Artwork (single view)
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 122, ../../src/scss/docs/_layout.scss */
+/* line 148, ../../src/scss/docs/_layout.scss */
 #media-container {
   width: 418px;
   float: left;
 }
 
-/* line 129, ../../src/scss/docs/_layout.scss */
+/* line 155, ../../src/scss/docs/_layout.scss */
 #info-container {
   width: 418px;
   float: right;
 }
-/* line 134, ../../src/scss/docs/_layout.scss */
+/* line 160, ../../src/scss/docs/_layout.scss */
 #info-container .sharing--iconified {
   margin-bottom: 1.5em;
 }
 
-/* line 138, ../../src/scss/docs/_layout.scss */
+/* line 164, ../../src/scss/docs/_layout.scss */
 .gallery__subworks {
   margin-bottom: .5em;
   margin-top: 2em;
@@ -2498,15 +2567,15 @@ samp {
 /*
  § Related artworks
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 147, ../../src/scss/docs/_layout.scss */
+/* line 173, ../../src/scss/docs/_layout.scss */
 #related-artworks {
   clear: both;
 }
-/* line 150, ../../src/scss/docs/_layout.scss */
+/* line 176, ../../src/scss/docs/_layout.scss */
 #related-artworks > [class*="heading"] {
   padding-top: 2em;
 }
-/* line 154, ../../src/scss/docs/_layout.scss */
+/* line 180, ../../src/scss/docs/_layout.scss */
 #related-artworks #teaser-container-grid {
   margin-top: 0;
   width: 882px;
@@ -2516,7 +2585,7 @@ samp {
 /*
  § Header
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 166, ../../src/scss/docs/_layout.scss */
+/* line 192, ../../src/scss/docs/_layout.scss */
 #header,
 #header * {
   -webkit-box-sizing: content-box;
@@ -2524,12 +2593,12 @@ samp {
   box-sizing: content-box;
 }
 
-/* line 171, ../../src/scss/docs/_layout.scss */
+/* line 197, ../../src/scss/docs/_layout.scss */
 #header_search {
   position: relative;
 }
 
-/* line 175, ../../src/scss/docs/_layout.scss */
+/* line 201, ../../src/scss/docs/_layout.scss */
 .search_submit {
   width: 50px;
   height: 20px;
@@ -2539,12 +2608,12 @@ samp {
 /*
  § Footer
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* line 184, ../../src/scss/docs/_layout.scss */
+/* line 210, ../../src/scss/docs/_layout.scss */
 #footer {
   margin-top: 40px;
 }
 
-/* line 190, ../../src/scss/docs/_layout.scss */
+/* line 216, ../../src/scss/docs/_layout.scss */
 .footer_content,
 .footer_content * {
   -webkit-box-sizing: content-box;
@@ -2595,7 +2664,7 @@ samp {
 .smkui-logo,
 .smkui-logo--s {
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -388px;
+  background-position: 0px -460px;
   width: 112px;
   height: 29px;
   text-indent: -9999em;
@@ -2614,7 +2683,7 @@ samp {
 /* line 12, ../../src/scss/docs/_smkui-logo.scss */
 .smkui-logo--m {
   background-image: url(../images/sprite_2x.png);
-  background-position: 0px -477px;
+  background-position: 0px -549px;
   width: 162px;
   height: 45px;
   text-indent: -9999em;

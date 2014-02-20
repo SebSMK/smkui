@@ -13,6 +13,9 @@
     <!-- Just for mocking up the view -->
     <link rel="stylesheet" href="css/mockup.css">
 
+    <!-- Print styles -->
+    <link rel="stylesheet" href="css/smk_print.css" media="print">
+
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=1" />
 <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=1" />
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=1" />
@@ -89,26 +92,38 @@
   </li>
 </ul>   
 
-<div class="sort-by-picker chosen--simple chosen--small">
-  <label>Sort by:</label>
-  <select>
-    <option value=""></option>
-    <option value="Relevans" selected>Relevans</option>
-    <option value="Dato">Dato</option>
-    <option value="Popularitet">Popularitet</option>
-  </select>
-</div><!-- chosen -->
+<div class="search-actions">
+  <ul class="pager">
+    <li class="pager__previous"><a href="#">Previous</a></li>
+    <li><a href="#">1</a></li>
+    <li class="pager__active"><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li class="pager__next"><a href="#">Next</a></li>
+  </ul>  
 
-<form class="view-picker" method="post">
-  <input type="radio" name="view" value="grid" id="grid" checked />
-  <label for="grid" class="grid">Grid</label>
+  <div class="sort-by-picker chosen--simple chosen--small">
+    <label>Sort by:</label>
+    <select>
+      <option value=""></option>
+      <option value="Relevans" selected>Relevans</option>
+      <option value="Dato">Dato</option>
+      <option value="Popularitet">Popularitet</option>
+    </select>
+  </div><!-- chosen -->
 
-  <input type="radio" name="view" value="list" id="list" />
-  <label for="list" class="list">List</label>
+  <form class="view-picker" method="post">
+    <input type="radio" name="view" value="grid" id="grid" checked />
+    <label for="grid" class="grid">Grid</label>
 
-  <input type="radio" name="view" value="image" id="image" />
-  <label for="image" class="image">Image</label>
-</form>
+    <input type="radio" name="view" value="list" id="list" />
+    <label for="list" class="list">List</label>
+
+    <input type="radio" name="view" value="image" id="image" />
+    <label for="image" class="image">Image</label>
+  </form>
+</div><!-- search-actions -->
 
 <!-- Teasers will be rendered into this div -->
 <div id="teaser-container-grid" class="full-width"></div>

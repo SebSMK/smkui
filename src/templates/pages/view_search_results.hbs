@@ -14,28 +14,41 @@ title:    Search Results
   <li><a href="#">Kalender <span>(30)</span></a></li>
   <li class="tabs__right">
   </li>
-</ul>   
+</ul>
 
-<div class="sort-by-picker chosen--simple chosen--small">
-  <label>Sort by:</label>
-  <select>
-    <option value=""></option>
-    <option value="Relevans" selected>Relevans</option>
-    <option value="Dato">Dato</option>
-    <option value="Popularitet">Popularitet</option>
-  </select>
-</div><!-- chosen -->
+<div class="search-actions">
+  <ul class="pager">
+    <li class="pager__previous"><a href="#">Previous</a></li>
+    <li><a href="#">1</a></li>
+    <li class="pager__active"><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li class="pager__next"><a href="#">Next</a></li>
+  </ul>  
 
-<form class="view-picker" method="post">
-  <input type="radio" name="view" value="grid" id="grid" checked />
-  <label for="grid" class="grid">Grid</label>
+  <div class="sort-by-picker chosen--simple chosen--small">
+    <label>Sort by:</label>
+    <select>
+      <option value=""></option>
+      <option value="Relevans" selected>Relevans</option>
+      <option value="Dato">Dato</option>
+      <option value="Popularitet">Popularitet</option>
+    </select>
+  </div><!-- chosen -->
 
-  <input type="radio" name="view" value="list" id="list" />
-  <label for="list" class="list">List</label>
+  <form class="view-picker" method="post">
+    <input type="radio" name="view" value="grid" id="grid" checked />
+    <label for="grid" class="grid">Grid</label>
 
-  <input type="radio" name="view" value="image" id="image" />
-  <label for="image" class="image">Image</label>
-</form>
+    <input type="radio" name="view" value="list" id="list" />
+    <label for="list" class="list">List</label>
+
+    <input type="radio" name="view" value="image" id="image" />
+    <label for="image" class="image">Image</label>
+  </form>
+</div><!-- search-actions -->
+
 
 <!-- Search filters -->
 <div id="search-filters">

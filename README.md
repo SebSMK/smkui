@@ -14,9 +14,9 @@ Before diving into SMKUI to make changes or optimizations, you should be comfort
 This code is made publically available for educational and inspirational purposes only. While you are free to download, modify, and play around with the entire codebase it remains the intellectual property of [The National Gallery of Denmark](http://smk.dk/en). Note that the open source projects used in this project (like Grunt, Bower etc.) all fall under other usage licenses.
 
 ## Todos
-- View more button
 - Delværker overskrift
 - Opdateret tooltip
+- View more button
 
 - print icon
 - print styling

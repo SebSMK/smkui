@@ -1,0 +1,17 @@
+// Hide all the irrelevant stuff
+#header,
+.view-main-header,
+#footer,
+.view-main-footer,  
+#navigator,
+#searchbox,
+.search-box,
+.sharing--iconified,
+#related-artworks,
+.cutoff__show-more {
+  display: none !important;
+}
+
+.cutoff {
+  max-height: none !important;
+}

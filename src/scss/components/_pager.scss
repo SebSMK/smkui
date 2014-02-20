@@ -6,11 +6,13 @@
 
   li {
     display: inline-block;
+    margin: 0 -.1em;
     @extend .heading--s;
 
     a {
-      padding: .25em .5em;
+      padding: .25em .4em;
       border-radius: 2px;
+      color: $gray-dark;
     } 
 
   } // li
@@ -25,13 +27,19 @@
 
   .pager__previous {
     a {
-      padding-left: 0;
+      position: relative;
+      top: 6px;
+      margin-right: 3px;
+      @include image-replacement($arrow_left_small);
     }
   }
 
   .pager__next {
     a {
-      padding-right: 0;
+      position: relative;
+      top: 6px;
+      margin-left: 3px;
+      @include image-replacement($arrow_right_small);
     }
   }
 

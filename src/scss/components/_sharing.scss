@@ -42,4 +42,9 @@
   a[href*="pinterest.com"] {
     background-position: $pinterest-offset-x $pinterest-offset-y;
   }
+
+  // Print
+  a[onclick*="print"] {
+    background-position: $print-offset-x $print-offset-y;
+  }
 } // sharing--iconified
