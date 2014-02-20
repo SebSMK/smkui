@@ -8,6 +8,13 @@
   width: 418px;
 }
 
+// Main image
+.gallery__main {
+  img[src*="default_picture"] {
+  opacity: .3;
+}
+}
+
 // Copyright notice
 .gallery__copyright {
   @extend .type--small;

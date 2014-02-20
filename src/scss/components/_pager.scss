@@ -2,45 +2,41 @@
  § Pager
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/*ul*/.pager {
+/*ul*/#pager {
+  float: left;
+  margin-top: -.6em;
 
   li {
     display: inline-block;
-    margin: 0 -.1em;
     @extend .heading--s;
+    padding: .25em .2em;
+    margin-bottom: 0;
 
     a {
-      padding: .25em .4em;
-      border-radius: 2px;
       color: $gray-dark;
     } 
 
   } // li
 
-  .pager__active {
-    a {
-      background: $black;
-      color: #fff;
+  .pager-current {
+    background: $black;
+    color: #fff;
+    border-radius: 2px;
+    padding: .15em .2em;
+  } // pager-current
 
-    }
-  } // pager__active
-
-  .pager__previous {
-    a {
-      position: relative;
-      top: 6px;
-      margin-right: 3px;
-      @include image-replacement($arrow_left_small);
-    }
+  .pager-prev {
+    position: relative;
+    top: 6px;
+    padding: .25em .2em;
+    @include image-replacement($arrow_left_small);
   }
 
-  .pager__next {
-    a {
-      position: relative;
-      top: 6px;
-      margin-left: 3px;
-      @include image-replacement($arrow_right_small);
-    }
+  .pager-next {
+    position: relative;
+    top: 6px;
+    padding: .25em .2em;
+    @include image-replacement($arrow_right_small);
   }
 
 } // pager

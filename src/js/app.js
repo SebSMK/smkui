@@ -471,5 +471,12 @@ $(document).ready(function() {
       template: ttTemplateStrings,
     }
   ]);
+
+  /*
+   § Tooltips (tooltipster)
+   § http://iamceege.github.io/tooltipster/
+  \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  // Initializing
+  $('.tooltip').tooltipster();
   
 }); // When the DOM is ready.

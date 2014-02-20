@@ -54,6 +54,10 @@
   &:focus {
     opacity: .85;
   }
+
+  img[src*="default_picture"] {
+    opacity: .3;
+  }
 }
 
 // Category

@@ -17,15 +17,19 @@ title:    Search Results
 </ul>
 
 <div class="search-actions">
-  <ul class="pager">
-    <li class="pager__previous"><a href="#">Previous</a></li>
-    <li><a href="#">1</a></li>
-    <li class="pager__active"><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li class="pager__next"><a href="#">Next</a></li>
-  </ul>  
+  <div id="pager">
+    <li><a href="#" rel="prev" class="pager-prev">&lt;</a></li>
+    <li> <a href="#" rel="start">1</a></li>
+    <li> <a href="#" rel="">2</a></li>
+    <li> <span class="pager-gap">…</span></li>
+    <li> <a href="#" rel="prev">51</a></li>
+    <li> <span class="pager-current">52</span></li>
+    <li> <a href="#" rel="next">53</a></li>
+    <li> <span class="pager-gap">…</span></li>
+    <li> <a href="#" rel="">2864</a></li>
+    <li> <a href="#" rel="">2865</a></li>
+    <li> <a href="#" rel="next" class="pager-next">&gt;</a></li>
+  </div>
 
   <div class="sort-by-picker chosen--simple chosen--small">
     <label>Sort by:</label>
@@ -39,13 +43,13 @@ title:    Search Results
 
   <form class="view-picker" method="post">
     <input type="radio" name="view" value="grid" id="grid" checked />
-    <label for="grid" class="grid">Grid</label>
+    <label for="grid" class="grid tooltip" title="Grid">Grid</label>
 
     <input type="radio" name="view" value="list" id="list" />
-    <label for="list" class="list">List</label>
+    <label for="list" class="list tooltip" title="List">List</label>
 
-    <input type="radio" name="view" value="image" id="image" />
-    <label for="image" class="image">Image</label>
+    <!-- <input type="radio" name="view" value="image" id="image" /> -->
+    <!-- <label for="image" class="image tooltip" title="Only results with images">Image</label> -->
   </form>
 </div><!-- search-actions -->
 

@@ -104,6 +104,7 @@ module.exports = function(grunt) {
             '<%= app.src %>/bower_components/typeahead.js/dist/typeahead.js',
             '<%= app.src %>/js/vendor/chosen.jquery.min.js',
             '<%= app.src %>/js/vendor/imagesloaded.js',
+            '<%= app.src %>/js/vendor/jquery.tooltipster.js', // http://iamceege.github.io/tooltipster/
             '<%= app.src %>/js/app.js'
           ]
         },
@@ -117,6 +118,7 @@ module.exports = function(grunt) {
             '<%= app.src %>/bower_components/typeahead.js/dist/typeahead.js',
             '<%= app.src %>/js/vendor/chosen.jquery.min.js',
             '<%= app.src %>/js/vendor/imagesloaded.js',
+            '<%= app.src %>/js/vendor/jquery.tooltipster.js', // http://iamceege.github.io/tooltipster/
             '<%= app.src %>/js/app.js'
           ]
         },
@@ -395,7 +397,7 @@ module.exports = function(grunt) {
         files: ['<%= app.src %>/**/*.*'],
         tasks: ['default'],
         options: {
-          livereload: true
+          livereload: 11123
         },
       }
     },
@@ -445,7 +447,7 @@ module.exports = function(grunt) {
   ]);
 
   // Deploy to staging
-  grunt.registerTask('deployStag', [
+  grunt.registerTask('deploy', [
     'production',
     'ftp-deploy'
   ]);
